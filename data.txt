@@ -1,0 +1,71 @@
+{
+    "status": 200,
+    "foundmatch": true,
+    "requested": "bengorr",
+    "players": {
+        "044e7ff2-67d6-4706-8bfd-b1503af00b9b": {
+            "profile": {
+                "p_id": "044e7ff2-67d6-4706-8bfd-b1503af00b9b",
+                "p_name": "BenGorr",
+                "p_user": "044e7ff2-67d6-4706-8bfd-b1503af00b9b",
+                "p_platform": "uplay",
+                "verified": false,
+                "information": ""
+            },
+            "refresh": {
+                "x": 0,
+                "s": 0
+            },
+            "stats": {
+                "level": 147
+            },
+            "ranked": {
+                "kd": 1.7,
+                "mmr": 3088,
+                "rank": 16,
+                "champ": 0,
+                "NA_mmr": 3088,
+                "NA_rank": 0,
+                "NA_champ": 0,
+                "EU_mmr": 0,
+                "EU_rank": 0,
+                "EU_champ": 0,
+                "AS_mmr": 0,
+                "AS_rank": 0,
+                "AS_champ": 0
+            }
+        },
+        "c9105b19-9780-4008-947e-10dad096e595": {
+            "profile": {
+                "p_id": "c9105b19-9780-4008-947e-10dad096e595",
+                "p_name": "bengorrr",
+                "p_user": "c9105b19-9780-4008-947e-10dad096e595",
+                "p_platform": "uplay",
+                "verified": false,
+                "information": ""
+            },
+            "refresh": {
+                "x": 0,
+                "s": 0
+            },
+            "stats": {
+                "level": 1
+            },
+            "ranked": {
+                "kd": 0,
+                "mmr": "",
+                "rank": 0,
+                "champ": 0,
+                "NA_mmr": 0,
+                "NA_rank": 0,
+                "NA_champ": 0,
+                "EU_mmr": 0,
+                "EU_rank": 0,
+                "EU_champ": 0,
+                "AS_mmr": 0,
+                "AS_rank": 0,
+                "AS_champ": 0
+            }
+        }
+    }
+}
