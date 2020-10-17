@@ -17,14 +17,14 @@
                 "s": 0
             },
             "stats": {
-                "level": 135
+                "level": 136
             },
             "ranked": {
                 "kd": 0.93,
-                "mmr": 3074,
+                "mmr": 3120,
                 "rank": 16,
                 "champ": 0,
-                "NA_mmr": 3074,
+                "NA_mmr": 3120,
                 "NA_rank": 0,
                 "NA_champ": 0,
                 "EU_mmr": 0,

@@ -15,13 +15,23 @@ class R6():
         if (resp.status_code == 200):
             print('Request success (200)')
             stats = json.loads(resp.text)
-            if (not stats['foundmatch']):
+
+
+            if (not stats['players']):
                 print('Did not Found a match!')
                 return {}
             else:
                 self.writeTofile(stats)
                 print('Found a match!')
                 return stats['players'][list(stats['players'].keys())[0]]
+
+            # if (not stats['foundmatch']):
+            #     print('Did not Found a match!')
+            #     return {}
+            # else:
+            #     self.writeTofile(stats)
+            #     print('Found a match!')
+            #     return stats['players'][list(stats['players'].keys())[0]]
         else:
             print('Request Error. Code: ', resp.status_code)
             return {}

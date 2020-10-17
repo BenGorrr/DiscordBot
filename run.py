@@ -86,7 +86,7 @@ async def us(ctx, platform="uplay"):
         title = "Ranking Among Us:",
         description = desc
     )
-    embed.set_thumbnail(url=f"https://tabstats.com/images/r6/ranks/?rank={players[0]['ranked']['rank']}&champ={players[0]['ranked']['champ']}")
+    embed.set_thumbnail(url=f"https://tabstats.com/images/r6/ranks/?rank={players[-1]['ranked']['rank']}&champ={players[-1]['ranked']['champ']}")
     await ctx.send(embed=embed)
 
 @bot.event
