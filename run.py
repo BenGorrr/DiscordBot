@@ -15,8 +15,8 @@ colorRGB = [(230, 70, 30), (107, 62, 50), (237, 240, 238), (247, 250, 75), (84, 
 #     'Diamond', 'Champions',
 #     ]
 def_playerList = {
-    'BenGorr':'044e7ff2-67d6-4706-8bfd-b1503af00b9b', 'Pingu_525':'bfaf9738-2401-4d5c-918b-c460b8760cdc',
-    'LilCh33tos':'8def768d-dae1-4c06-9e02-7e1b6d8b15f0', 'Benboojini':'c9bb4e6b-1a3e-4ba0-95db-7af886f2916f'
+    'BenGorr':'044e7ff2-67d6-4706-8bfd-b1503af00b9b', 'n1.Pigu':'bfaf9738-2401-4d5c-918b-c460b8760cdc',
+    'LilCh33tos':'8def768d-dae1-4c06-9e02-7e1b6d8b15f0', 'JellyF1shBean':'c9bb4e6b-1a3e-4ba0-95db-7af886f2916f'
     }
 
 @bot.event
@@ -135,12 +135,12 @@ async def us(ctx, platform="pc"):
     players = []
     for username in def_playerList.keys():
         try:
-            player = R6Stats(username, platform)
+            player = R6Stats(username, platform, generic=False)
         except Exception as e:
             await ctx.send("API is broken D:")
             print(e)
             return
-        if (not player.genericStats):
+        if (not player.seasonalStats):
             await ctx.send(f"Couldn't find user: {username}")
             continue
         else:
@@ -241,6 +241,8 @@ async def on_message(message):
     if ":4097_Mike_Sully_Face_Swap:" in message.content:
         stare = 15*"<:4097_Mike_Sully_Face_Swap:700599136906379297> "
         await message.channel.send(stare)
+    if "noice" in message.content:
+        await message.channel.send("https://giphy.com/gifs/8Odq0zzKM596g")
     await bot.process_commands(message)
 
 
