@@ -230,7 +230,9 @@ async def smd(ctx):
 
 @bot.event
 async def on_message(message):
-    print('Message from {0.author}: {0.content} at {0.created_at}'.format(message))
+    if message.author.id != 234395307759108106:
+        print('Message from {0.author}: {0.content}'.format(message))
+    #print(type(message.author))
     if message.author == bot.user:
         return
     if ":7529_KEKW:" in message.content:
@@ -241,8 +243,19 @@ async def on_message(message):
     if ":4097_Mike_Sully_Face_Swap:" in message.content:
         stare = 15*"<:4097_Mike_Sully_Face_Swap:700599136906379297> "
         await message.channel.send(stare)
-    if "noice" in message.content:
+    if "noice" in message.content.lower():
         await message.channel.send("https://giphy.com/gifs/8Odq0zzKM596g")
+    if "bye" in message.content.lower() and message.author.id == 236815295610617856:
+        await message.channel.send("Ah Chee, Bye")
+    if "hi" == message.content.lower():
+        if message.author.id == 171175305036300299:
+            await message.channel.send("Ah Soh, Hi")
+        elif message.author.id == 298650151860437023:
+            await message.channel.send("Adrian, Hi")
+        elif message.author.id == 236815295610617856:
+            await message.channel.send("Clifford, Hi")
+        elif message.author.id == 318221117640671234:
+            await message.channel.send("Melvin, Hi")
     await bot.process_commands(message)
 
 
