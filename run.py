@@ -256,6 +256,8 @@ async def on_message(message):
         await message.channel.send(stare)
     if "noice" in message.content.lower():
         await message.channel.send("https://giphy.com/gifs/8Odq0zzKM596g")
+    if any(msg in message.content.lower() for msg in ["vibe", "vibing"]):
+        await message.channel.send("https://tenor.com/view/cat-cat-vibing-cat-dancing-cat-jamming-cat-bopping-gif-18060934")
     if "bye" in message.content.lower() and message.author.id == 236815295610617856:
         await message.channel.send("Ah Chee, Bye")
     if "hi" == message.content.lower():
