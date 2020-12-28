@@ -272,4 +272,4 @@ async def on_message(message):
     await bot.process_commands(message)
 
 
-bot.run(config.api_key)
+bot.run(config.discord_api_key)
