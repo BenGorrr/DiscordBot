@@ -1,4 +1,4 @@
-import discord
+import discord, config
 from discord.ext import commands
 import asyncio
 #from r6 import R6
@@ -14,10 +14,7 @@ colorRGB = [(230, 70, 30), (107, 62, 50), (237, 240, 238), (247, 250, 75), (84, 
 #     'Gold III', 'Gold III', 'Gold II', 'Gold I', 'Platinum III', 'Platinum II', 'Platinum I',
 #     'Diamond', 'Champions',
 #     ]
-def_playerList = {
-    'BenGorr':'044e7ff2-67d6-4706-8bfd-b1503af00b9b', 'n1.Pigu':'bfaf9738-2401-4d5c-918b-c460b8760cdc',
-    'LilCh33tos':'8def768d-dae1-4c06-9e02-7e1b6d8b15f0', 'JellyF1shBean':'c9bb4e6b-1a3e-4ba0-95db-7af886f2916f'
-    }
+
 
 @bot.event
 async def on_ready():
@@ -142,7 +139,7 @@ async def r6(ctx, name, platform="pc"):
 @bot.command()
 async def us(ctx, platform="pc"):
     players = []
-    for username in def_playerList.keys():
+    for username in config.def_playerList.keys():
         try:
             player = R6Stats(username, platform, generic=False)
         except Exception as e:
@@ -273,4 +270,4 @@ async def on_message(message):
     await bot.process_commands(message)
 
 
-bot.run('NzY2NjI0Nzk3MjQ5NTAzMjMz.X4mE-g.SRG1cWPfz-0fjpr18LDFqN8Stmg')
+bot.run(config.api_key)

@@ -2,10 +2,15 @@
 __pycache__/
 *.py[cod]
 *$py.class
+
+#text file for development use
 data.txt
 data1.txt
 generic.txt
 seasonal.txt
+
+#config file
+config.py
 
 # C extensions
 *.so
