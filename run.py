@@ -86,7 +86,16 @@ async def r6(ctx, name, platform="pc"):
         embed.set_thumbnail(url=rank_url)
         embed.set_author(name=player.genericStats['username'], icon_url=icon_url)
         embed.add_field(name="Current MMR: ", value=f"{player.statsAsia['mmr']}", inline=False)
-        embed.add_field(name="KD: ", value=f"{player.statsAsia['kd']}", inline=False)
+        embed.add_field(name="Ranked KD: ", value=player.statsAsia['kd'], inline=True)
+        if player.statsAsia['losses'] == 0: losses = 1
+        else: losses = player.statsAsia['losses']
+        embed.add_field(name="Wins/Losses: ", value="Wins: {}\n Losses: {}\n W/L: {}".format(player.statsAsia['wins'],
+                player.statsAsia['losses'],
+                "{:.2f}".format(player.statsAsia['wins'] / losses)),
+                inline=True
+            )
+        #embed.add_field(name="Casual KD: ", value="{:.2f}".format(player.genericStats['stats']['queue']['casual']['kd']), inline=True)
+        embed.add_field(name="Overall KD: ", value="{:.2f}".format(player.genericStats['stats']['general']['kd']), inline=False)
         await ctx.send(embed=embed)
 #TABWIRE API
 # @bot.command()
@@ -227,6 +236,11 @@ async def smd(ctx):
         await msg.edit(content=smd+d[i]+emoji)
     await msg.edit(content=d+emoji_after)
 
+@bot.command(aliases=['close'])
+@commands.check(isBen)
+async def quit(ctx):
+    await bot.close()
+    print("Bot closed.")
 
 @bot.event
 async def on_message(message):

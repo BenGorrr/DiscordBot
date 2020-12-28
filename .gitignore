@@ -4,7 +4,8 @@ __pycache__/
 *$py.class
 data.txt
 data1.txt
-
+generic.txt
+seasonal.txt
 
 # C extensions
 *.so
