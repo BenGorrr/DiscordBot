@@ -94,47 +94,6 @@ async def r6(ctx, name, platform="pc"):
         #embed.add_field(name="Casual KD: ", value="{:.2f}".format(player.genericStats['stats']['queue']['casual']['kd']), inline=True)
         embed.add_field(name="Overall KD: ", value="{:.2f}".format(player.genericStats['stats']['general']['kd']), inline=False)
         await ctx.send(embed=embed)
-#TABWIRE API
-# @bot.command()
-# async def r6(ctx, name, platform="uplay"):
-#     player = R6(name, platform)
-#     #print(player.data)
-#     if (not player.data):
-#         await ctx.send(f"Couldn't find user: {name}")
-#         return
-#     else:
-#         # for x, y in player.data.items():
-#         #     print(f"{x} : {y}")
-#         rank = player.data['ranked']['rank']
-#         print(rank)
-#         color = discord.Color.default()
-#         if (rank >= 1 and rank <= 4): #copper
-#             color = discord.Color.from_rgb(*colorRGB[0])
-#         elif (rank >= 5 and rank <= 8): #bronze
-#             color = discord.Color.from_rgb(*colorRGB[1])
-#         elif (rank >= 9 and rank <= 12): #silver
-#             color = discord.Color.from_rgb(*colorRGB[2])
-#         elif (rank >= 13 and rank <= 16): #gold
-#             color = discord.Color.from_rgb(*colorRGB[3])
-#         elif (rank >= 17 and rank <= 19): #plat
-#             color = discord.Color.from_rgb(*colorRGB[4])
-#         elif (rank == 20):
-#             color = discord.Color.from_rgb(*colorRGB[5])
-#         elif (rank == 21):
-#             color = discord.Color.from_rgb(*colorRGB[6])
-#
-#         embed = discord.Embed(
-#             title = f"Rank: {rankList[int(player.data['ranked']['rank'])]}",
-#             description = f"Level: {player.data['stats']['level']}",
-#             color = color
-#         )
-#         rank_url = f"https://tabstats.com/images/r6/ranks/?rank={player.data['ranked']['rank']}&champ={player.data['ranked']['champ']}"
-#         icon_url = f"https://ubisoft-avatars.akamaized.net/{player.data['profile']['p_id']}/default_146_146.png"
-#         embed.set_thumbnail(url=rank_url)
-#         embed.set_author(name=player.data['profile']['p_name'], icon_url=icon_url)
-#         embed.add_field(name="Current MMR: ", value=f"{player.data['ranked']['mmr']}", inline=False)
-#         embed.add_field(name="KD: ", value=f"{player.data['ranked']['kd']}", inline=False)
-#         await ctx.send(embed=embed)
 
 @bot.command()
 async def us(ctx, platform="pc"):
@@ -217,6 +176,11 @@ async def sad(ctx):
     await ctx.send(sad*15)
 
 @bot.command()
+async def clown(ctx):
+    clown = 15*"<:ClownJin:793818012167831592> "
+    await ctx.send(clown)
+
+@bot.command()
 async def smd(ctx):
     d = "8====D"
     smd = d
@@ -246,11 +210,14 @@ async def on_message(message):
     #print(type(message.author))
     if message.author == bot.user:
         return
-    if ":7529_KEKW:" in message.content:
-        kekw = 6*"<:7529_KEKW:734986562030403666> "
-        msg = await message.channel.send(f"Yo {message.author.mention}, GTFO with the kekw")
-        await asyncio.sleep(5.0)
-        await msg.edit(content=kekw)
+    # if ":7529_KEKW:" in message.content:
+    #     kekw = 6*"<:7529_KEKW:734986562030403666> "
+    #     msg = await message.channel.send(f"Yo {message.author.mention}, GTFO with the kekw")
+    #     await asyncio.sleep(5.0)
+    #     await msg.edit(content=kekw)
+    if "clown" in message.content.lower():
+        clown = 15*"<:ClownJin:793818012167831592> "
+        await message.channel.send(clown)
     if ":4097_Mike_Sully_Face_Swap:" in message.content:
         stare = 15*"<:4097_Mike_Sully_Face_Swap:700599136906379297> "
         await message.channel.send(stare)
