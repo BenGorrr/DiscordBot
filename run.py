@@ -23,7 +23,7 @@ async def on_ready():
 def isBen(ctx):
     return ctx.author.id == 171175305036300299
 
-@bot.command(aliases=['r'])
+@bot.command(aliases=['r'], help="Restart bot (only owner)")
 @commands.check(isBen)
 async def restart(ctx):
     try:
@@ -34,15 +34,15 @@ async def restart(ctx):
     finally:
         os.system("python run.py")
 
-@bot.command()
+@bot.command(help="hi??")
 async def hi(ctx):
     await ctx.send(f"Hi! {ctx.author.mention}")
 
-@bot.command()
+@bot.command(help="??")
 async def bye(ctx):
     await ctx.send(f"Bye! {ctx.author.mention}")
 
-@bot.command()
+@bot.command(help="Check rainbow six siege stats. Usage: .r6 name")
 async def r6(ctx, name, platform="pc"):
     player = R6Stats(name, platform)
     #print(player.data)
@@ -95,7 +95,7 @@ async def r6(ctx, name, platform="pc"):
         embed.add_field(name="Overall KD: ", value="{:.2f}".format(player.genericStats['stats']['general']['kd']), inline=False)
         await ctx.send(embed=embed)
 
-@bot.command()
+@bot.command(help="r6 state with specific players")
 async def us(ctx, platform="pc"):
     players = []
     for username in config.def_playerList.keys():
@@ -130,7 +130,7 @@ async def us(ctx, platform="pc"):
     embed.set_thumbnail(url=rank_url)
     await ctx.send(embed=embed)
 
-@bot.command()
+@bot.command(help="kekw, try it")
 async def kekw(ctx):
     if ctx.author == 318221117640671234:
         await ctx.send(kekw + "Nope.")
@@ -149,7 +149,7 @@ async def kekw(ctx):
 def is_bot(m):
     return m.author == bot.user
 
-@bot.command()
+@bot.command(help="Purge messages, Usage: .purge limit")
 @commands.check(isBen)
 async def purge(ctx, limit=100):
     deleted = await ctx.channel.purge(limit=limit, check=is_bot)
@@ -197,11 +197,11 @@ async def smd(ctx):
         await msg.edit(content=smd+d[i]+emoji)
     await msg.edit(content=d+emoji_after)
 
-@bot.command()
+@bot.command(help="Set bot playing status")
 async def setplaying(ctx, *, text="Your pp"):
     await bot.change_presence(activity=discord.Game(name=text))
 
-@bot.command()
+@bot.command(help="Set bot watching status")
 async def setwatching(ctx, *, text="Your nudes"):
     await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name=text))
 
