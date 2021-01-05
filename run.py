@@ -1,19 +1,16 @@
+# -*- coding: utf-8 -*-
 import discord, config
 from discord.ext import commands
 import asyncio
 #from r6 import R6
 from r6stats import R6Stats
 import os, time
+import lyrics
 
 bot = commands.Bot(command_prefix = '.')
+#Global variable
 colorRGB = [(230, 70, 30), (107, 62, 50), (237, 240, 238), (247, 250, 75), (84, 252, 255), (138, 112, 255), (255, 20, 126)]
-# rankList = [
-#     'Unranked', 'Copper IV', 'Copper III', 'Copper II', 'Copper I',
-#     'Bronze IV', 'Bronze III', 'Bronze II', 'Bronze I',
-#     'Silver IV', 'Silver III', 'Silver II', 'Silver I',
-#     'Gold III', 'Gold III', 'Gold II', 'Gold I', 'Platinum III', 'Platinum II', 'Platinum I',
-#     'Diamond', 'Champions',
-#     ]
+bot.lyricsMethod = 1
 
 
 @bot.event
@@ -204,6 +201,28 @@ async def setplaying(ctx, *, text="Your pp"):
 @bot.command(help="Set bot watching status")
 async def setwatching(ctx, *, text="Your nudes"):
     await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name=text))
+
+@bot.command(help="Set lyric search method, 1. mulanci, 2.kugeci, 3.genius")
+async def method(ctx, m=None):
+    if m:
+        await ctx.send("Changed method: {} -> {}".format(bot.lyricsMethod, m))
+        bot.lyricsMethod = m
+    else:
+        await ctx.send("Current method: {}".format(bot.lyricsMethod))
+
+@bot.command(aliases=['lyrics'])
+async def lyric(ctx, *, name=None):
+    if name:
+        content = lyrics.getLyric(name, int(bot.lyricsMethod))
+        if content != "":
+            #await ctx.send(content)
+            embed = discord.Embed(
+                title = "Lyrics:",
+                description = content
+            )
+            await ctx.send(embed=embed)
+    else:
+        await ctx.send("Please type the song name as \".lyrics name\"")
 
 @bot.command(aliases=['close'])
 @commands.check(isBen)
