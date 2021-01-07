@@ -1,9 +1,9 @@
-import requests, json, config
+import requests, json, config, os
 
 class R6Stats():
     def __init__(self, username, platform="pc", generic=True, seasonal=True):
         self.baseURL = 'https://api2.r6stats.com/public-api/stats/' #/<username>/<platform>/<type>
-        self.headers = {'Authorization': 'Bearer ' + config.r6stats_api_key}
+        self.headers = {'Authorization': 'Bearer ' + os.environ.get('R6STATS_KEY', '-1')}
         self.username = username
         self.platform = platform
         if (generic):

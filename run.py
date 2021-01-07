@@ -9,9 +9,13 @@ import lyrics
 
 bot = commands.Bot(command_prefix = '.')
 #Global variable
-colorRGB = [(230, 70, 30), (107, 62, 50), (237, 240, 238), (247, 250, 75), (84, 252, 255), (138, 112, 255), (255, 20, 126)]
+bot.COLOR_RGB = [(230, 70, 30), (107, 62, 50), (237, 240, 238), (247, 250, 75), (84, 252, 255), (138, 112, 255), (255, 20, 126)]
 bot.lyricsMethod = 1
-
+#player id for the friends only stats
+bot.def_playerList = {
+    'BenGorr':'044e7ff2-67d6-4706-8bfd-b1503af00b9b', 'n1.Pigu':'bfaf9738-2401-4d5c-918b-c460b8760cdc',
+    'LilCh33tos':'8def768d-dae1-4c06-9e02-7e1b6d8b15f0', 'JellyF1shBean':'c9bb4e6b-1a3e-4ba0-95db-7af886f2916f'
+    }
 
 @bot.event
 async def on_ready():
@@ -50,19 +54,19 @@ async def r6(ctx, name, platform="pc"):
         rank = player.statsAsia['rank']
         color = discord.Color.default()
         if (rank >= 1 and rank <= 5): #copper
-            color = discord.Color.from_rgb(*colorRGB[0])
+            color = discord.Color.from_rgb(*bot.COLOR_RGB[0])
         elif (rank <= 10): #bronze
-            color = discord.Color.from_rgb(*colorRGB[1])
+            color = discord.Color.from_rgb(*bot.COLOR_RGB[1])
         elif (rank <= 15): #silver
-            color = discord.Color.from_rgb(*colorRGB[2])
+            color = discord.Color.from_rgb(*bot.COLOR_RGB[2])
         elif (rank <= 18): #gold
-            color = discord.Color.from_rgb(*colorRGB[3])
+            color = discord.Color.from_rgb(*bot.COLOR_RGB[3])
         elif (rank <= 21): #plat
-            color = discord.Color.from_rgb(*colorRGB[4])
+            color = discord.Color.from_rgb(*bot.COLOR_RGB[4])
         elif (rank == 22): #diamond
-            color = discord.Color.from_rgb(*colorRGB[5])
+            color = discord.Color.from_rgb(*bot.COLOR_RGB[5])
         elif (rank == 23): #champion
-            color = discord.Color.from_rgb(*colorRGB[6])
+            color = discord.Color.from_rgb(*bot.COLOR_RGB[6])
 
         embed = discord.Embed(
             title = f"Rank: {player.statsAsia['rank_text']}",
@@ -95,7 +99,7 @@ async def r6(ctx, name, platform="pc"):
 @bot.command(help="r6 state with specific players")
 async def us(ctx, platform="pc"):
     players = []
-    for username in config.def_playerList.keys():
+    for username in bot.def_playerList.keys():
         try:
             player = R6Stats(username, platform, generic=False)
         except Exception as e:
@@ -266,4 +270,4 @@ async def on_message(message):
     await bot.process_commands(message)
 
 
-bot.run(config.discord_api_key)
+bot.run(os.environ.get('DISCORD_KEY', '-1'))

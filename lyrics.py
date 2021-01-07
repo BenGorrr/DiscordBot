@@ -51,7 +51,7 @@ def kugeciGetLyric(driver, name):
 
 def geniusGetLyric(name):
     """ Using lyricsgenius wrapper to get lyrics from genius """
-    genius = lyricsgenius.Genius(config.GENIUS_ACCESS_TOKEN)
+    genius = lyricsgenius.Genius(os.environ.get('GENIUS_ACCESS_TOKEN', '-1'))
     song = genius.search_song(name)
     #print(song)
     if song:
