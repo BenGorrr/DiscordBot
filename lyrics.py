@@ -2,7 +2,7 @@
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
 import time
-import lyricsgenius, config
+import lyricsgenius
 
 """ useful attribute:
         element.tag_name

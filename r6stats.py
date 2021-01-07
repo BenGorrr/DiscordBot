@@ -1,4 +1,4 @@
-import requests, json, config, os
+import requests, json, os
 
 class R6Stats():
     def __init__(self, username, platform="pc", generic=True, seasonal=True):

@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-import discord, config
+import discord
 from discord.ext import commands
 import asyncio
 #from r6 import R6
