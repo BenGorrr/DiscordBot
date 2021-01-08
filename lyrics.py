@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
 from selenium import webdriver
+from webdriver_manager.chrome import ChromeDriverManager
 from selenium.common.exceptions import NoSuchElementException
-import time
+import time, os
 import lyricsgenius
 
 """ useful attribute:
@@ -84,10 +85,17 @@ def filterLyric(lyrics, method=1):
 def getLyric(name, method):
     """ wrapper for different site scrap"""
     if method == 1 or method == 2:
-        DRIVER_PATH = r"C:\Program Files (x86)\chromedriver.exe"
-        op = webdriver.ChromeOptions()
-        op.add_argument('headless')
-        driver = webdriver.Chrome(executable_path=DRIVER_PATH, options=op)
+        gChromeOptions = webdriver.ChromeOptions()
+        gChromeOptions.add_argument("window-size=1920x1480")
+        gChromeOptions.add_argument("disable-dev-shm-usage")
+        gChromeOptions.add_argument('headless')
+        driver = webdriver.Chrome(
+            chrome_options=gChromeOptions, executable_path=ChromeDriverManager().install()
+        )
+        #DRIVER_PATH = r"C:\Program Files (x86)\chromedriver.exe"
+        #op = webdriver.ChromeOptions()
+        #op.add_argument('headless')
+        #driver = webdriver.Chrome(executable_path=DRIVER_PATH, options=op)
 
     lyric = ""
     if method == 1: #mulanci search
