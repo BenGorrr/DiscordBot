@@ -150,11 +150,16 @@ async def kekw(ctx):
 def is_bot(m):
     return m.author == bot.user
 
-@bot.command(help="Purge messages, Usage: .purge limit")
+@bot.command(help="Purge bot messages, Usage: .purge limit")
 @commands.check(isBen)
 async def purge(ctx, limit=100):
     deleted = await ctx.channel.purge(limit=limit, check=is_bot)
     await ctx.channel.send('Deleted {} message(s)'.format(len(deleted)))
+
+@bot.command(help="Clear messages, Usage: .clear limit")
+async def clear(ctx, limit=100):
+    deleted = await ctx.channel.purge(limit=limit)
+    await ctx.channel.send('Cleared {} message(s)'.format(len(deleted)))
 
 @bot.command()
 async def fuck(ctx, *, name="you"):
