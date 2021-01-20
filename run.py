@@ -277,6 +277,8 @@ async def on_message(message):
         elif message.author.id == 458649160623718400:
             await message.channel.send("Adu, Hi")
         else: await message.channel.send("Diam.")
+    if "diam" in message.content.lower():
+        await message.channel.send("https://media.tenor.co/videos/26fb0a112adb635eb114c1542e5db476/mp4")
     await bot.process_commands(message)
 
 
