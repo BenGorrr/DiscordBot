@@ -272,6 +272,11 @@ async def on_message(message):
             await message.channel.send("Clifford, Hi")
         elif message.author.id == 318221117640671234:
             await message.channel.send("Melvin, Hi")
+        elif message.author.id == 722678030291435520:
+            await message.channel.send("Diu, Hi")
+        elif message.author.id == 458649160623718400:
+            await message.channel.send("Adu, Hi")
+        else: await message.channel.send("Diam.")
     await bot.process_commands(message)
 
 
