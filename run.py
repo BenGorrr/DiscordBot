@@ -278,7 +278,7 @@ async def on_message(message):
             await message.channel.send("Adu, Hi")
         else: await message.channel.send("Diam.")
     if "diam" in message.content.lower():
-        await message.channel.send("https://media.tenor.co/videos/26fb0a112adb635eb114c1542e5db476/mp4")
+        await message.channel.send("https://tenor.com/view/shut-the-fuck-up-gif-5518509")
     await bot.process_commands(message)
 
 
