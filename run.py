@@ -1,11 +1,9 @@
 # -*- coding: utf-8 -*-
-import discord
+import discord, asyncio, os, time
 from discord.ext import commands
-import asyncio
-#from r6 import R6
 from r6stats import R6Stats
-import os, time
 import lyrics
+from classes import *
 
 bot = commands.Bot(command_prefix = '.')
 #Global variable
@@ -232,6 +230,24 @@ async def lyric(ctx, *, name=None):
             await ctx.send(embed=embed)
     else:
         await ctx.send("Please type the song name as \".lyrics name\"")
+
+@bot.command(aliases=['links'])
+async def link(ctx, operation='all', code=' ', name=' ', link=' '):
+    s = Session() #create session object
+    if operation == "all":
+        embed = discord.Embed(
+            title = "Classes:",
+            description = "",
+            color = discord.Color.green()
+        )
+        await ctx.send(embed=embed)
+    elif operation == "add":
+        if not code == ' ':
+            add_class(code, name, link)
+            await ctx.send("Added ", code)
+        else:
+            await ctx.send("Usage: .link add code name link")
+    s.close()
 
 @bot.command(aliases=['close'])
 @commands.check(isBen)
