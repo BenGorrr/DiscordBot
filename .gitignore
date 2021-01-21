@@ -6,6 +6,7 @@ __pycache__/
 #text file for development use
 data.txt
 data1.txt
+player_data.txt
 generic.txt
 seasonal.txt
 text.txt
