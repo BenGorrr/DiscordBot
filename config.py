@@ -6,4 +6,4 @@ import psycopg2
 # DATABASE_URI = 'postgres+psycopg2://postgres:76541@localhost:5432/classes'
 DATABASE_URL = environ.get('DATABASE_URL')
 
-conn = psycopg2.connect(DATABASE_URI, sslmode='require')
+conn = psycopg2.connect(DATABASE_URL, sslmode='require')
