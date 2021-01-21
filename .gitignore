@@ -13,7 +13,6 @@ text.txt
 text_filtered.txt
 
 #config file
-config.py
 
 # C extensions
 *.so
