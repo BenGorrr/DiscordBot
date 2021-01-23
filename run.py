@@ -2,7 +2,7 @@
 import discord, asyncio, os, time
 from discord.ext import commands
 from r6stats import R6Stats
-import lyrics
+import lyrics, config
 from classes import *
 
 bot = commands.Bot(command_prefix = '.')
@@ -232,22 +232,88 @@ async def lyric(ctx, *, name=None):
         await ctx.send("Please type the song name as \".lyrics name\"")
 
 @bot.command(aliases=['links'])
-async def link(ctx, operation='all', code=' ', name=' ', link=' '):
-    s = Session() #create session object
-    if operation == "all":
-        embed = discord.Embed(
-            title = "Classes:",
-            description = "",
-            color = discord.Color.green()
-        )
-        await ctx.send(embed=embed)
-    elif operation == "add":
-        if not code == ' ':
-            add_class(code, name, link)
-            await ctx.send("Added ", code)
+async def link(ctx, operation='all', code=' ', name=' ', link=' ', c_type=' '):
+    """
+        Operation:
+        *Default* all (display all classes)  Usage: .link / .link all
+        add (Add class)  Usage: .link add course_code course_name link type(L, T or P)
+        delete (Delete Classes with course code)  Usage: .link delete course_code
+    """
+    # global s
+    # s = Session() #create session object
+    s = Session()
+    try:
+        if operation == "all":
+            class_list = get_all_class(s)
+            print(class_list)
+            embed = discord.Embed( #CREATE EMBED
+                title = "Classes:",
+                description = "Google Meet Links of Y2S3",
+                color = discord.Color.green()
+            )
+            #Add fields into embed
+            for c in class_list:
+                embed.add_field(name = c.course_name,
+                        value = "{}: [Lecture]({}) [Tutorial]({}) [Practical]({})"\
+                        .format(c.course_code, c.link_L, c.link_T, c.link_P),
+                        inline=False
+                    )
+            await ctx.send(embed=embed)
+        elif operation == "add":
+            if not code == ' ':
+                exist = False
+                class_list = get_all_class(s)
+                for c in class_list:
+                    if c.course_code == code and c.course_name == name:
+                        exist = True
+                        if update_classLink_bycode(s, code, link, c_type):
+                            print(get_all_class(s))
+                            await ctx.send(f"Updated {code}")
+                            break
+                        else: await ctx.send("Something went wrong!")
+                if not exist:
+                    if add_class(s, code, name, link, c_type):
+                        await ctx.send(f"Added {code}")
+                    else: await ctx.send("Something went wrong!")
+                s.commit()
+            else:
+                await ctx.send("Usage: .link add course_code name link type(L, T or P)")
+        elif operation == "delete":
+            if not code == ' ':
+                if (delete_class_bycode(s, code)):
+                    await ctx.send(f"Deleted {code}")
+                else: await ctx.send("Class not found!")
+                s.commit()
+            else:
+                await ctx.send("Usage: .link delete course_code")
+    except:
+        s.rollback()
+        raise
+    finally:
+        s.close()
+
+@bot.command(help="Usage: .editlink course_code new_link type(L, T or P)")
+async def editlink(ctx, code=' ', link=' ', c_type=' '):
+    s = Session()
+    try:
+        if not code == ' ' and not link == ' ' and not c_type == ' ': #if all args given
+            if (update_classLink_bycode(s, code, link, c_type)):
+                await ctx.send(f"Updated {code}")
+                s.commit()
+            else: await ctx.send("Class not found!")
         else:
-            await ctx.send("Usage: .link add code name link")
-    s.close()
+            await ctx.send("Usage: .editlink course_code new_link type(L, T or P)")
+    except:
+        s.rollback()
+        raise
+    finally:
+        s.close()
+
+@bot.command(help="Delete all the class links from DB (only owner)")
+@commands.check(isBen)
+async def deleteallclass(ctx):
+    recreate_db()
+    await ctx.send("Deleted everything.")
 
 @bot.command(aliases=['close'])
 @commands.check(isBen)
