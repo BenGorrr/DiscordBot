@@ -1,5 +1,6 @@
 from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy import Column, Integer, String, Date
+from sqlalchemy import ForeignKey, Column, Integer, String, Date
+from sqlalchemy.orm import relationship
 
 Base = declarative_base()
 
@@ -8,10 +9,20 @@ class Classes(Base):
     id = Column(Integer, primary_key=True)
     course_code = Column(String)
     course_name = Column(String)
-    link_L = Column(String)
-    link_T = Column(String)
-    link_P = Column(String)
+    urls = relationship("Links", cascade="all, delete-orphan")
 
     def __repr__(self):
-        return "<Classes({} course_code='{}', course_name='{}', links='{},{},{}')"\
-        .format(self.id, self.course_code, self.course_name, self.link_L, self.link_T, self.link_P)
+        return "<Classes({} course_code='{}', course_name='{}', urls={})>"\
+        .format(self.id, self.course_code, self.course_name, self.urls)
+
+class Links(Base):
+    __tablename__ = 'links'
+    id = Column(Integer, primary_key=True)
+    course_id = Column(Integer, ForeignKey('classes.id'))
+    url_name = Column(String)
+    url = Column(String)
+    course = relationship("Classes")
+
+    def __repr__(self):
+        return "<Links({} course_id='{}', name='{}', url='{}')>"\
+        .format(self.id, self.course_id, self.url_name, self.url)

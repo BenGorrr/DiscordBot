@@ -253,9 +253,13 @@ async def link(ctx, operation='all', code=' ', name=' ', link=' ', c_type=' '):
             )
             #Add fields into embed
             for c in class_list:
+                class_links = c.urls
+                links_embed = ""
+                for class_link in class_links:
+                    links_embed += "[{}]({}) ".format(class_link.url_name, class_link.url)
                 embed.add_field(name = c.course_name,
-                        value = "{}: [Lecture]({}) [Tutorial]({}) [Practical]({})"\
-                        .format(c.course_code, c.link_L, c.link_T, c.link_P),
+                        value = "{}: {}"\
+                        .format(c.course_code, links_embed),
                         inline=False
                     )
             await ctx.send(embed=embed)
@@ -266,18 +270,15 @@ async def link(ctx, operation='all', code=' ', name=' ', link=' ', c_type=' '):
                 for c in class_list:
                     if c.course_code == code and c.course_name == name:
                         exist = True
-                        if update_classLink_bycode(s, code, link, c_type):
-                            print(get_all_class(s))
-                            await ctx.send(f"Updated {code}")
-                            break
-                        else: await ctx.send("Something went wrong!")
+                        await ctx.send("Class already exist!")
+                        break
                 if not exist:
-                    if add_class(s, code, name, link, c_type):
+                    if add_class(s, code, name):
                         await ctx.send(f"Added {code}")
                     else: await ctx.send("Something went wrong!")
                 s.commit()
             else:
-                await ctx.send("Usage: .link add course_code name link type(L, T or P)")
+                await ctx.send("Usage: .link add course_code course_name")
         elif operation == "delete":
             if not code == ' ':
                 if (delete_class_bycode(s, code)):
@@ -292,17 +293,53 @@ async def link(ctx, operation='all', code=' ', name=' ', link=' ', c_type=' '):
     finally:
         s.close()
 
-@bot.command(help="Usage: .editlink course_code new_link type(L, T or P)")
-async def editlink(ctx, code=' ', link=' ', c_type=' '):
+@bot.command(help="Usage: .editlink course_code link_name new_link")
+async def editlink(ctx, code=' ', url_name=' ', link=' '):
     s = Session()
     try:
-        if not code == ' ' and not link == ' ' and not c_type == ' ': #if all args given
-            if (update_classLink_bycode(s, code, link, c_type)):
-                await ctx.send(f"Updated {code}")
+        if not code == ' ' and not link == ' ' and not url_name == ' ': #if all args given
+            if update_link(s, code, url_name, link):
+            #if (update_classLink_bycode(s, code, link, c_type)):
+                await ctx.send(f"Updated {code} {url_name}")
+                s.commit()
+            else: await ctx.send("Link not found!")
+        else:
+            await ctx.send("Usage: .editlink course_code link_name new_link")
+    except:
+        s.rollback()
+        raise
+    finally:
+        s.close()
+
+@bot.command(help="Usage: .addlink course_code link_name new_link")
+async def addlink(ctx, code=' ', url_name=' ', link=' '):
+    s = Session()
+    try:
+        if not code == ' ' and not link == ' ' and not url_name == ' ': #if all args given
+            if add_link_bycode(s, code, url_name, link):
+                await ctx.send(f"Added {code} {url_name}")
                 s.commit()
             else: await ctx.send("Class not found!")
         else:
-            await ctx.send("Usage: .editlink course_code new_link type(L, T or P)")
+            await ctx.send("Usage: .addlink course_code link_name new_link")
+    except:
+        s.rollback()
+        raise
+    finally:
+        s.close()
+
+@bot.command(help="Usage: .deletelink course_code link_name")
+async def deletelink(ctx, code=' ', url_name=' '):
+    s = Session()
+    try:
+        if not code == ' ' and not url_name == ' ': #if all args given
+            if delete_link(s, code, url_name):
+            # if add_link_bycode(s, code, url_name, link):
+                await ctx.send(f"Deleted {code} {url_name}")
+                s.commit()
+            else: await ctx.send("Link not found!")
+        else:
+            await ctx.send("Usage: .deletelink course_code link_name")
     except:
         s.rollback()
         raise
