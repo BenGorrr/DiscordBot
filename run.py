@@ -232,7 +232,7 @@ async def lyric(ctx, *, name=None):
         await ctx.send("Please type the song name as \".lyrics name\"")
 
 @bot.command(aliases=['links'])
-async def link(ctx, operation='all', code=' ', name=' ', link=' ', c_type=' '):
+async def link(ctx, operation='all', code=' ', name=' '):
     """
         Operation:
         *Default* all (display all classes)  Usage: .link / .link all
@@ -245,7 +245,7 @@ async def link(ctx, operation='all', code=' ', name=' ', link=' ', c_type=' '):
     try:
         if operation == "all":
             class_list = get_all_class(s)
-            print(class_list)
+            #print(class_list)
             embed = discord.Embed( #CREATE EMBED
                 title = "Classes:",
                 description = "Google Meet Links of Y2S3",
@@ -289,6 +289,7 @@ async def link(ctx, operation='all', code=' ', name=' ', link=' ', c_type=' '):
                 await ctx.send("Usage: .link delete course_code")
     except:
         s.rollback()
+        await ctx.send("Something went wrong!")
         raise
     finally:
         s.close()
@@ -307,6 +308,7 @@ async def editlink(ctx, code=' ', url_name=' ', link=' '):
             await ctx.send("Usage: .editlink course_code link_name new_link")
     except:
         s.rollback()
+        await ctx.send("Something went wrong!")
         raise
     finally:
         s.close()
@@ -324,6 +326,7 @@ async def addlink(ctx, code=' ', url_name=' ', link=' '):
             await ctx.send("Usage: .addlink course_code link_name new_link")
     except:
         s.rollback()
+        await ctx.send("Something went wrong!")
         raise
     finally:
         s.close()
@@ -342,6 +345,7 @@ async def deletelink(ctx, code=' ', url_name=' '):
             await ctx.send("Usage: .deletelink course_code link_name")
     except:
         s.rollback()
+        await ctx.send("Something went wrong!")
         raise
     finally:
         s.close()
