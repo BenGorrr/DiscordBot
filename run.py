@@ -264,7 +264,7 @@ async def link(ctx, operation='all', code=' ', name=' '):
                     )
             await ctx.send(embed=embed)
         elif operation == "add":
-            if not code == ' ':
+            if not code == ' ' and not name == ' ':
                 exist = False
                 class_list = get_all_class(s)
                 for c in class_list:
@@ -294,18 +294,23 @@ async def link(ctx, operation='all', code=' ', name=' '):
     finally:
         s.close()
 
-@bot.command(help="Usage: .editlink course_code link_name new_link")
-async def editlink(ctx, code=' ', url_name=' ', link=' '):
+@bot.command(help="Usage: .editlink course_code link_name/title new_link")
+async def editlink(ctx, code=' ', url_name=' ', link=' ', type='link'):
     s = Session()
     try:
         if not code == ' ' and not link == ' ' and not url_name == ' ': #if all args given
-            if update_link(s, code, url_name, link):
-            #if (update_classLink_bycode(s, code, link, c_type)):
-                await ctx.send(f"Updated {code} {url_name}")
-                s.commit()
-            else: await ctx.send("Link not found!")
+            if type == 'link':
+                if update_link(s, code, url_name, link):
+                #if (update_classLink_bycode(s, code, link, c_type)):
+                    await ctx.send(f"Updated {code} {url_name}")
+                    s.commit()
+                else: await ctx.send("Link not found!")
+            elif type == 'title':
+                if update_link_name(s, code, url_name, link):
+                    await ctx.send(f"Updated {code} {link}")
+                    s.commit()
         else:
-            await ctx.send("Usage: .editlink course_code link_name new_link")
+            await ctx.send("Usage: .editlink course_code link_name new_link whattoedit(link(default), title)")
     except:
         s.rollback()
         await ctx.send("Something went wrong!")

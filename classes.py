@@ -95,13 +95,13 @@ def update_link(s, course_code, url_name, new_link):
             return 1
     return 0
 
-
 def update_link_name(s, course_code, url_name, new_name):
     urls = get_all_links_in_course(s, course_code)
     for l in urls:
         if l.url_name == url_name:
             l.url_name = new_name
-            break
+            return 1
+    return 0
 
 def delete_link(s, course_code, url_name):
     urls = get_all_links_in_course(s, course_code)
