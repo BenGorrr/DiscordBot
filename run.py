@@ -202,10 +202,12 @@ async def smd(ctx):
     await msg.edit(content=d+emoji_after)
 
 @bot.command(help="Set bot playing status")
+@commands.check(isBen)
 async def setplaying(ctx, *, text="Your pp"):
     await bot.change_presence(activity=discord.Game(name=text))
 
 @bot.command(help="Set bot watching status")
+@commands.check(isBen)
 async def setwatching(ctx, *, text="Your nudes"):
     await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name=text))
 
