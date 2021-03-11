@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-import discord, asyncio, os, time, random
+import discord, asyncio, os, time, random, images
 from discord.ext import commands
 from r6stats import R6Stats
 import lyrics, config
@@ -414,6 +414,12 @@ async def on_message(message):
     if "diao ni" == message.content.lower():
         await message.channel.send('https://tenor.com/view/middlefinger-mood-screwyou-leave-me-gif-10174031')
     await bot.process_commands(message)
+
+@bot.command()
+async def image(ctx, tag=None):
+    if not tag:
+        img = images.get_random_image(tag)
+        await.ctx.send(img)
 
 
 bot.run(os.environ.get('DISCORD_KEY', '-1'))
