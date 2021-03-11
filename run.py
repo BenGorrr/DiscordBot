@@ -404,7 +404,7 @@ async def on_message(message):
             await message.channel.send("Melvin, Hi")
         elif message.author.id == 722678030291435520:
             await message.channel.send("Diu, Hi")
-        elif message.author.id == 458649160623718400:
+        elif message.author.id == 458649160623718400 or message.author.id == 698072756033421402:
             await message.channel.send("Adu, Hi")
         else: await message.channel.send("Diam.")
     if "diam" in message.content.lower():
