@@ -411,7 +411,7 @@ async def on_message(message):
         await message.channel.send("https://tenor.com/view/shut-the-fuck-up-gif-5518509")
     if "hey" == message.content.lower():
         gif = ['https://tenor.com/view/middle-finger-fuck-off-fuck-you-flip-off-screw-you-gif-12669379', 'https://tenor.com/view/middlefinger-mood-screwyou-leave-me-gif-10174031']
-        await message,channel.send(random.choice(gif))
+        await message.channel.send(random.choice(gif))
     await bot.process_commands(message)
 
 
