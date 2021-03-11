@@ -417,9 +417,11 @@ async def on_message(message):
 
 @bot.command()
 async def image(ctx, tag=None):
-    if not tag:
+    print(tag)
+    if tag != None:
         img = images.get_random_image(tag)
         await ctx.send(img)
+    else: await ctx.send("usage: .image tag_name")
 
 
 bot.run(os.environ.get('DISCORD_KEY', '-1'))
