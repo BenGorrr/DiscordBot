@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-import discord, asyncio, os, time
+import discord, asyncio, os, time, random
 from discord.ext import commands
 from r6stats import R6Stats
 import lyrics, config
@@ -409,6 +409,9 @@ async def on_message(message):
         else: await message.channel.send("Diam.")
     if "diam" in message.content.lower():
         await message.channel.send("https://tenor.com/view/shut-the-fuck-up-gif-5518509")
+    if "hey" == message.content.lower():
+        gif = ['https://tenor.com/view/middle-finger-fuck-off-fuck-you-flip-off-screw-you-gif-12669379', 'https://tenor.com/view/middlefinger-mood-screwyou-leave-me-gif-10174031']
+        await message,channel.send(random.choice(gif))
     await bot.process_commands(message)
 
 
