@@ -20,7 +20,7 @@ class R6Stats():
                 self.statsAsia['deaths'] = 1
             self.statsAsia['kd'] = "{:.2f}".format(self.statsAsia['kills'] / self.statsAsia['deaths'])
 
-    def getStats(self, type="generic", season="neon_dawn"):
+    def getStats(self, type="generic", season="crimson_heist"):
         formatURL = self.baseURL + "/".join([self.username, self.platform, type])
         #print(formatURL)
         resp = requests.get(formatURL, headers=self.headers)
