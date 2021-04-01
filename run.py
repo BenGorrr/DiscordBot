@@ -535,7 +535,7 @@ async def on_message(message):
     #     await message.channel.send('https://tenor.com/view/middle-finger-fuck-off-fuck-you-flip-off-screw-you-gif-12669379')
     # if "diao ni" == message.content.lower():
     #     await message.channel.send('https://tenor.com/view/middlefinger-mood-screwyou-leave-me-gif-10174031')
-    for kw in keywords: #loop tru all keywords from db
+    for kw in bot.keywords: #loop tru all keywords from db
         if kw.word == message.content: #if the arg word is found, delete that keyword from db
             await message.channel.send(kw.link)
     await bot.process_commands(message)
