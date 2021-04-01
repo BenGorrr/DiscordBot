@@ -363,6 +363,116 @@ async def deleteallclass(ctx):
     recreate_db()
     await ctx.send("Deleted everything.")
 
+@bot.command(help="Show all keywords")
+@commands.check(isBen)
+async def allkw(ctx):
+    s = Session()
+    try:
+        c = s.query(Keyword).all()
+        msg = ""
+        for kw in c:
+            msg = msg + kw.word + "\n"
+        if msg != "":
+            embed = discord.Embed(
+                title = f"We currently have {len(c)} keywords:",
+                description = msg,
+                color = discord.Color.orange()
+            )
+            await ctx.send(embed=embed)
+            #await ctx.send(msg)
+        else: await ctx.send("There is 0 keyword rn!")
+    except:
+        await ctx.send("Something went wrong!")
+        raise
+    finally:
+        s.close()
+    #await ctx.send("Added {}.".format(word))
+
+@bot.command(help="Add keyword response")
+@commands.check(isBen)
+async def addkw(ctx, word=' ', link=' '):
+    s = Session()
+    try:
+        if not word == ' ' and not link == ' ': #if all args given
+            exist = False
+            c = s.query(Keyword).all()
+            for kw in c:
+                if kw.word == word:
+                    await ctx.send(f"{word} already is a keyword, use .editkw to edit the link!")
+                    exist = True
+            if not exist:
+                new_keyword = Keyword(
+                    word = word,
+                    link = link
+                )
+                s.add(new_keyword)
+                await ctx.send(f"Added {word}.")
+                s.commit()
+        else:
+            await ctx.send("Usage: .addkw keyword link")
+    except:
+        s.rollback()
+        await ctx.send("Something went wrong!")
+        raise
+    finally:
+        s.close()
+    #await ctx.send("Added {}.".format(word))
+
+@bot.command(help="Edit keyword link")
+@commands.check(isBen)
+async def editkw(ctx, word=' ', link=' '):
+    s = Session()
+    try:
+        if not word == ' ' and not link == ' ': #if all args given
+            edited = False
+            c = s.query(Keyword).all()
+            for kw in c: #loop tru all keywords from db
+                if kw.word == word: #if the arg word is found, delete that keyword from db
+                    kw.link = link
+                    edited = True
+            if edited:
+                await ctx.send(f"Edited {word}.")
+            else:
+                await ctx.send(f"{word} is not a keyword!")
+            s.commit()
+        else:
+            await ctx.send("Usage: .editkw keyword link")
+    except:
+        s.rollback()
+        await ctx.send("Something went wrong!")
+        raise
+    finally:
+        s.close()
+    #await ctx.send("Added {}.".format(word))
+
+@bot.command(help="Delete keyword response")
+@commands.check(isBen)
+async def delkw(ctx, word=' '):
+    s = Session()
+    try:
+        if not word == ' ': #if all args given
+            deleted = False
+            c = s.query(Keyword).all()
+            for kw in c: #loop tru all keywords from db
+                if kw.word == word: #if the arg word is found, delete that keyword from db
+                    s.delete(kw)
+                    deleted = True
+            if deleted: #if deleted, send msg and commit
+                await ctx.send(f"Deleted {word}.")
+                s.commit()
+            else: #else send not found msg
+                await ctx.send(f"{word} is not a keyword!")
+
+        else:
+            await ctx.send("Usage: .addkw keyword link")
+    except:
+        s.rollback()
+        await ctx.send("Something went wrong!")
+        raise
+    finally:
+        s.close()
+    #await ctx.send("Added {}.".format(word))
+
 @bot.command(aliases=['close'])
 @commands.check(isBen)
 async def quit(ctx):
@@ -387,8 +497,8 @@ async def on_message(message):
     if ":4097_Mike_Sully_Face_Swap:" in message.content:
         stare = 15*"<:4097_Mike_Sully_Face_Swap:700599136906379297> "
         await message.channel.send(stare)
-    if "noice" in message.content.lower():
-        await message.channel.send("https://giphy.com/gifs/8Odq0zzKM596g")
+    # if "noice" in message.content.lower():
+    #     await message.channel.send("https://giphy.com/gifs/8Odq0zzKM596g")
     if any(msg in message.content.lower() for msg in ["vibe", "vibing"]):
         await message.channel.send("https://tenor.com/view/cat-cat-vibing-cat-dancing-cat-jamming-cat-bopping-gif-18060934")
     if "bye" in message.content.lower() and message.author.id == 236815295610617856:
@@ -407,12 +517,17 @@ async def on_message(message):
         elif message.author.id == 458649160623718400 or message.author.id == 698072756033421402:
             await message.channel.send("Adu, Hi")
         else: await message.channel.send("Diam.")
-    if "diam" in message.content.lower():
-        await message.channel.send("https://tenor.com/view/shut-the-fuck-up-gif-5518509")
-    if "lj" == message.content.lower():
-        await message.channel.send('https://tenor.com/view/middle-finger-fuck-off-fuck-you-flip-off-screw-you-gif-12669379')
-    if "diao ni" == message.content.lower():
-        await message.channel.send('https://tenor.com/view/middlefinger-mood-screwyou-leave-me-gif-10174031')
+    # if "diam" in message.content.lower():
+    #     await message.channel.send("https://tenor.com/view/shut-the-fuck-up-gif-5518509")
+    # if "lj" == message.content.lower():
+    #     await message.channel.send('https://tenor.com/view/middle-finger-fuck-off-fuck-you-flip-off-screw-you-gif-12669379')
+    # if "diao ni" == message.content.lower():
+    #     await message.channel.send('https://tenor.com/view/middlefinger-mood-screwyou-leave-me-gif-10174031')
+    s = Session()
+    keywords = s.query(Keyword).all()
+    for kw in keywords: #loop tru all keywords from db
+        if kw.word == message.content: #if the arg word is found, delete that keyword from db
+            await message.channel.send(kw.link)
     await bot.process_commands(message)
 
 @bot.command()

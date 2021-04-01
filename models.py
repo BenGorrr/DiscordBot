@@ -26,3 +26,9 @@ class Links(Base):
     def __repr__(self):
         return "<Links({} course_id='{}', name='{}', url='{}')>"\
         .format(self.id, self.course_id, self.url_name, self.url)
+
+class Keyword(Base):
+    __tablename__ = 'keyword'
+    id = Column(Integer, primary_key=True)
+    word = Column(String)
+    link = Column(String)
