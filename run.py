@@ -14,10 +14,12 @@ bot.def_playerList = {
     'BenGorr':'044e7ff2-67d6-4706-8bfd-b1503af00b9b', 'n1.Pigu':'bfaf9738-2401-4d5c-918b-c460b8760cdc',
     'LilCh33tos':'8def768d-dae1-4c06-9e02-7e1b6d8b15f0', 'JellyF1shBean':'c9bb4e6b-1a3e-4ba0-95db-7af886f2916f'
     }
+bot.keywords = []
 
 @bot.event
 async def on_ready():
     print('Logged on as {0}!'.format(bot.user))
+    updateBotKeywords()
 
 def isBen(ctx):
     return ctx.author.id == 171175305036300299
@@ -363,6 +365,16 @@ async def deleteallclass(ctx):
     recreate_db()
     await ctx.send("Deleted everything.")
 
+
+def updateBotKeywords():
+        s = Session()
+        try:
+            bot.keywords = s.query(Keyword).all()
+        except:
+            raise
+        finally:
+            s.close()
+
 @bot.command(help="Show all keywords")
 @commands.check(isBen)
 async def allkw(ctx):
@@ -523,8 +535,6 @@ async def on_message(message):
     #     await message.channel.send('https://tenor.com/view/middle-finger-fuck-off-fuck-you-flip-off-screw-you-gif-12669379')
     # if "diao ni" == message.content.lower():
     #     await message.channel.send('https://tenor.com/view/middlefinger-mood-screwyou-leave-me-gif-10174031')
-    s = Session()
-    keywords = s.query(Keyword).all()
     for kw in keywords: #loop tru all keywords from db
         if kw.word == message.content: #if the arg word is found, delete that keyword from db
             await message.channel.send(kw.link)
