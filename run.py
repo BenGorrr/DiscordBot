@@ -365,8 +365,8 @@ async def deleteallclass(ctx):
     recreate_db()
     await ctx.send("Deleted everything.")
 
-
-def updateBotKeywords():
+def updateBotKeywords(s=None):
+    if s == None:
         s = Session()
         try:
             bot.keywords = s.query(Keyword).all()
@@ -374,6 +374,12 @@ def updateBotKeywords():
             raise
         finally:
             s.close()
+    else:
+        try:
+            bot.keywords = s.query(Keyword).all()
+        except:
+            raise
+
 
 @bot.command(help="Show all keywords")
 @commands.check(isBen)
@@ -420,6 +426,7 @@ async def addkw(ctx, word=' ', link=' '):
                 s.add(new_keyword)
                 await ctx.send(f"Added {word}.")
                 s.commit()
+                updateBotKeywords(s)
         else:
             await ctx.send("Usage: .addkw keyword link")
     except:
@@ -444,9 +451,10 @@ async def editkw(ctx, word=' ', link=' '):
                     edited = True
             if edited:
                 await ctx.send(f"Edited {word}.")
+                updateBotKeywords(s)
+                s.commit()
             else:
                 await ctx.send(f"{word} is not a keyword!")
-            s.commit()
         else:
             await ctx.send("Usage: .editkw keyword link")
     except:
@@ -471,6 +479,7 @@ async def delkw(ctx, word=' '):
                     deleted = True
             if deleted: #if deleted, send msg and commit
                 await ctx.send(f"Deleted {word}.")
+                updateBotKeywords(s)
                 s.commit()
             else: #else send not found msg
                 await ctx.send(f"{word} is not a keyword!")
@@ -509,8 +518,6 @@ async def on_message(message):
     if ":4097_Mike_Sully_Face_Swap:" in message.content:
         stare = 15*"<:4097_Mike_Sully_Face_Swap:700599136906379297> "
         await message.channel.send(stare)
-    # if "noice" in message.content.lower():
-    #     await message.channel.send("https://giphy.com/gifs/8Odq0zzKM596g")
     if any(msg in message.content.lower() for msg in ["vibe", "vibing"]):
         await message.channel.send("https://tenor.com/view/cat-cat-vibing-cat-dancing-cat-jamming-cat-bopping-gif-18060934")
     if "bye" in message.content.lower() and message.author.id == 236815295610617856:
@@ -529,12 +536,6 @@ async def on_message(message):
         elif message.author.id == 458649160623718400 or message.author.id == 698072756033421402:
             await message.channel.send("Adu, Hi")
         else: await message.channel.send("Diam.")
-    # if "diam" in message.content.lower():
-    #     await message.channel.send("https://tenor.com/view/shut-the-fuck-up-gif-5518509")
-    # if "lj" == message.content.lower():
-    #     await message.channel.send('https://tenor.com/view/middle-finger-fuck-off-fuck-you-flip-off-screw-you-gif-12669379')
-    # if "diao ni" == message.content.lower():
-    #     await message.channel.send('https://tenor.com/view/middlefinger-mood-screwyou-leave-me-gif-10174031')
     for kw in bot.keywords: #loop tru all keywords from db
         if kw.word == message.content: #if the arg word is found, delete that keyword from db
             await message.channel.send(kw.link)
