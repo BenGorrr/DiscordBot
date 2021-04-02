@@ -382,7 +382,6 @@ def updateBotKeywords(s=None):
 
 
 @bot.command(help="Show all keywords")
-@commands.check(isBen)
 async def allkw(ctx):
     s = Session()
     try:
@@ -407,7 +406,6 @@ async def allkw(ctx):
     #await ctx.send("Added {}.".format(word))
 
 @bot.command(help="Add keyword response")
-@commands.check(isBen)
 async def addkw(ctx, word=' ', link=' '):
     s = Session()
     try:
@@ -438,7 +436,6 @@ async def addkw(ctx, word=' ', link=' '):
     #await ctx.send("Added {}.".format(word))
 
 @bot.command(help="Edit keyword link")
-@commands.check(isBen)
 async def editkw(ctx, word=' ', link=' '):
     s = Session()
     try:
@@ -466,7 +463,6 @@ async def editkw(ctx, word=' ', link=' '):
     #await ctx.send("Added {}.".format(word))
 
 @bot.command(help="Delete keyword response")
-@commands.check(isBen)
 async def delkw(ctx, word=' '):
     s = Session()
     try:
