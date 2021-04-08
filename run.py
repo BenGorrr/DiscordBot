@@ -448,8 +448,8 @@ async def editkw(ctx, word=' ', link=' '):
                     edited = True
             if edited:
                 await ctx.send(f"Edited {word}.")
-                updateBotKeywords(s)
                 s.commit()
+                updateBotKeywords(s)
             else:
                 await ctx.send(f"{word} is not a keyword!")
         else:
