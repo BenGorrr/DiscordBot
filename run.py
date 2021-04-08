@@ -475,8 +475,8 @@ async def delkw(ctx, word=' '):
                     deleted = True
             if deleted: #if deleted, send msg and commit
                 await ctx.send(f"Deleted {word}.")
-                updateBotKeywords(s)
                 s.commit()
+                updateBotKeywords(s)
             else: #else send not found msg
                 await ctx.send(f"{word} is not a keyword!")
 
