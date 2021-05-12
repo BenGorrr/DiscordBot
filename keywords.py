@@ -7,10 +7,10 @@ class Keywords(commands.Cog):
         self.bot = bot
         self.keywords = []
         self.engine = bot.engine
-        #Base.metadata.create_all(self.engine)
         self.Session = bot.Session
 
-    async def on_ready():
+    @commands.Cog.listener()
+    async def on_ready(self):
         self.updateBotKeywords()
 
     def updateBotKeywords(self, s=None):
