@@ -2,12 +2,11 @@
 import discord, asyncio, os, time, random, images
 from discord.ext import commands
 #from r6stats import R6Stats
-import lyrics, config
+import config
 from classes import *
 
 bot = commands.Bot(command_prefix = '.')
 #Global variable
-bot.lyricsMethod = 1
 bot.keywords = []
 
 @bot.event
@@ -36,8 +35,6 @@ async def hi(ctx):
 @bot.command(help="??")
 async def bye(ctx):
     await ctx.send(f"Bye! {ctx.author.mention}")
-
-bot.load_extension("r6stats")
 
 @bot.command(help="kekw, try it")
 async def kekw(ctx):
@@ -120,28 +117,6 @@ async def setplaying(ctx, *, text="Your pp"):
 @commands.check(isBen)
 async def setwatching(ctx, *, text="Your nudes"):
     await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name=text))
-
-@bot.command(help="Set lyric search method, 1. mulanci, 2.kugeci, 3.genius")
-async def method(ctx, m=None):
-    if m:
-        await ctx.send("Changed method: {} -> {}".format(bot.lyricsMethod, m))
-        bot.lyricsMethod = m
-    else:
-        await ctx.send("Current method: {}".format(bot.lyricsMethod))
-
-@bot.command(aliases=['lyrics'])
-async def lyric(ctx, *, name=None):
-    if name:
-        content = lyrics.getLyric(name, int(bot.lyricsMethod))
-        if content != "":
-            #await ctx.send(content)
-            embed = discord.Embed(
-                title = "Lyrics:",
-                description = content
-            )
-            await ctx.send(embed=embed)
-    else:
-        await ctx.send("Please type the song name as \".lyrics name\"")
 
 @bot.command(aliases=['links'])
 async def link(ctx, operation='all', code=' ', name=' '):
@@ -454,4 +429,6 @@ async def image(ctx, tag=None):
     else: await ctx.send("usage: .image tag_name")
 
 
+bot.load_extension("r6stats")
+bot.load_extension("lyrics")
 bot.run(os.environ.get('DISCORD_KEY', '-1'))
