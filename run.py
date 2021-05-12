@@ -21,10 +21,10 @@ async def on_ready():
 bot.engine = create_engine(DATABASE_URL, pool_pre_ping=True)
 Base.metadata.create_all(bot.engine)
 bot.Session = sessionmaker(bind=bot.engine)
-
+#initial_extension = []
 bot.load_extension("CogManager")
 bot.load_extension("main")
-bot.load_extension("r6stats")
+bot.load_extension("R6S.r6stats")
 bot.load_extension("lyrics")
 bot.load_extension("classes")
 bot.load_extension("images")

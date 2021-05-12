@@ -131,10 +131,10 @@ class R6Stats():
             print(stats['error'])
             return {}
         if (type=="seasonal"):
-            self.writeToFile(stats, "seasonal.txt")
+            self.writeToFile(stats, "./R6S/seasonal.txt")
             return stats['seasons'][season]
         else:
-            self.writeToFile(stats, "generic.txt")
+            self.writeToFile(stats, "./R6S/generic.txt")
             return stats
 
     def writeToFile(self, data, fileName):
