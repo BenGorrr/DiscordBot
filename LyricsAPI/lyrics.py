@@ -40,7 +40,7 @@ class Lyrics(commands.Cog):
             await ctx.send("Please type the song name as \".lyrics name\"")
 
     def exportText(self, filename, text):
-        with open(filename, mode='w', encoding="utf-8") as file:
+        with open("./LyricsAPI/"+filename, mode='w', encoding="utf-8") as file:
             file.write(text)
 
     def mulanciGetLyric(self, driver, name):
