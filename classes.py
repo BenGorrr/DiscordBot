@@ -1,19 +1,14 @@
-from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmaker
-from config import DATABASE_URL
 from models import *
 import discord
 from discord.ext import commands
+from run import isBen
 
 class ClassesLinks(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
-        self.engine = create_engine(DATABASE_URL, pool_pre_ping=True)
-        Base.metadata.create_all(self.engine)
-        self.Session = sessionmaker(bind=self.engine)
-
-    def isBen(self, ctx):
-        return ctx.author.id == 171175305036300299
+        self.engine = bot.engine
+        #Base.metadata.create_all(self.engine)
+        self.Session = bot.Session
 
     @commands.command(aliases=['links'])
     async def link(self, ctx, operation='all', code=' ', name=' '):
