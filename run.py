@@ -291,16 +291,11 @@ async def on_message(message):
             await message.channel.send(kw.link)
     await bot.process_commands(message)
 
-@bot.command()
-async def image(ctx, tag=None):
-    print(tag)
-    if tag != None:
-        img = images.get_random_image(tag)
-        await ctx.send(img)
-    else: await ctx.send("usage: .image tag_name")
+
 
 
 bot.load_extension("r6stats")
 bot.load_extension("lyrics")
 bot.load_extension("classes")
+bot.load_extension("images")
 bot.run(os.environ.get('DISCORD_KEY', '-1'))
