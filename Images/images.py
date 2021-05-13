@@ -7,14 +7,14 @@ class ImagesCog(commands.Cog):
         self.client = ImagesClient()
         self.nsfw = False
 
-    @commands.command()
+    @commands.command(help="Enable/Disable NSFW for .image")
     async def imageNSFW(self, ctx, state=""):
         if state.lower() in ["yes", "no"]:
             self.nsfw = True if state.lower() == "yes" else False
             await ctx.send("Image NSFW: " + str(self.nsfw))
         else: await ctx.send("usage: .imageNSFW (yes | no)")
 
-    @commands.command()
+    @commands.command(help="Get a random image with a tag")
     async def image(self, ctx, tag=None):
         if tag != None:
             img = self.client.get_random_image(tag, self.nsfw)
@@ -23,7 +23,7 @@ class ImagesCog(commands.Cog):
             else: await ctx.send("Can't find any :c")
         else: await ctx.send("usage: .image tag_name")
 
-    @commands.command()
+    @commands.command(help="Get the list of tags that can be used with .image")
     async def imagetags(self, ctx):
         tags = self.client.get_tags_list()
         if tags != None:
@@ -32,7 +32,16 @@ class ImagesCog(commands.Cog):
             await ctx.send("Tags: " + normal_tags + "\nNSFW Tags: " + nsfw_tags)
         else: await ctx.send("Can't find any :c")
 
+    @commands.command(help="Get a random meme from reddit")
+    async def meme(self, ctx):
+        meme = self.client.get_random_meme()
+        if meme != None:
+            await ctx.send(meme)
+        else: await ctx.send("Can't find any :c")
+
 class ImagesClient():
+    """ API DOCS: https://docs.ksoft.si/api/images-api """
+
     def __init__(self, base_url=''):
         self.set_base_url(base_url)
         self.api_key = os.environ.get('KSOFT_KEY', '-1')
@@ -71,6 +80,12 @@ class ImagesClient():
 
         if resp != None:
             return resp
+
+    def get_random_meme(self):
+        resp = self.do('GET', '/random-meme')
+
+        if resp != None:
+            return resp['image_url']
 
 def setup(bot):
     bot.add_cog(ImagesCog(bot))
