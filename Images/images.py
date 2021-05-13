@@ -20,19 +20,26 @@ class ImagesCog(commands.Cog):
         else: await ctx.send("usage: .imageNSFW (yes | no)")
 
     @commands.command(help="Get a random image with a tag")
-    async def image(self, ctx, tag=None):
+    async def image(self, ctx, tag=None, gifs=None):
         if tag != None:
             img = None
             if tag.lower() == 'meme':
                 img = self.client.get_random_meme()
             elif tag.lower() == 'aww':
                 img = self.client.get_random_aww()
+            elif tag.lower() == 'nsfw':
+                if self.nsfw: #Only get img if NSFW is set to True
+                    if gifs != None: #If gif parameter is given then get img with gif
+                        if gifs.lower() in ['gif', 'gifs']:
+                            img = self.client.get_random_nsfw(True)
+                        else: img = self.client.get_random_nsfw(False)
+                    else: img = self.client.get_random_nsfw(False)
             else:
                 img = self.client.get_random_image(tag, self.nsfw)
             if img != None:
                 await ctx.send(img)
             else: await ctx.send("Can't find any :c")
-        else: await ctx.send("usage: .image tag_name[meme, aww] / get tags with .imagetags")
+        else: await ctx.send("usage: .image tag_name[meme, aww, nsfw] / get tags with .imagetags")
 
     @commands.command(help="Get the list of tags that can be used with .image")
     async def imagetags(self, ctx):
@@ -108,6 +115,13 @@ class ImagesClient():
 
     def get_random_aww(self):
         resp = self.do('GET', '/random-aww')
+
+        if resp != None:
+            return resp['image_url']
+
+    def get_random_nsfw(self, gifs):
+        req = { 'gifs':gifs }
+        resp = self.do('GET', '/random-nsfw', req)
 
         if resp != None:
             return resp['image_url']
