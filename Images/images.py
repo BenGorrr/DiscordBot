@@ -22,11 +22,17 @@ class ImagesCog(commands.Cog):
     @commands.command(help="Get a random image with a tag")
     async def image(self, ctx, tag=None):
         if tag != None:
-            img = self.client.get_random_image(tag, self.nsfw)
+            img = None
+            if tag.lower() == 'meme':
+                img = self.client.get_random_meme()
+            elif tag.lower() == 'aww':
+                img = self.client.get_random_aww()
+            else:
+                img = self.client.get_random_image(tag, self.nsfw)
             if img != None:
                 await ctx.send(img)
             else: await ctx.send("Can't find any :c")
-        else: await ctx.send("usage: .image tag_name")
+        else: await ctx.send("usage: .image tag_name[meme, aww] / get tags with .imagetags")
 
     @commands.command(help="Get the list of tags that can be used with .image")
     async def imagetags(self, ctx):
@@ -35,13 +41,6 @@ class ImagesCog(commands.Cog):
             normal_tags = ', '.join(tags['tags'])
             nsfw_tags = ', '.join(tags['nsfw_tags'])
             await ctx.send("Tags: " + normal_tags + "\nNSFW Tags: " + nsfw_tags)
-        else: await ctx.send("Can't find any :c")
-
-    @commands.command(help="Get a random meme from reddit")
-    async def meme(self, ctx):
-        meme = self.client.get_random_meme()
-        if meme != None:
-            await ctx.send(meme)
         else: await ctx.send("Can't find any :c")
 
     @commands.command(help="Get a random image from wikihow", aliases=['wiki'])
@@ -77,6 +76,7 @@ class ImagesClient():
         resp = requests.request(method, url, **args)
 
         if resp.status_code == 200:
+            print(resp.elapsed.total_seconds())
             return resp.json()
         else: print("ERROR: " + resp.text)
 
@@ -105,6 +105,12 @@ class ImagesClient():
 
         if resp != None:
             return resp['url']
+
+    def get_random_aww(self):
+        resp = self.do('GET', '/random-aww')
+
+        if resp != None:
+            return resp['image_url']
 
 def setup(bot):
     bot.add_cog(ImagesCog(bot))
