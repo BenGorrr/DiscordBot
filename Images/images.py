@@ -85,7 +85,7 @@ class ImagesClient():
         if resp.status_code == 200:
             print(resp.elapsed.total_seconds())
             return resp.json()
-        else: print("ERROR: " + resp.text)
+        else: print(f"ERROR({resp.status_code}) : {resp.text}")
 
     def get_random_image(self, tag, nsfw):
         req = { 'tag':tag , 'nsfw':nsfw }
