@@ -9,9 +9,14 @@ class ImagesCog(commands.Cog):
 
     @commands.command(help="Enable/Disable NSFW for .image")
     async def imageNSFW(self, ctx, state=""):
-        if state.lower() in ["yes", "no"]:
-            self.nsfw = True if state.lower() == "yes" else False
+        if state == "":
             await ctx.send("Image NSFW: " + str(self.nsfw))
+        elif state.lower() in ["yes", "no"]:
+            curNsfw = self.nsfw
+            self.nsfw = True if state.lower() == "yes" else False
+            if self.nsfw != curNsfw:
+                await ctx.send("Image NSFW: " + str(curNsfw) + " -> " + str(self.nsfw))
+            else: await ctx.send("Image NSFW: " + str(self.nsfw))
         else: await ctx.send("usage: .imageNSFW (yes | no)")
 
     @commands.command(help="Get a random image with a tag")
@@ -37,6 +42,13 @@ class ImagesCog(commands.Cog):
         meme = self.client.get_random_meme()
         if meme != None:
             await ctx.send(meme)
+        else: await ctx.send("Can't find any :c")
+
+    @commands.command(help="Get a random image from wikihow", aliases=['wiki'])
+    async def wikihow(self, ctx):
+        wiki = self.client.get_random_wikihow(self.nsfw)
+        if wiki != None:
+            await ctx.send(wiki)
         else: await ctx.send("Can't find any :c")
 
 class ImagesClient():
@@ -66,7 +78,7 @@ class ImagesClient():
 
         if resp.status_code == 200:
             return resp.json()
-        else: print("ERROR: " + resp.json()['message'])
+        else: print("ERROR: " + resp.text)
 
     def get_random_image(self, tag, nsfw):
         req = { 'tag':tag , 'nsfw':nsfw }
@@ -86,6 +98,13 @@ class ImagesClient():
 
         if resp != None:
             return resp['image_url']
+
+    def get_random_wikihow(self, nsfw):
+        req = { 'nsfw':nsfw }
+        resp = self.do('GET', '/random-wikihow', req)
+
+        if resp != None:
+            return resp['url']
 
 def setup(bot):
     bot.add_cog(ImagesCog(bot))
