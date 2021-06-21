@@ -143,8 +143,8 @@ class ClassesLinks(commands.Cog):
         await ctx.send("Deleted everything.")
 
     def recreate_db(self):
-        Base.metadata.drop_all(engine)
-        Base.metadata.create_all(engine)
+        Base.metadata.drop_all(self.engine)
+        Base.metadata.create_all(self.engine)
 
     def add_class(self, s, code, name=" "):
         new_class = Classes(
