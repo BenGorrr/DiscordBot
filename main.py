@@ -114,9 +114,9 @@ class MainCog(commands.Cog):
         #     msg = await message.channel.send(f"Yo {message.author.mention}, GTFO with the kekw")
         #     await asyncio.sleep(5.0)
         #     await msg.edit(content=kekw)
-        if "clown" in message.content.lower():
-            clown = 15*"<:ClownJin:793818012167831592> "
-            await message.channel.send(clown)
+        # if "clown" in message.content.lower():
+        #     clown = 15*"<:ClownJin:793818012167831592> "
+        #     await message.channel.send(clown)
         if ":4097_Mike_Sully_Face_Swap:" in message.content:
             stare = 15*"<:4097_Mike_Sully_Face_Swap:700599136906379297> "
             await message.channel.send(stare)
