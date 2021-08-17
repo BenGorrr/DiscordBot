@@ -6,6 +6,18 @@ class Manager(commands.Cog):
         self.bot = bot
 
     # Hidden means it won't show up on the default help.
+    @commands.command(name='showmodules', hidden=True)
+    @commands.is_owner()
+    async def showextension(self, ctx):
+        """Command which Show loaded modules"""
+        if (self.bot.extension):
+            str = ""
+            for ext in self.bot.extension:
+                str += ext + " "
+            await ctx.send('Loaded Modules: ' + str)
+        else: await ctx.send('No modules loaded')
+
+
     @commands.command(name='load', hidden=True)
     @commands.is_owner()
     async def load(self, ctx, *, cog: str):

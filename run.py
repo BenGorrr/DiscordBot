@@ -21,13 +21,18 @@ async def on_ready():
 bot.engine = create_engine(DATABASE_URL, pool_pre_ping=True)
 Base.metadata.create_all(bot.engine)
 bot.Session = sessionmaker(bind=bot.engine)
-#initial_extension = []
-bot.load_extension("CogManager")
-bot.load_extension("main")
-bot.load_extension("R6S.r6stats")
-bot.load_extension("LyricsAPI.lyrics")
-bot.load_extension("Classes.classes")
-bot.load_extension("Images.images")
-bot.load_extension("keywords")
-bot.load_extension("TenorAPI.gif")
+
+bot.extension = [
+    "CogManager",
+    "main",
+    "R6S.r6stats",
+    "LyricsAPI.lyrics",
+    "Classes.classes",
+    "Images.images",
+    "keywords",
+    "TenorAPI.gif"
+    ]
+for ext in bot.extension:
+    bot.load_extension(ext)
+
 bot.run(os.environ.get('DISCORD_KEY', '-1'))
