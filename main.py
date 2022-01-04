@@ -19,10 +19,10 @@ class MainCog(commands.Cog):
 
     @commands.command(help="kekw, try it")
     async def kekw(self, ctx):
+        kekw = "<:7529_KEKW:734986562030403666> "
         if ctx.author == 318221117640671234:
             await ctx.send(kekw + "Nope.")
             return
-        kekw = "<:7529_KEKW:734986562030403666> "
         msgs = []
         j = [i for i in range(1, 6)]# + [i for i in range(4, 0, -1)]
         for i in j:
@@ -89,12 +89,12 @@ class MainCog(commands.Cog):
     @commands.command(help="Set bot playing status")
     @commands.check(isBen)
     async def setplaying(self, ctx, *, text="Your pp"):
-        await bot.change_presence(activity=discord.Game(name=text))
+        await self.bot.change_presence(activity=discord.Game(name=text))
 
     @commands.command(help="Set bot watching status")
     @commands.check(isBen)
     async def setwatching(self, ctx, *, text="Your nudes"):
-        await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name=text))
+        await self.bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name=text))
 
     @commands.command(aliases=['close'])
     @commands.check(isBen)
