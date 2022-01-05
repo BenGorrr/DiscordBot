@@ -1,23 +1,87 @@
 import requests, json, asyncio
-import RSO_Auth
-from ..Utils import files_util, messages
+from . import RSO_Auth
+# from .Utils import files_util, messages
+from Utils import files_util, messages
 from discord.ext import commands
+from models import ValorantUsers
 
 class Valorant(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
         self.client = Client()
+        self.ids = []
+        self.engine = bot.engine
+        self.Session = bot.Session
 
     @commands.command()
     async def valadd(self, ctx):
-        await ctx.author.send("Send me your id and password seperated by a space! [user pass]")
+        await ctx.author.send("Send me your id and password and ingame name with tag seperated by a space! [user pass BenGorr#1234]")
         # wait for reponse
-        check = messages.message_check(channel=ctx.author.dm_channel())
+        check = messages.message_check(channel=ctx.author.dm_channel)
         response = await self.bot.wait_for('message', check=check)
         try:
-            response.split(' ')
+            id, pw, ign = response.content.split(' ')
+            self.ids.append({'id': id, 'pw': pw, 'ign': ign.lower()})
+        except Exception as e:
+            await ctx.author.send("Invalid input :/ Error:" + e)
+
+    @commands.command()
+    async def valstore(self, ctx, username):
+        try: 
+            name = username.lower()
+            print(name)
+            id = self.search(name)
+            print(type(id))
+            if not id:
+                await ctx.send("Id not found")
+                return
+            await self.client.get_auth(id['id'], id['pw'])
+            name, tag = id['ign'].split("#")
+            player_store = self.client.get_player_store(name, tag)
+            await ctx.send(player_store)
+        except Exception as e:
+            print(e)
+
+    # TODO: use addUser and getUser in the command method
+
+    def addUser(self, entry):
+        s = self.Session()
+        try:
+            username, password, ign = entry.values()
+            new_user = ValorantUsers(
+                username = username, 
+                password = password, 
+                ign = ign
+            )
+            s.add(new_user)
+            s.commit()
         except:
-            await ctx.author.send("Invalid input :/")
+            s.rollback()
+            raise
+        finally:
+            s.close()
+
+    def getUser(self):
+        s = self.Session()
+        try:
+            valoUsers = s.query(ValorantUsers).all()
+        except:
+            raise
+        finally:
+            s.close()
+            return valoUsers
+
+
+    @commands.command()
+    async def valdelall(self, ctx):
+        self.ids = []
+        await ctx.send("All ids deleted")
+
+    def search(self, name):
+        for id in self.ids:
+            if name in id['ign']:
+                return id
+
 
 
 class Client():
@@ -26,8 +90,9 @@ class Client():
         self.access_token = access_token
         self.entitlements_token = entitlements_token
 
-    def get_auth(self, username, password):
-        data = asyncio.get_event_loop().run_until_complete(RSO_Auth.auth(username, password))
+    async def get_auth(self, username, password):
+        # data = asyncio.get_event_loop().run_until_complete(RSO_Auth.auth(username, password))
+        data = await RSO_Auth.auth(username, password)
         self.access_token, self.entitlements_token = data
 
     def set_base_url(self, base_url):
@@ -67,7 +132,11 @@ class Client():
         player_id = self.get_player(name, tag).json()['data']['puuid']
         store_ids = self.get_store_from_id(player_id).json()['SkinsPanelLayout']['SingleItemOffers']
         # skins_ids = read_Json('content.txt')['skinLevels']
-        skins_ids = files_util.read_Json('content.txt')['skinLevels']
+        try:
+            skins_ids = files_util.read_Json('content.txt')['skinLevels']
+        except:
+            self.update_content('content.txt')
+            skins_ids = files_util.read_Json('content.txt')['skinLevels']
         skins_name = []
         for store_id in store_ids:
             skins_name.append(next(skin for skin in skins_ids if skin['id'] == store_id.upper())['name'])
@@ -77,3 +146,6 @@ class Client():
         data = self.get_content()
         # write_Json(file, data.json())
         files_util.write_Json(file, data.json())
+
+def setup(bot):
+    bot.add_cog(Valorant(bot))

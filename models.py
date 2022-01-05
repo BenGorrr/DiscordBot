@@ -32,3 +32,10 @@ class Keyword(Base):
     id = Column(Integer, primary_key=True)
     word = Column(String)
     link = Column(String)
+
+class ValorantUsers(Base):
+    __tablename__ = 'valorantusers'
+    id = Column(Integer, primary_key=True)
+    username = Column(String)
+    password = Column(String)
+    ign = Column(String)

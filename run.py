@@ -30,7 +30,8 @@ bot.extension = [
     "Classes.classes",
     "Images.images",
     "keywords",
-    "TenorAPI.gif"
+    "TenorAPI.gif", 
+    "ValorantAPI.valorant"
     ]
 for ext in bot.extension:
     bot.load_extension(ext)
