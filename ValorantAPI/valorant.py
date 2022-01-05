@@ -1,3 +1,4 @@
+from typing_extensions import final
 from discord import player
 import requests, json, time
 from . import RSO_Auth
@@ -14,6 +15,7 @@ class Valorant(commands.Cog):
         self.ids = []
         self.engine = bot.engine
         self.Session = bot.Session
+        self.last_auth_user = None
 
     @commands.command()
     async def valadd(self, ctx):
@@ -24,8 +26,9 @@ class Valorant(commands.Cog):
         try:
             id, pw, ign = response.content.split(' ')
             self.ids.append({'id': id, 'pw': pw, 'ign': ign.lower()})
-            self.addUser({'id': id, 'pw': pw, 'ign': ign.lower()})
-            await ctx.author.send("Added :)")
+            if self.addUser({'id': id, 'pw': pw, 'ign': ign.lower()}):
+                await ctx.author.send("Added :)")
+            else: await ctx.author.send("Something went wrong!")
 
         except Exception as e:
             await ctx.author.send("Invalid input :/ Error:" + e)
@@ -56,22 +59,35 @@ class Valorant(commands.Cog):
 
             print(f"id: {id} \n username: {id.username} pw: {id.password} ign: {id.ign}")
             # Get Auth with username and password
-            await self.client.get_auth(id.username, id.password)
+            # If last auth time is more than 1 hour or it is not previously auth'd
+            print(int(time.time()) - id.last_auth)
+            print(f"last_auth: {id.last_auth} time: {int(time.time())}")
+            if (int(time.time()) - id.last_auth > 3600) or username != self.last_auth_user:
+                await self.client.get_auth(id.username, id.password)
+                self.update_last_auth(id.username, int(time.time()))
 
 
             name, tag = id.ign.split("#")
             # Get player store (list of dict with 'name' and 'img' key)
             player_store = self.client.get_player_store(name, tag)
-            print(player_store)
             embed = discord.Embed(title=f"{id.ign}'s Store:")
             player_card = id.player_card
             embed.set_thumbnail(url=player_card)
 
-            # if user does not want weapon image
-            for item in player_store:
-                embed.add_field(name=item['name'])
-            
-            await ctx.send(embed = embed)
+            if image == '':
+                # if user does not want weapon image
+                for item in player_store:
+                    embed.add_field(name=item['name'], value=15*'-', inline=False)
+                
+                await ctx.send(embed = embed)
+            else:
+                await ctx.send(embed = embed)
+                for item in player_store:
+                    embed = discord.Embed(title=item['name'])
+                    embed.set_image(url=item['img'])
+
+                    await ctx.send(embed = embed)
+
         except Exception as e:
             print(e)
             await ctx.send("Something went wrong!")
@@ -89,9 +105,10 @@ class Valorant(commands.Cog):
 
     def addUser(self, entry):
         s = self.Session()
+        isAdded = False
         try:
             username, password, ign = entry.values()
-            player = self.client.get_player(ign.split('#')).json()
+            player = self.client.get_player(*ign.split('#')).json()
             ppuid = player['data']['puuid']
             player_card = player['data']['card']['small']
             new_user = ValorantUsers(
@@ -99,19 +116,22 @@ class Valorant(commands.Cog):
                 password = password, 
                 ign = ign, 
                 ppuid = ppuid,
-                player_card = player_card
+                player_card = player_card, 
+                last_auth = 0
             )
             s.add(new_user)
             s.commit()
-        except:
+            isAdded = True
+        except Exception as e:
             s.rollback()
-            raise
+            print(e)
         finally:
             s.close()
-            return True
+            return isAdded
 
     def getUser(self):
         s = self.Session()
+        valoUsers = []
         try:
             valoUsers = s.query(ValorantUsers).all()
         except:
@@ -120,6 +140,20 @@ class Valorant(commands.Cog):
             s.close()
             return valoUsers
 
+    def update_last_auth(self, username, time):
+        s = self.Session()
+        try:
+            valoUsers = s.query(ValorantUsers).all()
+            for user in valoUsers:
+                if user.username == username:
+                    user.last_auth = time
+                    s.commit()
+                    break
+        except:
+            s.rollback()
+            raise
+        finally:
+            s.close()
 
     @commands.command()
     async def valdelall(self, ctx):
@@ -128,6 +162,7 @@ class Valorant(commands.Cog):
         try:
             s.query(ValorantUsers).delete()
             s.commit()
+            ValorantUsers.__table__.drop(self.engine)
         except:
             s.rollback()
             await ctx.send("Something went wrong!")
@@ -178,7 +213,7 @@ class Client():
         if resp.status_code == 200:
             return resp
         else:
-            print(resp.status_code, resp.text, path)
+            print(resp.status_code, resp.text, url)
 
     def get_content(self):
         self.set_base_url(r"https://api.henrikdev.xyz")
@@ -189,7 +224,7 @@ class Client():
         self.set_base_url(r'https://valorant-api.com/v1')
         content = self.do('GET', r'/weapons/skins').json()
         for item in content['data']:
-            allSkinNames.append({'uuid': item['levels'][0]['uuid'].upper(), 'name': item['displayName'], 'img': item['displayIcon']})
+            allSkinNames.append({'uuid': item['levels'][0]['uuid'].upper(), 'name': item['displayName'], 'img': item['levels'][0]['displayIcon']})
         return allSkinNames
 
     def get_player(self, name='', tag=''):

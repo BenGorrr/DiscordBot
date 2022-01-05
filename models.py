@@ -41,3 +41,4 @@ class ValorantUsers(Base):
     ign = Column(String)
     ppuid = Column(String)
     player_card = Column(String)
+    last_auth = Column(Integer)
