@@ -8,11 +8,12 @@ colorama==0.4.4
 configparser==5.0.1
 crayons==0.4.0
 discord==1.0.1
-discord.py==1.5.1
+discord.py==1.7.3
 idna==2.10
 lyricsgenius==2.0.2
 multidict==4.7.6
 psycopg2==2.8.6
+python-dotenv==0.15.0
 requests==2.25.1
 selenium==3.141.0
 soupsieve==2.1
