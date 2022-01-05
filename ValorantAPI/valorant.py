@@ -62,9 +62,10 @@ class Valorant(commands.Cog):
             # If last auth time is more than 1 hour or it is not previously auth'd
             print(int(time.time()) - id.last_auth)
             print(f"last_auth: {id.last_auth} time: {int(time.time())}")
-            if (int(time.time()) - id.last_auth > 3600) or username != self.last_auth_user:
+            if (int(time.time()) - id.last_auth > 3600) or username.lower() != self.last_auth_user:
                 await self.client.get_auth(id.username, id.password)
                 self.update_last_auth(id.username, int(time.time()))
+                self.last_auth_user = username.lower()
 
 
             name, tag = id.ign.split("#")
