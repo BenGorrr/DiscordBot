@@ -39,3 +39,5 @@ class ValorantUsers(Base):
     username = Column(String)
     password = Column(String)
     ign = Column(String)
+    ppuid = Column(String)
+    player_card = Column(String)

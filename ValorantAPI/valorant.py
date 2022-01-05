@@ -1,7 +1,9 @@
-import requests, json
+from discord import player
+import requests, json, time
 from . import RSO_Auth
 # from .Utils import files_util, messages
 from Utils import files_util, messages
+import discord
 from discord.ext import commands
 from models import ValorantUsers
 
@@ -29,7 +31,7 @@ class Valorant(commands.Cog):
             await ctx.author.send("Invalid input :/ Error:" + e)
 
     @commands.command()
-    async def valstore(self, ctx, username):
+    async def valstore(self, ctx, username, image=''):
         try: 
             name = username.lower()
             valoUsers = self.getUser()
@@ -51,13 +53,25 @@ class Valorant(commands.Cog):
             # if not id:
             #     await ctx.send("Id not found")
             #     return
+
             print(f"id: {id} \n username: {id.username} pw: {id.password} ign: {id.ign}")
             # Get Auth with username and password
             await self.client.get_auth(id.username, id.password)
+
+
             name, tag = id.ign.split("#")
-            # Get player store
+            # Get player store (list of dict with 'name' and 'img' key)
             player_store = self.client.get_player_store(name, tag)
-            await ctx.send(player_store)
+            print(player_store)
+            embed = discord.Embed(title=f"{id.ign}'s Store:")
+            player_card = id.player_card
+            embed.set_thumbnail(url=player_card)
+
+            # if user does not want weapon image
+            for item in player_store:
+                embed.add_field(name=item['name'])
+            
+            await ctx.send(embed = embed)
         except Exception as e:
             print(e)
             await ctx.send("Something went wrong!")
@@ -77,10 +91,15 @@ class Valorant(commands.Cog):
         s = self.Session()
         try:
             username, password, ign = entry.values()
+            player = self.client.get_player(ign.split('#')).json()
+            ppuid = player['data']['puuid']
+            player_card = player['data']['card']['small']
             new_user = ValorantUsers(
                 username = username, 
                 password = password, 
-                ign = ign
+                ign = ign, 
+                ppuid = ppuid,
+                player_card = player_card
             )
             s.add(new_user)
             s.commit()
@@ -105,7 +124,17 @@ class Valorant(commands.Cog):
     @commands.command()
     async def valdelall(self, ctx):
         self.ids = []
-        await ctx.send("All ids deleted")
+        s = self.Session()
+        try:
+            s.query(ValorantUsers).delete()
+            s.commit()
+        except:
+            s.rollback()
+            await ctx.send("Something went wrong!")
+            raise
+        finally:
+            s.close()
+            await ctx.send("All ids deleted")
 
     def search(self, name):
         for id in self.ids:
@@ -120,6 +149,7 @@ class Client():
         self.access_token = access_token
         self.entitlements_token = entitlements_token
         self.contentFile = "ValorantAPI\content.txt"
+        self.skinsFile = "ValorantAPI\skinsIDS.txt"
 
     async def get_auth(self, username, password):
         # data = asyncio.get_event_loop().run_until_complete(RSO_Auth.auth(username, password))
@@ -148,11 +178,19 @@ class Client():
         if resp.status_code == 200:
             return resp
         else:
-            print(resp.status_code, resp.text)
+            print(resp.status_code, resp.text, path)
 
     def get_content(self):
         self.set_base_url(r"https://api.henrikdev.xyz")
         return self.do('GET', r'/valorant/v1/content')
+
+    def get_skins_content(self):
+        allSkinNames = []
+        self.set_base_url(r'https://valorant-api.com/v1')
+        content = self.do('GET', r'/weapons/skins').json()
+        for item in content['data']:
+            allSkinNames.append({'uuid': item['levels'][0]['uuid'].upper(), 'name': item['displayName'], 'img': item['displayIcon']})
+        return allSkinNames
 
     def get_player(self, name='', tag=''):
         self.set_base_url(r"https://api.henrikdev.xyz")
@@ -167,21 +205,36 @@ class Client():
         print("Got player id")
         store_ids = self.get_store_from_id(player_id).json()['SkinsPanelLayout']['SingleItemOffers']
         print("Got player store ids")
-        # skins_ids = read_Json('content.txt')['skinLevels']
         try:
-            skins_ids = files_util.read_Json(self.contentFile)['skinLevels']
+            #skins_ids = files_util.read_Json(self.contentFile)['skinLevels']
+            skins_ids = files_util.read_Json(self.skinsFile)
         except:
-            self.update_content(self.contentFile)
-            skins_ids = files_util.read_Json(self.contentFile)['skinLevels']
-        skins_name = []
+            # self.update_content(self.contentFile)
+            # skins_ids = files_util.read_Json(self.contentFile)['skinLevels']
+            self.update_skins(self.skinsFile)
+            skins_ids = files_util.read_Json(self.skinsFile)
+
+        skins = []
         for store_id in store_ids:
-            skins_name.append(next(skin for skin in skins_ids if skin['id'] == store_id.upper())['name'])
-        return skins_name
+            #skins_name.append(next(skin for skin in skins_ids if skin['id'] == store_id.upper())['name'])
+            try:
+                skin = next(skin_id for skin_id in skins_ids if skin_id['uuid'] == store_id.upper())
+                skins.append({'name': skin['name'], 'img': skin['img']})
+            except Exception as e:
+                print(e)
+        
+        return skins
 
     def update_content(self, file):
         data = self.get_content()
         # write_Json(file, data.json())
         files_util.write_Json(file, data.json())
+        print("Updated content")
+
+    def update_skins(self, file):
+        data = self.get_skins_content()
+        files_util.write_Json(file, data)
+        print("Updated skins")
 
 def setup(bot):
     bot.add_cog(Valorant(bot))
