@@ -34,11 +34,12 @@ class Valorant(commands.Cog):
             await ctx.author.send("Invalid input :/ Error:" + e)
 
     @commands.command(help="Display user's valorant daily store")
-    async def valstore(self, ctx, username, image=''):
+    async def valstore(self, ctx, username='', image=''):
         try: 
             # if username is empty
             if not username:
                 await ctx.send("Usage: .valstore [in-game-name without #tag]")
+                return
 
             name = username.lower()
             # get user from db
