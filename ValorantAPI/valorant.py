@@ -12,20 +12,20 @@ class Valorant(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
         self.client = Client()
-        self.ids = []
         self.engine = bot.engine
         self.Session = bot.Session
         self.last_auth_user = None
 
-    @commands.command()
+    @commands.command(help="Add user's valorant account in order to use .valstore")
     async def valadd(self, ctx):
-        await ctx.author.send("Send me your id and password and ingame name with tag seperated by a space! [user pass BenGorr#1234]")
-        # wait for reponse
+        await ctx.author.send("Reply with your id and password and ingame name with tag seperated by a space! \nExample: [benn123 mypassword BenGorr#1234]")
+        # create a check for messages from author only
         check = messages.message_check(channel=ctx.author.dm_channel)
+        # wait for reponse
         response = await self.bot.wait_for('message', check=check)
         try:
             id, pw, ign = response.content.split(' ')
-            self.ids.append({'id': id, 'pw': pw, 'ign': ign.lower()})
+            # add user to db
             if self.addUser({'id': id, 'pw': pw, 'ign': ign.lower()}):
                 await ctx.author.send("Added :)")
             else: await ctx.author.send("Something went wrong!")
@@ -33,10 +33,15 @@ class Valorant(commands.Cog):
         except Exception as e:
             await ctx.author.send("Invalid input :/ Error:" + e)
 
-    @commands.command()
+    @commands.command(help="Display user's valorant daily store")
     async def valstore(self, ctx, username, image=''):
         try: 
+            # if username is empty
+            if not username:
+                await ctx.send("Usage: .valstore [in-game-name without #tag]")
+
             name = username.lower()
+            # get user from db
             valoUsers = self.getUser()
             print(f"Name: {name} \nvaloUsers: {valoUsers} \n")
             if not valoUsers: # if the query is empty
@@ -44,44 +49,41 @@ class Valorant(commands.Cog):
                 return
 
             id = None
-            for user in valoUsers:
+            # search for the user with the user given ign
+            for user in valoUsers: 
                 if name in user.ign:
                     id = user
                     break
 
             if not id: # if user not found
-                await ctx.send("Id not found")
+                await ctx.send("Id not found. Use .valadd to add your valorant id")
                 return
-            # id = self.search(name)
-            # if not id:
-            #     await ctx.send("Id not found")
-            #     return
 
-            print(f"id: {id} \n username: {id.username} pw: {id.password} ign: {id.ign}")
+            print(f"id: {id} \n username: {id.username} ign: {id.ign}")
+            print(f"Last auth user: {self.last_auth_user}")
             # Get Auth with username and password
             # If last auth time is more than 1 hour or it is not previously auth'd
-            print(int(time.time()) - id.last_auth)
-            print(f"last_auth: {id.last_auth} time: {int(time.time())}")
             if (int(time.time()) - id.last_auth > 3600) or username.lower() != self.last_auth_user:
-                await self.client.get_auth(id.username, id.password)
-                self.update_last_auth(id.username, int(time.time()))
-                self.last_auth_user = username.lower()
+                await self.client.get_auth(id.username, id.password)    # Get auth
+                self.update_last_auth(id.username, int(time.time()))    # update user's last auth time
+                self.last_auth_user = username.lower()                  # update last auth'd user
 
-
-            name, tag = id.ign.split("#")
+            name, tag = id.ign.split("#") 
             # Get player store (list of dict with 'name' and 'img' key)
-            player_store = self.client.get_player_store(name, tag)
+            player_store = self.client.get_player_store(name, tag, id.ppuid)
+
+            # Create and setup embed
             embed = discord.Embed(title=f"{id.ign}'s Store:")
             player_card = id.player_card
             embed.set_thumbnail(url=player_card)
 
-            if image == '':
+            if image == '': # Send one embed with text-only
                 # if user does not want weapon image
                 for item in player_store:
                     embed.add_field(name=item['name'], value=15*'-', inline=False)
                 
                 await ctx.send(embed = embed)
-            else:
+            elif image.lower() == 'img': # Send multiple embeds with weapon images
                 await ctx.send(embed = embed)
                 for item in player_store:
                     embed = discord.Embed(title=item['name'])
@@ -93,25 +95,25 @@ class Valorant(commands.Cog):
             print(e)
             await ctx.send("Something went wrong!")
 
-    @commands.command()
+    @commands.command(help="Show all currently added valorant users")
     async def valusers(self, ctx):
-        valoUsers = self.getUser()
+        valoUsers = self.getUser()  # Get users from db
         if valoUsers:
             users = [user.ign for user in valoUsers]
             await ctx.send(users)
         else:
             await ctx.send("There is no users.")
 
-    # TODO: use addUser and getUser in the command method
-
-    def addUser(self, entry):
-        s = self.Session()
+    def addUser(self, entry: dict):
+        s = self.Session()  # Create db session
         isAdded = False
         try:
             username, password, ign = entry.values()
+            # Get player info
             player = self.client.get_player(*ign.split('#')).json()
             ppuid = player['data']['puuid']
             player_card = player['data']['card']['small']
+            # Create new entry
             new_user = ValorantUsers(
                 username = username, 
                 password = password, 
@@ -120,7 +122,7 @@ class Valorant(commands.Cog):
                 player_card = player_card, 
                 last_auth = 0
             )
-            s.add(new_user)
+            s.add(new_user) # Add entry
             s.commit()
             isAdded = True
         except Exception as e:
@@ -147,7 +149,7 @@ class Valorant(commands.Cog):
             valoUsers = s.query(ValorantUsers).all()
             for user in valoUsers:
                 if user.username == username:
-                    user.last_auth = time
+                    user.last_auth = time   # Update user's last auth time to db
                     s.commit()
                     break
         except:
@@ -156,14 +158,13 @@ class Valorant(commands.Cog):
         finally:
             s.close()
 
-    @commands.command()
+    @commands.command(help="Delete all currently added valorant users")
     async def valdelall(self, ctx):
-        self.ids = []
         s = self.Session()
         try:
             s.query(ValorantUsers).delete()
             s.commit()
-            ValorantUsers.__table__.drop(self.engine)
+            ValorantUsers.__table__.drop(self.engine)   # drop the whole table
         except:
             s.rollback()
             await ctx.send("Something went wrong!")
@@ -171,12 +172,6 @@ class Valorant(commands.Cog):
         finally:
             s.close()
             await ctx.send("All ids deleted")
-
-    def search(self, name):
-        for id in self.ids:
-            if name in id['ign']:
-                return id
-
 
 
 class Client():
@@ -193,7 +188,7 @@ class Client():
         data = await RSO_Auth.auth(username, password)
         if data:
             print("Authorization done!")
-        self.access_token, self.entitlements_token = data
+        self.access_token, self.entitlements_token = data   # Set tokens that we get from RSO_Auth
 
     def set_base_url(self, base_url):
         if base_url == '':
@@ -236,8 +231,9 @@ class Client():
         self.set_base_url(r"https://pd.AP.a.pvp.net/")
         return self.do('GET', r'/store/v2/storefront/' + id, auth=True)
 
-    def get_player_store(self, name, tag):
-        player_id = self.get_player(name, tag).json()['data']['puuid']
+    def get_player_store(self, name, tag, ppuid):
+        # player_id = self.get_player(name, tag).json()['data']['puuid']
+        player_id = ppuid
         print("Got player id")
         store_ids = self.get_store_from_id(player_id).json()['SkinsPanelLayout']['SingleItemOffers']
         print("Got player store ids")
@@ -247,17 +243,25 @@ class Client():
         except:
             # self.update_content(self.contentFile)
             # skins_ids = files_util.read_Json(self.contentFile)['skinLevels']
-            self.update_skins(self.skinsFile)
+            self.update_skins(self.skinsFile)   # Update skins file if file does not exist
             skins_ids = files_util.read_Json(self.skinsFile)
 
         skins = []
-        for store_id in store_ids:
-            #skins_name.append(next(skin for skin in skins_ids if skin['id'] == store_id.upper())['name'])
-            try:
-                skin = next(skin_id for skin_id in skins_ids if skin_id['uuid'] == store_id.upper())
-                skins.append({'name': skin['name'], 'img': skin['img']})
-            except Exception as e:
-                print(e)
+        tries = 0
+        found = False
+        while not found and tries <= 1:
+            for store_id in store_ids:
+                #skins_name.append(next(skin for skin in skins_ids if skin['id'] == store_id.upper())['name'])
+                try:
+                    skin = next(skin_id for skin_id in skins_ids if skin_id['uuid'] == store_id.upper())
+                    skins.append({'name': skin['name'], 'img': skin['img']})
+                except Exception as e:
+                    print(e)
+            if len(skins) != len(store_ids): # if not all skins is found
+                tries += 1
+                self.update_skins(self.skinsFile)   # Update skins file incase there is update
+                skins_ids = files_util.read_Json(self.skinsFile)
+            else: found = True
         
         return skins
 
