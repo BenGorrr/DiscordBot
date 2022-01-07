@@ -201,8 +201,7 @@ class Client():
             params = json.loads(json.dumps(req))
         except Exception:
             params = None
-        headers = {}
-        headers = {"Authorization": "Bearer " + self.access_token, "X-Riot-Entitlements-JWT": self.entitlements_token} if auth else None
+        headers = {"Authorization": "Bearer " + self.access_token, "X-Riot-Entitlements-JWT": self.entitlements_token} if auth else {}
         headers['Accept'] = 'application/json'
         headers['Content-Type'] = 'application/json'
         
