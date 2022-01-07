@@ -210,7 +210,7 @@ class Client():
         if resp.status_code == 200:
             return resp
         else:
-            print(resp.status_code, resp.text, url)
+            print(resp.status_code, resp.headers, url)
 
     def get_content(self):
         self.set_base_url(r"https://api.henrikdev.xyz")
