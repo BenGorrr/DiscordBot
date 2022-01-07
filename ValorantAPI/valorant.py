@@ -227,6 +227,7 @@ class Client():
         return allSkinNames
 
     def get_player(self, name='', tag=''):
+        print(f"{name}/{tag}")
         self.set_base_url(r"https://api.henrikdev.xyz")
         return self.do('GET', r'/valorant/v1/account/'+ f"{name}/{tag}")
 
