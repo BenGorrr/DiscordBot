@@ -27,11 +27,57 @@ class Valorant(commands.Cog):
             id, pw, ign = response.content.split(' ')
             # add user to db
             if self.addUser({'id': id, 'pw': pw, 'ign': ign.lower()}):
-                await ctx.author.send("Added :)")
+                await ctx.author.send(f"Added {ign}:)")
             else: await ctx.author.send("Something went wrong!")
 
         except Exception as e:
             await ctx.author.send("Invalid input :/ Error:" + e)
+
+    @commands.command(help="Edit user's credentials")
+    async def valedit(self, ctx, username=''):
+        try:
+            if not username:
+                await ctx.send("Usage: .valedit [in-game-name without #tag]")
+                return
+            s = self.Session()
+            user = None
+            try:
+                valoUsers = s.query(ValorantUsers).all()
+                for valoUser in valoUsers:
+                    if username in valoUser.ign:
+                        user = valoUser
+                        break
+
+                if not user:
+                    await ctx.send("Id not found!")
+                    return
+
+                await ctx.author.send("Reply with your new id and password and ingame name with tag seperated by a space! \nExample: [benn123 mypassword BenGorr#1234]")   
+                # create a check for messages from author only
+                check = messages.message_check(channel=ctx.author.dm_channel)
+                # wait for reponse
+                response = await self.bot.wait_for('message', check=check)
+                try:
+                    id, pw, ign = response.content.split(' ')
+                    # add user to db
+                    user.username, user.password, user.ign = id, pw, ign
+                    if user.username and user.password and user.ign:
+                        s.commit()
+                        await ctx.author.send(f"Edited {user.ign} :)")
+                    else: await ctx.author.send("Something went wrong!")
+
+                except Exception as e:
+                    await ctx.author.send("Invalid input :/ Error:" + e)
+            except:
+                s.rollback()
+                raise
+            finally:
+                s.close()
+
+        except Exception as e:
+            print(e)
+            await ctx.send("Something went wrong!")
+
 
     @commands.command(help="Display user's valorant daily store")
     async def valstore(self, ctx, username='', image=''):
