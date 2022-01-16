@@ -27,16 +27,27 @@ class Valorant(commands.Cog):
     @commands.command(help="Add user's valorant account in order to use .valstore")
     async def valadd(self, ctx):
         await ctx.author.send(
-            "Reply with your id and password and ingame name with tag seperated by a space! \n\
-                Example: [benn123 mypassword BenGorr#1234]\n\
-                Example: [benn123 mypassword \"Name with Space#1234\"]\n\
+            "Reply with your id and password seperated by a space! \n\
+                Example: benn123 mypassword\n\
                 *Your credentials will be private and no one will have access to them")
         # create a check for messages from author only
         check = messages.message_check(channel=ctx.author.dm_channel)
         # wait for reponse
         response = await self.bot.wait_for('message', check=check)
+        id, pw = response.content.split(' ')
+        if not id or not pw:
+            await ctx.author.send("Invalid input :/")
+            return
+        await ctx.author.send(
+            "Reply with your ingame name with tag seperated by a space! \n\
+                Example: BenGorr#1234\n\
+                Example: Name with Space#1234w")
+        response = await self.bot.wait_for('message', check=check)
+        ign = response.content
+        if not ign: 
+            await ctx.author.send("Invalid input :/")
+            return
         try:
-            id, pw, ign = response.content.split(' ')
             # add user to db
             if self.addUser({'id': id, 'pw': pw, 'ign': ign.lower()}):
                 await ctx.author.send(f"Added {ign}:)")
