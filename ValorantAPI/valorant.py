@@ -7,6 +7,7 @@ from Utils import files_util, messages
 import discord
 from discord.ext import commands
 from models import ValorantUsers
+from run import isBen
 
 class Valorant(commands.Cog):
     def __init__(self, bot):
@@ -15,10 +16,21 @@ class Valorant(commands.Cog):
         self.engine = bot.engine
         self.Session = bot.Session
         self.last_auth_user = None
+        self.skinsTierColor = {
+            875: discord.Color.from_rgb(95, 159, 220), 
+            1275: discord.Color.from_rgb(20, 197, 168), 
+            1775: discord.Color.from_rgb(207, 84, 139), 
+            2475: discord.Color.from_rgb(249, 212, 98), 
+            "Exclusive": discord.Color.from_rgb(248, 148, 89), 
+        }
 
     @commands.command(help="Add user's valorant account in order to use .valstore")
     async def valadd(self, ctx):
-        await ctx.author.send("Reply with your id and password and ingame name with tag seperated by a space! \nExample: [benn123 mypassword BenGorr#1234]")
+        await ctx.author.send(
+            "Reply with your id and password and ingame name with tag seperated by a space! \n\
+                Example: [benn123 mypassword BenGorr#1234]\n\
+                Example: [benn123 mypassword \"Name with Space#1234\"]\n\
+                *Your credentials will be private and no one will have access to them")
         # create a check for messages from author only
         check = messages.message_check(channel=ctx.author.dm_channel)
         # wait for reponse
@@ -31,7 +43,22 @@ class Valorant(commands.Cog):
             else: await ctx.author.send("Something went wrong!")
 
         except Exception as e:
-            await ctx.author.send("Invalid input :/ Error:" + e)
+            await ctx.author.send("Invalid input :/")
+            print(e)
+    #TODO : valdel
+    @commands.command()
+    async def valdel(self, ctx, username=""):
+        username = username.lower()
+        s = self.Session()
+        try:
+            valoUsers = s.query(ValorantUsers).all()
+            for valoUser in valoUsers:
+                pass
+        except:
+            raise
+        finally:
+            s.close()
+            return valoUsers
 
     @commands.command(help="Edit user's credentials")
     async def valedit(self, ctx, username=''):
@@ -127,13 +154,24 @@ class Valorant(commands.Cog):
             if image == '': # Send one embed with text-only
                 # if user does not want weapon image
                 for item in player_store:
-                    embed.add_field(name=item['name'], value=15*'-', inline=False)
+                    embed.add_field(
+                        name=f"{item['name']}\nCost: {item['cost']}", 
+                        value=15*'-', 
+                        inline=False
+                        )
                 
                 await ctx.send(embed = embed)
             elif image.lower() == 'img': # Send multiple embeds with weapon images
                 await ctx.send(embed = embed)
                 for item in player_store:
-                    embed = discord.Embed(title=item['name'])
+                    try:
+                        color = self.skinsTierColor[item['cost']]
+                    except KeyError:
+                        color = None if item['cost'] == 0 else self.skinsTierColor['Exclusive']
+                    embed = discord.Embed(
+                        title=f"{item['name']} | Cost: {item['cost']}", 
+                        color=color
+                        )
                     embed.set_image(url=item['img'])
 
                     await ctx.send(embed = embed)
@@ -220,6 +258,11 @@ class Valorant(commands.Cog):
             s.close()
             await ctx.send("All ids deleted")
 
+    @commands.command(help="Manual update valorant skins content")
+    @commands.check(isBen)
+    async def valupdatecontent(self, ctx):
+        self.client.update_skins(self.client.skinsFile)
+        await ctx.send("Updated skins")
 
 class Client():
     def __init__(self, base_url='', access_token='', entitlements_token=''):
@@ -268,9 +311,19 @@ class Client():
         allSkinNames = []
         self.set_base_url(r'https://valorant-api.com/v1')
         content = self.do('GET', r'/weapons/skins').json()
+        store_offers = self.get_store_offers().json()['data']['Offers']
         for item in content['data']:
-            allSkinNames.append({'uuid': item['levels'][0]['uuid'].upper(), 'name': item['displayName'], 'img': item['levels'][0]['displayIcon']})
+            uuid = item['levels'][0]['uuid']
+            cost = 0
+            for offer in store_offers:
+                if offer['OfferID'] == uuid:
+                    cost = next(iter(offer['Cost'].values()))
+            allSkinNames.append({'uuid': uuid.upper(), 'name': item['displayName'], 'img': item['levels'][0]['displayIcon'], 'cost': cost})
         return allSkinNames
+
+    def get_store_offers(self):
+        self.set_base_url(r"https://api.henrikdev.xyz")
+        return self.do('GET', r'/valorant/v1/store-offers')
 
     def get_player(self, name='', tag=''):
         print(f"{name}/{tag}")
@@ -304,7 +357,7 @@ class Client():
                 #skins_name.append(next(skin for skin in skins_ids if skin['id'] == store_id.upper())['name'])
                 try:
                     skin = next(skin_id for skin_id in skins_ids if skin_id['uuid'] == store_id.upper())
-                    skins.append({'name': skin['name'], 'img': skin['img']})
+                    skins.append({'name': skin['name'], 'img': skin['img'], 'cost': skin['cost']})
                 except Exception as e:
                     print(e)
             if len(skins) != len(store_ids): # if not all skins is found

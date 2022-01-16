@@ -2,1986 +2,2503 @@
     {
         "uuid": "549B06BB-4704-25CE-19D5-C9B70B10DE19",
         "name": "Glitchpop Odin",
-        "img": "https://media.valorant-api.com/weaponskinlevels/549b06bb-4704-25ce-19d5-c9b70b10de19/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/549b06bb-4704-25ce-19d5-c9b70b10de19/displayicon.png",
+        "cost": 2175
     },
     {
         "uuid": "5F86AC54-46B0-806F-F200-DD89FBCD7CB9",
         "name": "Nitro Odin",
-        "img": "https://media.valorant-api.com/weaponskinlevels/5f86ac54-46b0-806f-f200-dd89fbcd7cb9/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/5f86ac54-46b0-806f-f200-dd89fbcd7cb9/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "49292F21-4F5E-0A1A-3671-54B7CA8FE65A",
         "name": "dot EXE Odin",
-        "img": "https://media.valorant-api.com/weaponskinlevels/49292f21-4f5e-0a1a-3671-54b7ca8fe65a/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/49292f21-4f5e-0a1a-3671-54b7ca8fe65a/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "EF564EC3-497C-3038-543E-EB94BBE46437",
         "name": "Prime//2.0 Odin",
-        "img": "https://media.valorant-api.com/weaponskinlevels/ef564ec3-497c-3038-543e-eb94bbe46437/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/ef564ec3-497c-3038-543e-eb94bbe46437/displayicon.png",
+        "cost": 1775
     },
     {
         "uuid": "7E323E82-44B6-1711-2028-10AF32C632D5",
         "name": "Prism III Odin",
-        "img": "https://media.valorant-api.com/weaponskinlevels/7e323e82-44b6-1711-2028-10af32c632d5/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/7e323e82-44b6-1711-2028-10af32c632d5/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "C59442A5-4B74-792C-D996-71A5FB340625",
         "name": "Smite Odin",
-        "img": "https://media.valorant-api.com/weaponskinlevels/c59442a5-4b74-792c-d996-71a5fb340625/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/c59442a5-4b74-792c-d996-71a5fb340625/displayicon.png",
+        "cost": 875
     },
     {
         "uuid": "1BFEA917-4262-37BA-3A76-04B937F2D0BE",
         "name": "Sensation Odin",
-        "img": "https://media.valorant-api.com/weaponskinlevels/1bfea917-4262-37ba-3a76-04b937f2d0be/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/1bfea917-4262-37ba-3a76-04b937f2d0be/displayicon.png",
+        "cost": 875
     },
     {
         "uuid": "162BEB92-4AB7-4383-DA51-4B94BA90BD5D",
         "name": "Lightwave Odin",
-        "img": "https://media.valorant-api.com/weaponskinlevels/162beb92-4ab7-4383-da51-4b94ba90bd5d/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/162beb92-4ab7-4383-da51-4b94ba90bd5d/displayicon.png",
+        "cost": 0
+    },
+    {
+        "uuid": "15A5516D-412F-2DB0-6BB3-3CBE40A2355F",
+        "name": "Schema Odin",
+        "img": "https://media.valorant-api.com/weaponskinlevels/15a5516d-412f-2db0-6bb3-3cbe40a2355f/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "D91FB318-4E40-B4C9-8C0B-BB9DA28BAC55",
         "name": "Standard Odin",
-        "img": "https://media.valorant-api.com/weaponskinlevels/d91fb318-4e40-b4c9-8c0b-bb9da28bac55/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/d91fb318-4e40-b4c9-8c0b-bb9da28bac55/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "657B3476-4919-7B4B-BE54-AEAEDAD999E6",
         "name": "Aerosol Odin",
-        "img": "https://media.valorant-api.com/weaponskinlevels/657b3476-4919-7b4b-be54-aeaedad999e6/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/657b3476-4919-7b4b-be54-aeaedad999e6/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "5123ED96-48DE-AEAB-EAEA-2B8EA689F5A2",
         "name": "BlastX Odin",
-        "img": "https://media.valorant-api.com/weaponskinlevels/5123ed96-48de-aeab-eaea-2b8ea689f5a2/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/5123ed96-48de-aeab-eaea-2b8ea689f5a2/displayicon.png",
+        "cost": 2175
     },
     {
         "uuid": "1203A0B8-4044-A7DE-1751-87B30B9574E8",
         "name": "VALORANT GO! Vol. 2 Ares",
-        "img": "https://media.valorant-api.com/weaponskinlevels/1203a0b8-4044-a7de-1751-87b30b9574e8/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/1203a0b8-4044-a7de-1751-87b30b9574e8/displayicon.png",
+        "cost": 1775
     },
     {
         "uuid": "A2045403-40F7-2926-F955-028B6867C79A",
         "name": "Aristocrat Ares",
-        "img": "https://media.valorant-api.com/weaponskinlevels/a2045403-40f7-2926-f955-028b6867c79a/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/a2045403-40f7-2926-f955-028b6867c79a/displayicon.png",
+        "cost": 1275
     },
     {
         "uuid": "7D3C0AC4-42CE-7111-2C86-43BE3D2E86A7",
         "name": "Nebula Ares",
-        "img": "https://media.valorant-api.com/weaponskinlevels/7d3c0ac4-42ce-7111-2c86-43be3d2e86a7/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/7d3c0ac4-42ce-7111-2c86-43be3d2e86a7/displayicon.png",
+        "cost": 1775
     },
     {
         "uuid": "642EE168-4F9E-1F5F-BE72-01B3A41AC086",
         "name": "Singularity Ares",
-        "img": "https://media.valorant-api.com/weaponskinlevels/642ee168-4f9e-1f5f-be72-01b3a41ac086/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/642ee168-4f9e-1f5f-be72-01b3a41ac086/displayicon.png",
+        "cost": 2175
     },
     {
         "uuid": "BAD7AE62-4F6A-8974-AB73-7BA6405CA898",
         "name": "Rush Ares",
-        "img": "https://media.valorant-api.com/weaponskinlevels/bad7ae62-4f6a-8974-ab73-7ba6405ca898/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/bad7ae62-4f6a-8974-ab73-7ba6405ca898/displayicon.png",
+        "cost": 875
     },
     {
         "uuid": "65BB772A-41F2-8B25-A1AF-75A79D596203",
         "name": "Hivemind Ares",
-        "img": "https://media.valorant-api.com/weaponskinlevels/65bb772a-41f2-8b25-a1af-75a79d596203/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/65bb772a-41f2-8b25-a1af-75a79d596203/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "6DF8B470-4248-E29D-2879-BD840ED224C1",
         "name": "Infantry Ares",
-        "img": "https://media.valorant-api.com/weaponskinlevels/6df8b470-4248-e29d-2879-bd840ed224c1/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/6df8b470-4248-e29d-2879-bd840ed224c1/displayicon.png",
+        "cost": 875
     },
     {
         "uuid": "6916019F-405F-B5F1-D2C6-2D8E4C27CF17",
         "name": "Goldwing Ares",
-        "img": "https://media.valorant-api.com/weaponskinlevels/6916019f-405f-b5f1-d2c6-2d8e4c27cf17/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/6916019f-405f-b5f1-d2c6-2d8e4c27cf17/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "81694ACE-47B3-3D95-9B88-59983D351471",
         "name": "Outpost Ares",
-        "img": "https://media.valorant-api.com/weaponskinlevels/81694ace-47b3-3d95-9b88-59983d351471/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/81694ace-47b3-3d95-9b88-59983d351471/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "29BE6D9E-48B2-1229-4F7D-4DA1C20DEDA9",
         "name": "Prism Ares",
-        "img": "https://media.valorant-api.com/weaponskinlevels/29be6d9e-48b2-1229-4f7d-4da1c20deda9/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/29be6d9e-48b2-1229-4f7d-4da1c20deda9/displayicon.png",
+        "cost": 1275
     },
     {
         "uuid": "0DC1EEFC-4B8F-E4C5-0C71-D680ABCF73E7",
         "name": "Nunca Olvidados Ares",
-        "img": "https://media.valorant-api.com/weaponskinlevels/0dc1eefc-4b8f-e4c5-0c71-d680abcf73e7/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/0dc1eefc-4b8f-e4c5-0c71-d680abcf73e7/displayicon.png",
+        "cost": 1275
     },
     {
         "uuid": "46048768-4499-72F7-820B-7CBE1D4AD844",
         "name": "Celestial Ares",
-        "img": "https://media.valorant-api.com/weaponskinlevels/46048768-4499-72f7-820b-7cbe1d4ad844/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/46048768-4499-72f7-820b-7cbe1d4ad844/displayicon.png",
+        "cost": 1775
     },
     {
         "uuid": "857AD950-486A-D199-7BF2-7092AAF88AE2",
         "name": "Magepunk Ares",
-        "img": "https://media.valorant-api.com/weaponskinlevels/857ad950-486a-d199-7bf2-7092aaf88ae2/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/857ad950-486a-d199-7bf2-7092aaf88ae2/displayicon.png",
+        "cost": 1775
     },
     {
         "uuid": "792656FF-445C-FA7F-301A-8490F638B168",
         "name": "Minima Ares",
-        "img": "https://media.valorant-api.com/weaponskinlevels/792656ff-445c-fa7f-301a-8490f638b168/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/792656ff-445c-fa7f-301a-8490f638b168/displayicon.png",
+        "cost": 1275
     },
     {
         "uuid": "9B61F5CA-4AA2-8557-37B2-A1B05F30C678",
         "name": "POLYfrog Ares",
-        "img": "https://media.valorant-api.com/weaponskinlevels/9b61f5ca-4aa2-8557-37b2-a1b05f30c678/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/9b61f5ca-4aa2-8557-37b2-a1b05f30c678/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "3EE60A8A-4736-5A6D-3713-00A05402481D",
         "name": "Jigsaw Ares",
-        "img": "https://media.valorant-api.com/weaponskinlevels/3ee60a8a-4736-5a6d-3713-00a05402481d/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/3ee60a8a-4736-5a6d-3713-00a05402481d/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "9FBE39C6-42D7-B1DB-9048-F0951CE2FF94",
         "name": "Sakura Ares",
-        "img": "https://media.valorant-api.com/weaponskinlevels/9fbe39c6-42d7-b1db-9048-f0951ce2ff94/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/9fbe39c6-42d7-b1db-9048-f0951ce2ff94/displayicon.png",
+        "cost": 1275
     },
     {
         "uuid": "F8295D0B-4378-F4FF-342D-178F6D86AC88",
         "name": "Snowfall Ares",
-        "img": "https://media.valorant-api.com/weaponskinlevels/f8295d0b-4378-f4ff-342d-178f6d86ac88/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/f8295d0b-4378-f4ff-342d-178f6d86ac88/displayicon.png",
+        "cost": 1275
     },
     {
         "uuid": "0DDBDF8C-43B0-E2F1-94F8-D6BE9D2A2110",
         "name": "Sentinels of Light Ares",
-        "img": "https://media.valorant-api.com/weaponskinlevels/0ddbdf8c-43b0-e2f1-94f8-d6be9d2a2110/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/0ddbdf8c-43b0-e2f1-94f8-d6be9d2a2110/displayicon.png",
+        "cost": 2175
     },
     {
         "uuid": "0F5F60F4-4C94-E4B2-CEAB-E2B4E8B41784",
         "name": "Standard Ares",
-        "img": "https://media.valorant-api.com/weaponskinlevels/0f5f60f4-4c94-e4b2-ceab-e2b4e8b41784/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/0f5f60f4-4c94-e4b2-ceab-e2b4e8b41784/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "4E435234-49A2-1444-4640-908692C855B8",
         "name": "RGX 11z Pro Vandal",
-        "img": "https://media.valorant-api.com/weaponskinlevels/4e435234-49a2-1444-4640-908692c855b8/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/4e435234-49a2-1444-4640-908692c855b8/displayicon.png",
+        "cost": 2175
     },
     {
         "uuid": "23DE6607-4647-BCCD-8863-3DA2720E4152",
         "name": "VALORANT GO! Vol. 2 Vandal",
-        "img": "https://media.valorant-api.com/weaponskinlevels/23de6607-4647-bccd-8863-3da2720e4152/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/23de6607-4647-bccd-8863-3da2720e4152/displayicon.png",
+        "cost": 1775
     },
     {
         "uuid": "9FF1A0E6-4F74-0E6D-9117-DE8683DB4EB5",
         "name": "Aristocrat Vandal",
-        "img": "https://media.valorant-api.com/weaponskinlevels/9ff1a0e6-4f74-0e6d-9117-de8683db4eb5/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/9ff1a0e6-4f74-0e6d-9117-de8683db4eb5/displayicon.png",
+        "cost": 1275
     },
     {
         "uuid": "9F51DA57-4623-415A-6313-F49588297D0E",
         "name": "Champions 2021 Vandal",
-        "img": "https://media.valorant-api.com/weaponskinlevels/9f51da57-4623-415a-6313-f49588297d0e/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/9f51da57-4623-415a-6313-f49588297d0e/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "1969E379-40AE-B28A-6FB3-819873A24FB9",
         "name": "Origin Vandal",
-        "img": "https://media.valorant-api.com/weaponskinlevels/1969e379-40ae-b28a-6fb3-819873a24fb9/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/1969e379-40ae-b28a-6fb3-819873a24fb9/displayicon.png",
+        "cost": 1775
     },
     {
         "uuid": "7E44FC1B-44FA-CDDA-8491-F8A5BCA1CFA3",
         "name": "Glitchpop Vandal",
-        "img": "https://media.valorant-api.com/weaponskinlevels/7e44fc1b-44fa-cdda-8491-f8a5bca1cfa3/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/7e44fc1b-44fa-cdda-8491-f8a5bca1cfa3/displayicon.png",
+        "cost": 2175
     },
     {
         "uuid": "B3D3FF38-4202-20D8-2F41-C783477E5636",
         "name": "Elderflame Vandal",
-        "img": "https://media.valorant-api.com/weaponskinlevels/b3d3ff38-4202-20d8-2f41-c783477e5636/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/b3d3ff38-4202-20d8-2f41-c783477e5636/displayicon.png",
+        "cost": 2475
     },
     {
         "uuid": "F910A11A-40AB-D799-3782-C58674F7ADA0",
         "name": "Nitro Vandal",
-        "img": "https://media.valorant-api.com/weaponskinlevels/f910a11a-40ab-d799-3782-c58674f7ada0/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/f910a11a-40ab-d799-3782-c58674f7ada0/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "7383CA56-490A-F9F5-F126-5EA0DCD4A242",
         "name": "Hivemind Vandal",
-        "img": "https://media.valorant-api.com/weaponskinlevels/7383ca56-490a-f9f5-f126-5ea0dcd4a242/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/7383ca56-490a-f9f5-f126-5ea0dcd4a242/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "851B390A-4852-66BD-8B72-4F96F0919710",
         "name": "Forsaken Vandal",
-        "img": "https://media.valorant-api.com/weaponskinlevels/851b390a-4852-66bd-8b72-4f96f0919710/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/851b390a-4852-66bd-8b72-4f96f0919710/displayicon.png",
+        "cost": 1775
     },
     {
         "uuid": "3D1BC8E8-4759-148C-7775-5A96E8C975FD",
         "name": "Ruin Vandal",
-        "img": "https://media.valorant-api.com/weaponskinlevels/3d1bc8e8-4759-148c-7775-5a96e8c975fd/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/3d1bc8e8-4759-148c-7775-5a96e8c975fd/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "C9EE9A00-453D-A358-8501-3EBB7CA3765E",
         "name": "dot EXE Vandal",
-        "img": "https://media.valorant-api.com/weaponskinlevels/c9ee9a00-453d-a358-8501-3ebb7ca3765e/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/c9ee9a00-453d-a358-8501-3ebb7ca3765e/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "26EEE656-4F8D-BDD3-E4FE-AE9E808A3408",
         "name": "Horizon Vandal",
-        "img": "https://media.valorant-api.com/weaponskinlevels/26eee656-4f8d-bdd3-e4fe-ae9e808a3408/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/26eee656-4f8d-bdd3-e4fe-ae9e808a3408/displayicon.png",
+        "cost": 1275
     },
     {
         "uuid": "C9678D8C-4327-F397-B0EC-DCA3C3D6FB15",
         "name": "Prime Vandal",
-        "img": "https://media.valorant-api.com/weaponskinlevels/c9678d8c-4327-f397-b0ec-dca3c3d6fb15/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/c9678d8c-4327-f397-b0ec-dca3c3d6fb15/displayicon.png",
+        "cost": 1775
     },
     {
         "uuid": "FBFC273B-4C12-961A-A4FB-978B43BE81A9",
         "name": "Avalanche Vandal",
-        "img": "https://media.valorant-api.com/weaponskinlevels/fbfc273b-4c12-961a-a4fb-978b43be81a9/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/fbfc273b-4c12-961a-a4fb-978b43be81a9/displayicon.png",
+        "cost": 1275
     },
     {
         "uuid": "D0C07243-4AFA-DECC-7C5B-4B994F1321EE",
         "name": "Prism II Vandal",
-        "img": "https://media.valorant-api.com/weaponskinlevels/d0c07243-4afa-decc-7c5b-4b994f1321ee/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/d0c07243-4afa-decc-7c5b-4b994f1321ee/displayicon.png",
+        "cost": 875
     },
     {
         "uuid": "5C21371E-46E1-A0B2-2E49-728281CFAAED",
         "name": "K/TAC Vandal",
-        "img": "https://media.valorant-api.com/weaponskinlevels/5c21371e-46e1-a0b2-2e49-728281cfaaed/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/5c21371e-46e1-a0b2-2e49-728281cfaaed/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "A2A15C4E-4102-41BD-102D-378DEC6CEE7F",
         "name": "Nunca Olvidados Vandal",
-        "img": "https://media.valorant-api.com/weaponskinlevels/a2a15c4e-4102-41bd-102d-378dec6cee7f/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/a2a15c4e-4102-41bd-102d-378dec6cee7f/displayicon.png",
+        "cost": 1275
     },
     {
         "uuid": "1878BBC9-409E-66B4-346B-C3997A54DF57",
         "name": "Luxe Vandal",
-        "img": "https://media.valorant-api.com/weaponskinlevels/1878bbc9-409e-66b4-346b-c3997a54df57/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/1878bbc9-409e-66b4-346b-c3997a54df57/displayicon.png",
+        "cost": 875
     },
     {
         "uuid": "9D501EEC-4084-5D44-32EF-6E8ED5B0ED49",
         "name": "Silvanus Vandal",
-        "img": "https://media.valorant-api.com/weaponskinlevels/9d501eec-4084-5d44-32ef-6e8ed5b0ed49/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/9d501eec-4084-5d44-32ef-6e8ed5b0ed49/displayicon.png",
+        "cost": 1275
     },
     {
         "uuid": "F4BFFF96-487A-CF9E-08CC-D590D962C4E6",
         "name": "Sensation Vandal",
-        "img": "https://media.valorant-api.com/weaponskinlevels/f4bfff96-487a-cf9e-08cc-d590d962c4e6/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/f4bfff96-487a-cf9e-08cc-d590d962c4e6/displayicon.png",
+        "cost": 875
     },
     {
         "uuid": "3AEEF60B-48FB-02AA-31B1-068AEB351213",
         "name": "Sakura Vandal",
-        "img": "https://media.valorant-api.com/weaponskinlevels/3aeef60b-48fb-02aa-31b1-068aeb351213/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/3aeef60b-48fb-02aa-31b1-068aeb351213/displayicon.png",
+        "cost": 1275
+    },
+    {
+        "uuid": "76C30002-4884-8193-DCF6-93A00B10BC15",
+        "name": "Schema Vandal",
+        "img": "https://media.valorant-api.com/weaponskinlevels/76c30002-4884-8193-dcf6-93a00b10bc15/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "968EFD06-4549-65F4-9FB1-3F90D612E428",
         "name": "Sentinels of Light Vandal",
-        "img": "https://media.valorant-api.com/weaponskinlevels/968efd06-4549-65f4-9fb1-3f90d612e428/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/968efd06-4549-65f4-9fb1-3f90d612e428/displayicon.png",
+        "cost": 2175
     },
     {
         "uuid": "BA42FE63-457A-78CE-4499-47950A698129",
         "name": "Reaver Vandal",
-        "img": "https://media.valorant-api.com/weaponskinlevels/ba42fe63-457a-78ce-4499-47950a698129/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/ba42fe63-457a-78ce-4499-47950a698129/displayicon.png",
+        "cost": 1775
     },
     {
         "uuid": "1D2E2FD5-4FEF-61F2-A4EC-92819D16FCF2",
         "name": "Tethered Realms Vandal",
-        "img": "https://media.valorant-api.com/weaponskinlevels/1d2e2fd5-4fef-61f2-a4ec-92819d16fcf2/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/1d2e2fd5-4fef-61f2-a4ec-92819d16fcf2/displayicon.png",
+        "cost": 1775
     },
     {
         "uuid": "8017A235-48D8-9F2A-42C2-7A865157C587",
         "name": "Cavalier Vandal",
-        "img": "https://media.valorant-api.com/weaponskinlevels/8017a235-48d8-9f2a-42c2-7a865157c587/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/8017a235-48d8-9f2a-42c2-7a865157c587/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "1AB72E66-4DA3-33A0-164F-908113E075A4",
         "name": "Standard Vandal",
-        "img": "https://media.valorant-api.com/weaponskinlevels/1ab72e66-4da3-33a0-164f-908113e075a4/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/1ab72e66-4da3-33a0-164f-908113e075a4/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "BD1B4801-4BF2-1444-82CE-3CA3636159D4",
         "name": "Depths Vandal",
-        "img": "https://media.valorant-api.com/weaponskinlevels/bd1b4801-4bf2-1444-82ce-3ca3636159d4/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/bd1b4801-4bf2-1444-82ce-3ca3636159d4/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "94CF6DD4-42C5-F70E-1652-DCA05FA42AD6",
         "name": "Ego Vandal",
-        "img": "https://media.valorant-api.com/weaponskinlevels/94cf6dd4-42c5-f70e-1652-dca05fa42ad6/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/94cf6dd4-42c5-f70e-1652-dca05fa42ad6/displayicon.png",
+        "cost": 1775
     },
     {
         "uuid": "A6D41F01-4B8B-444D-B9DA-3EAAF3D7E262",
         "name": "Wasteland Vandal",
-        "img": "https://media.valorant-api.com/weaponskinlevels/a6d41f01-4b8b-444d-b9da-3eaaf3d7e262/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/a6d41f01-4b8b-444d-b9da-3eaaf3d7e262/displayicon.png",
+        "cost": 1275
     },
     {
         "uuid": "496B0096-4000-C1FC-102D-70A8B769D0D1",
         "name": "Winterwunderland Vandal",
-        "img": "https://media.valorant-api.com/weaponskinlevels/496b0096-4000-c1fc-102d-70a8b769d0d1/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/496b0096-4000-c1fc-102d-70a8b769d0d1/displayicon.png",
+        "cost": 1275
     },
     {
         "uuid": "3BF9D39F-46B4-BA23-E079-488D799B9416",
         "name": "Aristocrat Bulldog",
-        "img": "https://media.valorant-api.com/weaponskinlevels/3bf9d39f-46b4-ba23-e079-488d799b9416/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/3bf9d39f-46b4-ba23-e079-488d799b9416/displayicon.png",
+        "cost": 1275
     },
     {
         "uuid": "43854C54-4263-571C-9BE6-52B6D50D3190",
         "name": "Spectrum Bulldog",
-        "img": "https://media.valorant-api.com/weaponskinlevels/43854c54-4263-571c-9be6-52b6d50d3190/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/43854c54-4263-571c-9be6-52b6d50d3190/displayicon.png",
+        "cost": 2675
     },
     {
         "uuid": "4A5AD8CD-4684-A47C-B393-CE9C6760D21A",
         "name": "Glitchpop Bulldog",
-        "img": "https://media.valorant-api.com/weaponskinlevels/4a5ad8cd-4684-a47c-b393-ce9c6760d21a/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/4a5ad8cd-4684-a47c-b393-ce9c6760d21a/displayicon.png",
+        "cost": 2175
     },
     {
         "uuid": "8E032580-414F-7AB4-7EFB-F6AC7D2BC2F1",
         "name": "Rush Bulldog",
-        "img": "https://media.valorant-api.com/weaponskinlevels/8e032580-414f-7ab4-7efb-f6ac7d2bc2f1/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/8e032580-414f-7ab4-7efb-f6ac7d2bc2f1/displayicon.png",
+        "cost": 875
+    },
+    {
+        "uuid": "7561A8E0-4CC4-8644-A88B-48A88790B36F",
+        "name": "Velocity Bulldog",
+        "img": "https://media.valorant-api.com/weaponskinlevels/7561a8e0-4cc4-8644-a88b-48a88790b36f/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "079F6046-49C3-72E3-BCFA-A5B6D01910DC",
         "name": "Horizon Bulldog",
-        "img": "https://media.valorant-api.com/weaponskinlevels/079f6046-49c3-72e3-bcfa-a5b6d01910dc/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/079f6046-49c3-72e3-bcfa-a5b6d01910dc/displayicon.png",
+        "cost": 1275
     },
     {
         "uuid": "DDF3064F-4C05-D0FB-2F62-F8BE055CB934",
         "name": "K/TAC Bulldog",
-        "img": "https://media.valorant-api.com/weaponskinlevels/ddf3064f-4c05-d0fb-2f62-f8be055cb934/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/ddf3064f-4c05-d0fb-2f62-f8be055cb934/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "49FC11B3-40A9-29FF-A701-63A6F59E2A0F",
         "name": "Couture Bulldog",
-        "img": "https://media.valorant-api.com/weaponskinlevels/49fc11b3-40a9-29ff-a701-63a6f59e2a0f/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/49fc11b3-40a9-29ff-a701-63a6f59e2a0f/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "47815B56-43D7-1312-8B3E-5DA445F71E31",
         "name": "Nunca Olvidados Bulldog",
-        "img": "https://media.valorant-api.com/weaponskinlevels/47815b56-43d7-1312-8b3e-5da445f71e31/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/47815b56-43d7-1312-8b3e-5da445f71e31/displayicon.png",
+        "cost": 1275
     },
     {
         "uuid": "C5711665-4126-FA98-510F-5F8C82F52911",
         "name": "Genesis Bulldog",
-        "img": "https://media.valorant-api.com/weaponskinlevels/c5711665-4126-fa98-510f-5f8c82f52911/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/c5711665-4126-fa98-510f-5f8c82f52911/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "0FCE64BD-42C9-1755-8C67-E3A8CDD49DE7",
         "name": "POLYfox Bulldog",
-        "img": "https://media.valorant-api.com/weaponskinlevels/0fce64bd-42c9-1755-8c67-e3a8cdd49de7/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/0fce64bd-42c9-1755-8c67-e3a8cdd49de7/displayicon.png",
+        "cost": 0
+    },
+    {
+        "uuid": "544DDF0F-42C6-E410-C9DB-FC8B3B2C84D4",
+        "name": "Protocol 781-A Bulldog",
+        "img": "https://media.valorant-api.com/weaponskinlevels/544ddf0f-42c6-e410-c9db-fc8b3b2c84d4/displayicon.png",
+        "cost": 2475
     },
     {
         "uuid": "5FC3C5E8-470E-7683-B594-6580D5E3D624",
         "name": "Infinity Bulldog",
-        "img": "https://media.valorant-api.com/weaponskinlevels/5fc3c5e8-470e-7683-b594-6580d5e3d624/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/5fc3c5e8-470e-7683-b594-6580d5e3d624/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "C8E6AC70-48EF-9D96-D964-A88E8890B885",
         "name": "Standard Bulldog",
-        "img": "https://media.valorant-api.com/weaponskinlevels/c8e6ac70-48ef-9d96-d964-a88e8890b885/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/c8e6ac70-48ef-9d96-d964-a88e8890b885/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "84F8D0F4-4442-5892-6A20-8F83E65A5E96",
         "name": "Convex Bulldog",
-        "img": "https://media.valorant-api.com/weaponskinlevels/84f8d0f4-4442-5892-6a20-8f83e65a5e96/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/84f8d0f4-4442-5892-6a20-8f83e65a5e96/displayicon.png",
+        "cost": 875
     },
     {
         "uuid": "6F86D77A-43C6-17B5-312F-87BF159076D9",
         "name": "Depths Bulldog",
-        "img": "https://media.valorant-api.com/weaponskinlevels/6f86d77a-43c6-17b5-312f-87bf159076d9/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/6f86d77a-43c6-17b5-312f-87bf159076d9/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "0EDD85D1-4589-385A-E5E2-84A55AE9860D",
         "name": "Varnish Bulldog",
-        "img": "https://media.valorant-api.com/weaponskinlevels/0edd85d1-4589-385a-e5e2-84a55ae9860d/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/0edd85d1-4589-385a-e5e2-84a55ae9860d/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "30423AF3-42F9-D0BA-DEE5-0B93704B39C8",
         "name": "VALORANT GO! Vol. 1 Phantom",
-        "img": "https://media.valorant-api.com/weaponskinlevels/30423af3-42f9-d0ba-dee5-0b93704b39c8/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/30423af3-42f9-d0ba-dee5-0b93704b39c8/displayicon.png",
+        "cost": 1775
     },
     {
         "uuid": "82DB01D1-4192-167B-9F53-78BA374C39AC",
         "name": "Spectrum Phantom",
-        "img": "https://media.valorant-api.com/weaponskinlevels/82db01d1-4192-167b-9f53-78ba374c39ac/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/82db01d1-4192-167b-9f53-78ba374c39ac/displayicon.png",
+        "cost": 2675
     },
     {
         "uuid": "52C3BBF6-491F-FEF1-FAA9-E19DF06A687C",
         "name": "Radiant Crisis 001 Phantom",
-        "img": "https://media.valorant-api.com/weaponskinlevels/52c3bbf6-491f-fef1-faa9-e19df06a687c/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/52c3bbf6-491f-fef1-faa9-e19df06a687c/displayicon.png",
+        "cost": 1775
     },
     {
         "uuid": "40308B30-4689-9713-52FB-6F8A3534213F",
         "name": "Nebula Phantom",
-        "img": "https://media.valorant-api.com/weaponskinlevels/40308b30-4689-9713-52fb-6f8a3534213f/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/40308b30-4689-9713-52fb-6f8a3534213f/displayicon.png",
+        "cost": 1775
     },
     {
         "uuid": "9F6E4612-433B-AEA9-1683-3DB7AEE90848",
         "name": "Glitchpop Phantom",
-        "img": "https://media.valorant-api.com/weaponskinlevels/9f6e4612-433b-aea9-1683-3db7aee90848/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/9f6e4612-433b-aea9-1683-3db7aee90848/displayicon.png",
+        "cost": 2175
     },
     {
         "uuid": "0FF7FF25-42CF-769A-4E6D-BD833121302D",
         "name": "Singularity Phantom",
-        "img": "https://media.valorant-api.com/weaponskinlevels/0ff7ff25-42cf-769a-4e6d-bd833121302d/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/0ff7ff25-42cf-769a-4e6d-bd833121302d/displayicon.png",
+        "cost": 2175
     },
     {
         "uuid": "D39A4263-49D3-F2E0-2C13-C299F8644518",
         "name": "Rush Phantom",
-        "img": "https://media.valorant-api.com/weaponskinlevels/d39a4263-49d3-f2e0-2c13-c299f8644518/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/d39a4263-49d3-f2e0-2c13-c299f8644518/displayicon.png",
+        "cost": 875
+    },
+    {
+        "uuid": "4707BAE8-4938-71B5-CE5C-52AAD3F24D21",
+        "name": "Velocity Phantom",
+        "img": "https://media.valorant-api.com/weaponskinlevels/4707bae8-4938-71b5-ce5c-52aad3f24d21/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "9DC0BDD7-4D88-9360-38D6-3EA62B1DAACA",
         "name": "Prime//2.0 Phantom",
-        "img": "https://media.valorant-api.com/weaponskinlevels/9dc0bdd7-4d88-9360-38d6-3ea62b1daaca/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/9dc0bdd7-4d88-9360-38d6-3ea62b1daaca/displayicon.png",
+        "cost": 1775
     },
     {
         "uuid": "66F68F67-4F5E-8188-8BA8-B183E25E93E7",
         "name": "Avalanche Phantom",
-        "img": "https://media.valorant-api.com/weaponskinlevels/66f68f67-4f5e-8188-8ba8-b183e25e93e7/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/66f68f67-4f5e-8188-8ba8-b183e25e93e7/displayicon.png",
+        "cost": 1275
     },
     {
         "uuid": "4845A7AB-4120-AE1C-AEC1-9E915A7424B1",
         "name": "Prism Phantom",
-        "img": "https://media.valorant-api.com/weaponskinlevels/4845a7ab-4120-ae1c-aec1-9e915a7424b1/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/4845a7ab-4120-ae1c-aec1-9e915a7424b1/displayicon.png",
+        "cost": 1275
     },
     {
         "uuid": "645FDAE1-4056-E40C-B8E4-A08AEA0DFE2F",
         "name": "Serenity Phantom",
-        "img": "https://media.valorant-api.com/weaponskinlevels/645fdae1-4056-e40c-b8e4-a08aea0dfe2f/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/645fdae1-4056-e40c-b8e4-a08aea0dfe2f/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "279E0A89-4DD6-B135-CEF9-8EBB1DF6F2AC",
         "name": "Ruination Phantom",
-        "img": "https://media.valorant-api.com/weaponskinlevels/279e0a89-4dd6-b135-cef9-8ebb1df6f2ac/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/279e0a89-4dd6-b135-cef9-8ebb1df6f2ac/displayicon.png",
+        "cost": 2175
     },
     {
         "uuid": "A7229CBA-4691-62B0-9C40-F59A29817DDC",
         "name": "Kingdom Phantom",
-        "img": "https://media.valorant-api.com/weaponskinlevels/a7229cba-4691-62b0-9c40-f59a29817ddc/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/a7229cba-4691-62b0-9c40-f59a29817ddc/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "19B20B51-472B-E837-E5DA-F8A348110DBF",
         "name": "Smite Phantom",
-        "img": "https://media.valorant-api.com/weaponskinlevels/19b20b51-472b-e837-e5da-f8a348110dbf/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/19b20b51-472b-e837-e5da-f8a348110dbf/displayicon.png",
+        "cost": 875
     },
     {
         "uuid": "AA610521-4BEA-BC0E-1BD4-94B67FD90DB6",
         "name": "Celestial Phantom",
-        "img": "https://media.valorant-api.com/weaponskinlevels/aa610521-4bea-bc0e-1bd4-94b67fd90db6/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/aa610521-4bea-bc0e-1bd4-94b67fd90db6/displayicon.png",
+        "cost": 1775
     },
     {
         "uuid": "04DBF8E5-44FC-73F7-0655-8CA05A47739C",
         "name": "Spline Phantom",
-        "img": "https://media.valorant-api.com/weaponskinlevels/04dbf8e5-44fc-73f7-0655-8ca05a47739c/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/04dbf8e5-44fc-73f7-0655-8ca05a47739c/displayicon.png",
+        "cost": 1775
     },
     {
         "uuid": "186D9FBB-400E-665B-E5F3-C08B24B6974F",
         "name": "Minima Phantom",
-        "img": "https://media.valorant-api.com/weaponskinlevels/186d9fbb-400e-665b-e5f3-c08b24b6974f/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/186d9fbb-400e-665b-e5f3-c08b24b6974f/displayicon.png",
+        "cost": 1275
     },
     {
         "uuid": "F38B2545-4498-48B3-150E-1589E25E7AA7",
         "name": "Galleria Phantom",
-        "img": "https://media.valorant-api.com/weaponskinlevels/f38b2545-4498-48b3-150e-1589e25e7aa7/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/f38b2545-4498-48b3-150e-1589e25e7aa7/displayicon.png",
+        "cost": 875
     },
     {
         "uuid": "A127C324-4213-23A2-FF77-1284431DAD74",
         "name": "Silvanus Phantom",
-        "img": "https://media.valorant-api.com/weaponskinlevels/a127c324-4213-23a2-ff77-1284431dad74/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/a127c324-4213-23a2-ff77-1284431dad74/displayicon.png",
+        "cost": 1275
     },
     {
         "uuid": "B8BB264C-4578-2410-8DFA-6AACFEB318B0",
         "name": "Ion Phantom",
-        "img": "https://media.valorant-api.com/weaponskinlevels/b8bb264c-4578-2410-8dfa-6aacfeb318b0/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/b8bb264c-4578-2410-8dfa-6aacfeb318b0/displayicon.png",
+        "cost": 1775
     },
     {
         "uuid": "C00E786E-4E6F-0EF7-0CE3-32BA9918BA41",
         "name": "Oni Phantom",
-        "img": "https://media.valorant-api.com/weaponskinlevels/c00e786e-4e6f-0ef7-0ce3-32ba9918ba41/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/c00e786e-4e6f-0ef7-0ce3-32ba9918ba41/displayicon.png",
+        "cost": 1775
     },
     {
         "uuid": "24A1644C-4AA9-50CC-9CA3-4AA7BE12339D",
         "name": "Aero Phantom",
-        "img": "https://media.valorant-api.com/weaponskinlevels/24a1644c-4aa9-50cc-9ca3-4aa7be12339d/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/24a1644c-4aa9-50cc-9ca3-4aa7be12339d/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "76F9CAA0-40AE-ECD2-5598-53B0BEB969C7",
         "name": "Artisan Phantom",
-        "img": "https://media.valorant-api.com/weaponskinlevels/76f9caa0-40ae-ecd2-5598-53b0beb969c7/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/76f9caa0-40ae-ecd2-5598-53b0beb969c7/displayicon.png",
+        "cost": 0
+    },
+    {
+        "uuid": "A7CF8684-41A0-3DD4-E30C-6F9B4B34E635",
+        "name": "Protocol 781-A Phantom",
+        "img": "https://media.valorant-api.com/weaponskinlevels/a7cf8684-41a0-3dd4-e30c-6f9b4b34e635/displayicon.png",
+        "cost": 2475
     },
     {
         "uuid": "1452386A-47AB-BD8A-775D-9194020CA52D",
         "name": "Lightwave Phantom",
-        "img": "https://media.valorant-api.com/weaponskinlevels/1452386a-47ab-bd8a-775d-9194020ca52d/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/1452386a-47ab-bd8a-775d-9194020ca52d/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "00EB5B5B-4697-44B5-A926-7E86B730E812",
         "name": "Snowfall Phantom",
-        "img": "https://media.valorant-api.com/weaponskinlevels/00eb5b5b-4697-44b5-a926-7e86b730e812/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/00eb5b5b-4697-44b5-a926-7e86b730e812/displayicon.png",
+        "cost": 1275
     },
     {
         "uuid": "5BE0B43B-4E66-AB8A-91D9-BE9137E2E1C2",
         "name": "Recon Phantom",
-        "img": "https://media.valorant-api.com/weaponskinlevels/5be0b43b-4e66-ab8a-91d9-be9137e2e1c2/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/5be0b43b-4e66-ab8a-91d9-be9137e2e1c2/displayicon.png",
+        "cost": 1775
     },
     {
         "uuid": "C71C8E2E-481F-C09F-57EF-91846A982CB5",
         "name": "Infinity Phantom",
-        "img": "https://media.valorant-api.com/weaponskinlevels/c71c8e2e-481f-c09f-57ef-91846a982cb5/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/c71c8e2e-481f-c09f-57ef-91846a982cb5/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "871E73ED-452D-EB5A-3D6B-1D87060F35CE",
         "name": "Standard Phantom",
-        "img": "https://media.valorant-api.com/weaponskinlevels/871e73ed-452d-eb5a-3d6b-1d87060f35ce/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/871e73ed-452d-eb5a-3d6b-1d87060f35ce/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "7B534393-40B0-38D0-1FFC-2B8B78708264",
         "name": "BlastX Phantom",
-        "img": "https://media.valorant-api.com/weaponskinlevels/7b534393-40b0-38d0-1ffc-2b8b78708264/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/7b534393-40b0-38d0-1ffc-2b8b78708264/displayicon.png",
+        "cost": 2175
     },
     {
         "uuid": "63A65008-4266-1117-FE3D-D1BF290B7DA9",
         "name": "Winterwunderland Phantom",
-        "img": "https://media.valorant-api.com/weaponskinlevels/63a65008-4266-1117-fe3d-d1bf290b7da9/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/63a65008-4266-1117-fe3d-d1bf290b7da9/displayicon.png",
+        "cost": 1275
     },
     {
         "uuid": "712C7A37-4524-0B27-DFDD-4E95181DD36E",
         "name": "Glitchpop Judge",
-        "img": "https://media.valorant-api.com/weaponskinlevels/712c7a37-4524-0b27-dfdd-4e95181dd36e/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/712c7a37-4524-0b27-dfdd-4e95181dd36e/displayicon.png",
+        "cost": 2175
     },
     {
         "uuid": "D8C9FEE3-4E02-BC92-A235-608A556905AE",
         "name": "Elderflame Judge",
-        "img": "https://media.valorant-api.com/weaponskinlevels/d8c9fee3-4e02-bc92-a235-608a556905ae/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/d8c9fee3-4e02-bc92-a235-608a556905ae/displayicon.png",
+        "cost": 2475
     },
     {
         "uuid": "33D3C906-4305-19CF-8770-1EB5207482CC",
         "name": "Rush Judge",
-        "img": "https://media.valorant-api.com/weaponskinlevels/33d3c906-4305-19cf-8770-1eb5207482cc/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/33d3c906-4305-19cf-8770-1eb5207482cc/displayicon.png",
+        "cost": 875
     },
     {
         "uuid": "F8CD4279-4530-DB62-1E4E-AA82C129B045",
         "name": "dot EXE Judge",
-        "img": "https://media.valorant-api.com/weaponskinlevels/f8cd4279-4530-db62-1e4e-aa82c129b045/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/f8cd4279-4530-db62-1e4e-aa82c129b045/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "77DD3407-4580-9734-A0BB-6B80A4E5BE3E",
         "name": "Goldwing Judge",
-        "img": "https://media.valorant-api.com/weaponskinlevels/77dd3407-4580-9734-a0bb-6b80a4e5be3e/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/77dd3407-4580-9734-a0bb-6b80a4e5be3e/displayicon.png",
+        "cost": 0
+    },
+    {
+        "uuid": "2A25F841-4769-6536-DED3-8890EE26C430",
+        "name": "Hydrodip Judge",
+        "img": "https://media.valorant-api.com/weaponskinlevels/2a25f841-4769-6536-ded3-8890ee26c430/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "11E342BA-4F18-B9AB-964E-E48FDF610890",
         "name": "Outpost Judge",
-        "img": "https://media.valorant-api.com/weaponskinlevels/11e342ba-4f18-b9ab-964e-e48fdf610890/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/11e342ba-4f18-b9ab-964e-e48fdf610890/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "B3E563FE-4A91-6070-4582-7CA51D62631A",
         "name": "Prism III Judge",
-        "img": "https://media.valorant-api.com/weaponskinlevels/b3e563fe-4a91-6070-4582-7ca51d62631a/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/b3e563fe-4a91-6070-4582-7ca51d62631a/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "4AFDC818-4665-1582-6319-8081AA64E550",
         "name": "Serenity Judge",
-        "img": "https://media.valorant-api.com/weaponskinlevels/4afdc818-4665-1582-6319-8081aa64e550/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/4afdc818-4665-1582-6319-8081aa64e550/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "1B94D997-4DB6-014F-4CB8-C1B4DF7D7EBC",
         "name": "Smite Judge",
-        "img": "https://media.valorant-api.com/weaponskinlevels/1b94d997-4db6-014f-4cb8-c1b4df7d7ebc/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/1b94d997-4db6-014f-4cb8-c1b4df7d7ebc/displayicon.png",
+        "cost": 875
     },
     {
         "uuid": "4F45735C-4513-E9A6-48AC-35ACCA4C3410",
         "name": "Celestial Judge",
-        "img": "https://media.valorant-api.com/weaponskinlevels/4f45735c-4513-e9a6-48ac-35acca4c3410/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/4f45735c-4513-e9a6-48ac-35acca4c3410/displayicon.png",
+        "cost": 1775
     },
     {
         "uuid": "CFEB4B7A-4310-796C-DB4E-FB9844823992",
         "name": "Luxe Judge",
-        "img": "https://media.valorant-api.com/weaponskinlevels/cfeb4b7a-4310-796c-db4e-fb9844823992/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/cfeb4b7a-4310-796c-db4e-fb9844823992/displayicon.png",
+        "cost": 875
     },
     {
         "uuid": "3C23FDC3-4300-EC78-5123-BCB0DC456473",
         "name": "POLYfox Judge",
-        "img": "https://media.valorant-api.com/weaponskinlevels/3c23fdc3-4300-ec78-5123-bcb0dc456473/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/3c23fdc3-4300-ec78-5123-bcb0dc456473/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "A1C04A89-45E6-0406-9E1A-668CD772FC63",
         "name": "Jigsaw Judge",
-        "img": "https://media.valorant-api.com/weaponskinlevels/a1c04a89-45e6-0406-9e1a-668cd772fc63/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/a1c04a89-45e6-0406-9e1a-668cd772fc63/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "65ED014B-4279-8BA5-01D3-F48D4E7F115C",
         "name": "Sensation Judge",
-        "img": "https://media.valorant-api.com/weaponskinlevels/65ed014b-4279-8ba5-01d3-f48d4e7f115c/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/65ed014b-4279-8ba5-01d3-f48d4e7f115c/displayicon.png",
+        "cost": 875
     },
     {
         "uuid": "E1B5CDCA-4DF5-5C4E-F34A-3CBDD3FD8735",
         "name": "Snowfall Judge",
-        "img": "https://media.valorant-api.com/weaponskinlevels/e1b5cdca-4df5-5c4e-f34a-3cbdd3fd8735/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/e1b5cdca-4df5-5c4e-f34a-3cbdd3fd8735/displayicon.png",
+        "cost": 1275
     },
     {
         "uuid": "6942D8D1-4370-A144-2140-22A6D2BE2697",
         "name": "Standard Judge",
-        "img": "https://media.valorant-api.com/weaponskinlevels/6942d8d1-4370-a144-2140-22a6d2be2697/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/6942d8d1-4370-a144-2140-22a6d2be2697/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "73E91435-4A2A-2552-D541-EB961E168F2C",
         "name": "Convex Judge",
-        "img": "https://media.valorant-api.com/weaponskinlevels/73e91435-4a2a-2552-d541-eb961e168f2c/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/73e91435-4a2a-2552-d541-eb961e168f2c/displayicon.png",
+        "cost": 875
     },
     {
         "uuid": "07AC5E03-42E6-0FD9-B8FA-4D9F059B904F",
         "name": "Varnish Judge",
-        "img": "https://media.valorant-api.com/weaponskinlevels/07ac5e03-42e6-0fd9-b8fa-4d9f059b904f/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/07ac5e03-42e6-0fd9-b8fa-4d9f059b904f/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "56042CE2-4F95-19BE-7CAC-5FB191683953",
         "name": "Origin Bucky",
-        "img": "https://media.valorant-api.com/weaponskinlevels/56042ce2-4f95-19be-7cac-5fb191683953/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/56042ce2-4f95-19be-7cac-5fb191683953/displayicon.png",
+        "cost": 1775
     },
     {
         "uuid": "BDDFD0BA-49A1-0F4F-E32A-D5A1ED29D5FC",
         "name": "Radiant Crisis 001 Bucky",
-        "img": "https://media.valorant-api.com/weaponskinlevels/bddfd0ba-49a1-0f4f-e32a-d5a1ed29d5fc/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/bddfd0ba-49a1-0f4f-e32a-d5a1ed29d5fc/displayicon.png",
+        "cost": 1775
     },
     {
         "uuid": "633521C9-42AE-D2BE-78C1-A09B25AF7D10",
         "name": "Red Alert Bucky",
-        "img": "https://media.valorant-api.com/weaponskinlevels/633521c9-42ae-d2be-78c1-a09b25af7d10/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/633521c9-42ae-d2be-78c1-a09b25af7d10/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "1E7BE2E9-418E-7F39-D879-A8912BE1D3AB",
         "name": "Surge Bucky",
-        "img": "https://media.valorant-api.com/weaponskinlevels/1e7be2e9-418e-7f39-d879-a8912be1d3ab/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/1e7be2e9-418e-7f39-d879-a8912be1d3ab/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "F7425A39-43CA-E1FE-5B2B-56A51ED479C5",
         "name": "Horizon Bucky",
-        "img": "https://media.valorant-api.com/weaponskinlevels/f7425a39-43ca-e1fe-5b2b-56a51ed479c5/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/f7425a39-43ca-e1fe-5b2b-56a51ed479c5/displayicon.png",
+        "cost": 1275
     },
     {
         "uuid": "A773DD2F-4027-4B98-8D4B-5EA0C7924883",
         "name": "Monarch Bucky",
-        "img": "https://media.valorant-api.com/weaponskinlevels/a773dd2f-4027-4b98-8d4b-5ea0c7924883/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/a773dd2f-4027-4b98-8d4b-5ea0c7924883/displayicon.png",
+        "cost": 0
+    },
+    {
+        "uuid": "338BB3E6-4C47-425D-32A5-5EA1A96C78AE",
+        "name": "Hydrodip Bucky",
+        "img": "https://media.valorant-api.com/weaponskinlevels/338bb3e6-4c47-425d-32a5-5ea1a96c78ae/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "F987BE1F-4287-35A4-34A9-D6A92805E7FF",
         "name": "Prime//2.0 Bucky",
-        "img": "https://media.valorant-api.com/weaponskinlevels/f987be1f-4287-35a4-34a9-d6a92805e7ff/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/f987be1f-4287-35a4-34a9-d6a92805e7ff/displayicon.png",
+        "cost": 1775
     },
     {
         "uuid": "1EF3C871-45DB-0F6D-FC34-8BB2685CD6C0",
         "name": "Prism II Bucky",
-        "img": "https://media.valorant-api.com/weaponskinlevels/1ef3c871-45db-0f6d-fc34-8bb2685cd6c0/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/1ef3c871-45db-0f6d-fc34-8bb2685cd6c0/displayicon.png",
+        "cost": 875
     },
     {
         "uuid": "4CAA7FB0-4751-52F3-6EED-6AB6232BE131",
         "name": "Kingdom Bucky",
-        "img": "https://media.valorant-api.com/weaponskinlevels/4caa7fb0-4751-52f3-6eed-6ab6232be131/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/4caa7fb0-4751-52f3-6eed-6ab6232be131/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "78776175-4040-282F-07A1-0199B1FDCF58",
         "name": "Magepunk Bucky",
-        "img": "https://media.valorant-api.com/weaponskinlevels/78776175-4040-282f-07a1-0199b1fdcf58/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/78776175-4040-282f-07a1-0199b1fdcf58/displayicon.png",
+        "cost": 1775
     },
     {
         "uuid": "03E03718-4C65-8A47-FB8B-78BA233CECD1",
         "name": "Galleria Bucky",
-        "img": "https://media.valorant-api.com/weaponskinlevels/03e03718-4c65-8a47-fb8b-78ba233cecd1/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/03e03718-4c65-8a47-fb8b-78ba233cecd1/displayicon.png",
+        "cost": 875
     },
     {
         "uuid": "BB3E45B2-4C4F-E0CB-C094-3A95261BBA35",
         "name": "Genesis Bucky",
-        "img": "https://media.valorant-api.com/weaponskinlevels/bb3e45b2-4c4f-e0cb-c094-3a95261bba35/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/bb3e45b2-4c4f-e0cb-c094-3a95261bba35/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "F00520C8-4B70-7255-D23C-C0A4887656A2",
         "name": "Ion Bucky",
-        "img": "https://media.valorant-api.com/weaponskinlevels/f00520c8-4b70-7255-d23c-c0a4887656a2/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/f00520c8-4b70-7255-d23c-c0a4887656a2/displayicon.png",
+        "cost": 1775
     },
     {
         "uuid": "CDC130C2-4B12-3702-C8F6-5A8920746395",
         "name": "Oni Bucky",
-        "img": "https://media.valorant-api.com/weaponskinlevels/cdc130c2-4b12-3702-c8f6-5a8920746395/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/cdc130c2-4b12-3702-c8f6-5a8920746395/displayicon.png",
+        "cost": 1775
     },
     {
         "uuid": "5466BACF-446B-52A1-611D-339F6F376D40",
         "name": "Artisan Bucky",
-        "img": "https://media.valorant-api.com/weaponskinlevels/5466bacf-446b-52a1-611d-339f6f376d40/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/5466bacf-446b-52a1-611d-339f6f376d40/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "22C0AAA3-4919-5A7B-90C0-2DACAFDC32FE",
         "name": "Gravitational Uranium Neuroblaster Bucky",
-        "img": "https://media.valorant-api.com/weaponskinlevels/22c0aaa3-4919-5a7b-90c0-2dacafdc32fe/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/22c0aaa3-4919-5a7b-90c0-2dacafdc32fe/displayicon.png",
+        "cost": 1775
     },
     {
         "uuid": "23885A08-4A77-82A7-5DBC-EC812F252CA0",
         "name": "Lightwave Bucky",
-        "img": "https://media.valorant-api.com/weaponskinlevels/23885a08-4a77-82a7-5dbc-ec812f252ca0/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/23885a08-4a77-82a7-5dbc-ec812f252ca0/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "B6A089DD-4616-BE48-4F28-D8B2A539C0A5",
         "name": "Cavalier Bucky",
-        "img": "https://media.valorant-api.com/weaponskinlevels/b6a089dd-4616-be48-4f28-d8b2a539c0a5/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/b6a089dd-4616-be48-4f28-d8b2a539c0a5/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "2F5078C7-4381-492D-CC00-9F96966BA1EC",
         "name": "Standard Bucky",
-        "img": "https://media.valorant-api.com/weaponskinlevels/2f5078c7-4381-492d-cc00-9f96966ba1ec/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/2f5078c7-4381-492d-cc00-9f96966ba1ec/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "5F2AE626-44A5-B1C5-A879-98BC2FE587C6",
         "name": "Aerosol Bucky",
-        "img": "https://media.valorant-api.com/weaponskinlevels/5f2ae626-44a5-b1c5-a879-98bc2fe587c6/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/5f2ae626-44a5-b1c5-a879-98bc2fe587c6/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "6F2AEFAB-439D-140A-4DC6-87818E2D72CD",
         "name": "RGX 11z Pro Frenzy",
-        "img": "https://media.valorant-api.com/weaponskinlevels/6f2aefab-439d-140a-4dc6-87818e2d72cd/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/6f2aefab-439d-140a-4dc6-87818e2d72cd/displayicon.png",
+        "cost": 2175
     },
     {
         "uuid": "B02520DD-48CD-466C-977D-529DC6A1D6F5",
         "name": "RagnaRocker Frenzy",
-        "img": "https://media.valorant-api.com/weaponskinlevels/b02520dd-48cd-466c-977d-529dc6a1d6f5/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/b02520dd-48cd-466c-977d-529dc6a1d6f5/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "C4547E69-47A7-DC52-D09C-94BBF87DBA0A",
         "name": "Origin Frenzy",
-        "img": "https://media.valorant-api.com/weaponskinlevels/c4547e69-47a7-dc52-d09c-94bbf87dba0a/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/c4547e69-47a7-dc52-d09c-94bbf87dba0a/displayicon.png",
+        "cost": 1775
     },
     {
         "uuid": "4B74B3EE-4A63-7339-A28F-8B8BE010CA5A",
         "name": "Glitchpop Frenzy",
-        "img": "https://media.valorant-api.com/weaponskinlevels/4b74b3ee-4a63-7339-a28f-8b8be010ca5a/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/4b74b3ee-4a63-7339-a28f-8b8be010ca5a/displayicon.png",
+        "cost": 2175
     },
     {
         "uuid": "EA65BA94-468D-39A8-5DED-98820D72D19F",
         "name": "Elderflame Frenzy",
-        "img": "https://media.valorant-api.com/weaponskinlevels/ea65ba94-468d-39a8-5ded-98820d72d19f/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/ea65ba94-468d-39a8-5ded-98820d72d19f/displayicon.png",
+        "cost": 2475
     },
     {
         "uuid": "3E32C58E-4347-E4B1-4502-6DAB0DC516A8",
         "name": "Rush Frenzy",
-        "img": "https://media.valorant-api.com/weaponskinlevels/3e32c58e-4347-e4b1-4502-6dab0dc516a8/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/3e32c58e-4347-e4b1-4502-6dab0dc516a8/displayicon.png",
+        "cost": 875
     },
     {
         "uuid": "2F911F78-46E4-102A-F677-37A069C3A4DC",
         "name": "Swooping Frenzy",
-        "img": "https://media.valorant-api.com/weaponskinlevels/2f911f78-46e4-102a-f677-37a069c3a4dc/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/2f911f78-46e4-102a-f677-37a069c3a4dc/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "7CD7C895-4DA5-A3BC-3518-FF8D53AF5151",
         "name": "Horizon Frenzy",
-        "img": "https://media.valorant-api.com/weaponskinlevels/7cd7c895-4da5-a3bc-3518-ff8d53af5151/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/7cd7c895-4da5-a3bc-3518-ff8d53af5151/displayicon.png",
+        "cost": 1275
     },
     {
         "uuid": "CCBD02CA-442D-08B7-E862-E1A350266FB4",
         "name": "Monarch Frenzy",
-        "img": "https://media.valorant-api.com/weaponskinlevels/ccbd02ca-442d-08b7-e862-e1a350266fb4/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/ccbd02ca-442d-08b7-e862-e1a350266fb4/displayicon.png",
+        "cost": 0
+    },
+    {
+        "uuid": "C485B3DF-4EA3-D457-E75B-35ADD7E78E7E",
+        "name": "Hydrodip Frenzy",
+        "img": "https://media.valorant-api.com/weaponskinlevels/c485b3df-4ea3-d457-e75b-35add7e78e7e/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "2607B2C6-45F7-E75E-94F8-58A738773D5C",
         "name": "Prime//2.0 Frenzy",
-        "img": "https://media.valorant-api.com/weaponskinlevels/2607b2c6-45f7-e75e-94f8-58a738773d5c/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/2607b2c6-45f7-e75e-94f8-58a738773d5c/displayicon.png",
+        "cost": 1775
     },
     {
         "uuid": "9D333FF1-47E2-04C7-2A26-688C08E9164D",
         "name": "Couture Frenzy",
-        "img": "https://media.valorant-api.com/weaponskinlevels/9d333ff1-47e2-04c7-2a26-688c08e9164d/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/9d333ff1-47e2-04c7-2a26-688c08e9164d/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "55869FB8-4A79-E684-2000-028FA9F54060",
         "name": "Nunca Olvidados Frenzy",
-        "img": "https://media.valorant-api.com/weaponskinlevels/55869fb8-4a79-e684-2000-028fa9f54060/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/55869fb8-4a79-e684-2000-028fa9f54060/displayicon.png",
+        "cost": 1275
     },
     {
         "uuid": "4EFC0AF7-4623-CB2E-997C-6CBF2E5DDFB4",
         "name": "Celestial Frenzy",
-        "img": "https://media.valorant-api.com/weaponskinlevels/4efc0af7-4623-cb2e-997c-6cbf2e5ddfb4/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/4efc0af7-4623-cb2e-997c-6cbf2e5ddfb4/displayicon.png",
+        "cost": 1775
     },
     {
         "uuid": "468505E6-46E2-AF29-3974-5FBBE6BF212F",
         "name": "Spitfire Frenzy",
-        "img": "https://media.valorant-api.com/weaponskinlevels/468505e6-46e2-af29-3974-5fbbe6bf212f/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/468505e6-46e2-af29-3974-5fbbe6bf212f/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "2F69BFE0-4126-4D2B-91B4-C9A2CB1909DA",
         "name": "Aero Frenzy",
-        "img": "https://media.valorant-api.com/weaponskinlevels/2f69bfe0-4126-4d2b-91b4-c9a2cb1909da/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/2f69bfe0-4126-4d2b-91b4-c9a2cb1909da/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "5A773352-456E-EF0B-35AB-C99EAD159264",
         "name": "Sensation Frenzy",
-        "img": "https://media.valorant-api.com/weaponskinlevels/5a773352-456e-ef0b-35ab-c99ead159264/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/5a773352-456e-ef0b-35ab-c99ead159264/displayicon.png",
+        "cost": 875
     },
     {
         "uuid": "FE7AC291-4516-02D4-9101-0A990615A585",
         "name": "Lightwave Frenzy",
-        "img": "https://media.valorant-api.com/weaponskinlevels/fe7ac291-4516-02d4-9101-0a990615a585/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/fe7ac291-4516-02d4-9101-0a990615a585/displayicon.png",
+        "cost": 0
+    },
+    {
+        "uuid": "08E6BA32-4A6E-8680-DF58-39AF9C32CDAC",
+        "name": "Live Wire Frenzy",
+        "img": "https://media.valorant-api.com/weaponskinlevels/08e6ba32-4a6e-8680-df58-39af9c32cdac/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "80FABD74-4438-A2DD-0C39-42AB449F9EC6",
         "name": "Standard Frenzy",
-        "img": "https://media.valorant-api.com/weaponskinlevels/80fabd74-4438-a2dd-0c39-42ab449f9ec6/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/80fabd74-4438-a2dd-0c39-42ab449f9ec6/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "31DA3EC9-4EB0-CE9F-FCBB-E09EC626E748",
         "name": "BlastX Frenzy",
-        "img": "https://media.valorant-api.com/weaponskinlevels/31da3ec9-4eb0-ce9f-fcbb-e09ec626e748/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/31da3ec9-4eb0-ce9f-fcbb-e09ec626e748/displayicon.png",
+        "cost": 2175
     },
     {
         "uuid": "68EE5C6C-4424-E95A-F46F-C08EC2DFEB97",
         "name": "VALORANT GO! Vol. 2 Classic",
-        "img": "https://media.valorant-api.com/weaponskinlevels/68ee5c6c-4424-e95a-f46f-c08ec2dfeb97/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/68ee5c6c-4424-e95a-f46f-c08ec2dfeb97/displayicon.png",
+        "cost": 1775
     },
     {
         "uuid": "FE32E4BD-420F-B4CC-DE37-FEBB78DF9E16",
         "name": "Spectrum Classic",
-        "img": "https://media.valorant-api.com/weaponskinlevels/fe32e4bd-420f-b4cc-de37-febb78df9e16/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/fe32e4bd-420f-b4cc-de37-febb78df9e16/displayicon.png",
+        "cost": 2675
     },
     {
         "uuid": "C2E41149-4F8B-E191-A0AE-5A94B80044F5",
         "name": "Pistolinha Classic",
-        "img": "https://media.valorant-api.com/weaponskinlevels/c2e41149-4f8b-e191-a0ae-5a94b80044f5/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/c2e41149-4f8b-e191-a0ae-5a94b80044f5/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "13F3818C-4518-CF39-51F6-8CAD1DC5BFC6",
         "name": "Radiant Crisis 001 Classic",
-        "img": "https://media.valorant-api.com/weaponskinlevels/13f3818c-4518-cf39-51f6-8cad1dc5bfc6/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/13f3818c-4518-cf39-51f6-8cad1dc5bfc6/displayicon.png",
+        "cost": 1775
     },
     {
         "uuid": "D2B8B79B-4BE7-4790-A356-4E9B06D3965E",
         "name": "Red Alert Classic",
-        "img": "https://media.valorant-api.com/weaponskinlevels/d2b8b79b-4be7-4790-a356-4e9b06d3965e/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/d2b8b79b-4be7-4790-a356-4e9b06d3965e/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "25CB63CD-416E-AB23-2377-D18638679871",
         "name": "Glitchpop Classic",
-        "img": "https://media.valorant-api.com/weaponskinlevels/25cb63cd-416e-ab23-2377-d18638679871/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/25cb63cd-416e-ab23-2377-d18638679871/displayicon.png",
+        "cost": 2175
     },
     {
         "uuid": "30F3E881-43D0-A455-B272-E8968C45761F",
         "name": "Finesse Classic",
-        "img": "https://media.valorant-api.com/weaponskinlevels/30f3e881-43d0-a455-b272-e8968c45761f/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/30f3e881-43d0-a455-b272-e8968c45761f/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "29A5ECC2-4F93-068A-130A-B5A8A113FEC9",
         "name": "Surge Classic",
-        "img": "https://media.valorant-api.com/weaponskinlevels/29a5ecc2-4f93-068a-130a-b5a8a113fec9/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/29a5ecc2-4f93-068a-130a-b5a8a113fec9/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "3E20522C-42BA-797E-B469-DA88B5DE7505",
         "name": "Songsteel Classic",
-        "img": "https://media.valorant-api.com/weaponskinlevels/3e20522c-42ba-797e-b469-da88b5de7505/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/3e20522c-42ba-797e-b469-da88b5de7505/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "81658642-4F78-CBB4-9E40-B8856A904BC7",
         "name": "Forsaken Classic",
-        "img": "https://media.valorant-api.com/weaponskinlevels/81658642-4f78-cbb4-9e40-b8856a904bc7/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/81658642-4f78-cbb4-9e40-b8856a904bc7/displayicon.png",
+        "cost": 1775
     },
     {
         "uuid": "E7822F41-4DC8-6FAB-A931-4FB1BB7590AB",
         "name": "FIRE/arm Classic",
-        "img": "https://media.valorant-api.com/weaponskinlevels/e7822f41-4dc8-6fab-a931-4fb1bb7590ab/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/e7822f41-4dc8-6fab-a931-4fb1bb7590ab/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "EAD87FF8-4CAD-E895-FD07-57B4DB148022",
         "name": "Goldwing Classic",
-        "img": "https://media.valorant-api.com/weaponskinlevels/ead87ff8-4cad-e895-fd07-57b4db148022/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/ead87ff8-4cad-e895-fd07-57b4db148022/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "C7695CE7-4FC9-1C79-64B3-8C8F9E21571C",
         "name": "Prime Classic",
-        "img": "https://media.valorant-api.com/weaponskinlevels/c7695ce7-4fc9-1c79-64b3-8c8f9e21571c/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/c7695ce7-4fc9-1c79-64b3-8c8f9e21571c/displayicon.png",
+        "cost": 1775
     },
     {
         "uuid": "3800390C-4192-92D1-1703-33BA231FC226",
         "name": "Avalanche Classic",
-        "img": "https://media.valorant-api.com/weaponskinlevels/3800390c-4192-92d1-1703-33ba231fc226/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/3800390c-4192-92d1-1703-33ba231fc226/displayicon.png",
+        "cost": 1275
     },
     {
         "uuid": "01868AF0-4D5C-6F65-5B77-B6BB5AADAF09",
         "name": "Prism III Classic",
-        "img": "https://media.valorant-api.com/weaponskinlevels/01868af0-4d5c-6f65-5b77-b6bb5aadaf09/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/01868af0-4d5c-6f65-5b77-b6bb5aadaf09/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "6AB90B28-49F1-9E1B-5083-2DA2DE61E109",
         "name": "Kingdom Classic",
-        "img": "https://media.valorant-api.com/weaponskinlevels/6ab90b28-49f1-9e1b-5083-2da2de61e109/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/6ab90b28-49f1-9e1b-5083-2da2de61e109/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "EB35E4E1-4138-9ECE-08E2-69BD414CF598",
         "name": "Smite Classic",
-        "img": "https://media.valorant-api.com/weaponskinlevels/eb35e4e1-4138-9ece-08e2-69bd414cf598/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/eb35e4e1-4138-9ece-08e2-69bd414cf598/displayicon.png",
+        "cost": 875
     },
     {
         "uuid": "1B300B91-41BB-D468-F65F-F68EC0861BD6",
         "name": "Spline Classic",
-        "img": "https://media.valorant-api.com/weaponskinlevels/1b300b91-41bb-d468-f65f-f68ec0861bd6/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/1b300b91-41bb-d468-f65f-f68ec0861bd6/displayicon.png",
+        "cost": 1775
     },
     {
         "uuid": "B8BC5D1B-44AA-AA83-0246-B1A6BB496177",
         "name": "Galleria Classic",
-        "img": "https://media.valorant-api.com/weaponskinlevels/b8bc5d1b-44aa-aa83-0246-b1a6bb496177/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/b8bc5d1b-44aa-aa83-0246-b1a6bb496177/displayicon.png",
+        "cost": 875
     },
     {
         "uuid": "F35F6E13-4B7B-DA38-C0DE-5C91FFFD584B",
         "name": "Gravitational Uranium Neuroblaster Classic",
-        "img": "https://media.valorant-api.com/weaponskinlevels/f35f6e13-4b7b-da38-c0de-5c91fffd584b/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/f35f6e13-4b7b-da38-c0de-5c91fffd584b/displayicon.png",
+        "cost": 1775
     },
     {
         "uuid": "DF639108-4E9D-7FC1-51DA-4DBB810BA011",
         "name": "Sakura Classic",
-        "img": "https://media.valorant-api.com/weaponskinlevels/df639108-4e9d-7fc1-51da-4dbb810ba011/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/df639108-4e9d-7fc1-51da-4dbb810ba011/displayicon.png",
+        "cost": 1275
     },
     {
         "uuid": "F2A7150B-4894-0DC8-53B3-BF9A30FA4EA4",
         "name": "Snowfall Classic",
-        "img": "https://media.valorant-api.com/weaponskinlevels/f2a7150b-4894-0dc8-53b3-bf9a30fa4ea4/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/f2a7150b-4894-0dc8-53b3-bf9a30fa4ea4/displayicon.png",
+        "cost": 1275
     },
     {
         "uuid": "03DC8F7E-46B0-E412-E335-47BB646FA057",
         "name": "Infinity Classic",
-        "img": "https://media.valorant-api.com/weaponskinlevels/03dc8f7e-46b0-e412-e335-47bb646fa057/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/03dc8f7e-46b0-e412-e335-47bb646fa057/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "51CBCCAD-487C-50ED-2FFD-C88B4240FAB3",
         "name": "Standard Classic",
-        "img": "https://media.valorant-api.com/weaponskinlevels/51cbccad-487c-50ed-2ffd-c88b4240fab3/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/51cbccad-487c-50ed-2ffd-c88b4240fab3/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "BBBE4B32-457C-E4FB-A674-1D9C3885D331",
         "name": "Final Chamber Classic",
-        "img": "https://media.valorant-api.com/weaponskinlevels/bbbe4b32-457c-e4fb-a674-1d9c3885d331/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/bbbe4b32-457c-e4fb-a674-1d9c3885d331/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "2DD042E4-409E-C8ED-EC76-758529E49D99",
         "name": "VALORANT GO! Vol. 1 Ghost",
-        "img": "https://media.valorant-api.com/weaponskinlevels/2dd042e4-409e-c8ed-ec76-758529e49d99/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/2dd042e4-409e-c8ed-ec76-758529e49d99/displayicon.png",
+        "cost": 1775
     },
     {
         "uuid": "9466088A-4AD8-CB08-EC9A-45AABA3A6ACD",
         "name": "dot EXE Ghost",
-        "img": "https://media.valorant-api.com/weaponskinlevels/9466088a-4ad8-cb08-ec9a-45aaba3a6acd/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/9466088a-4ad8-cb08-ec9a-45aaba3a6acd/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "AFCB2528-4415-0178-98B1-C0A751092762",
         "name": "Hush Ghost",
-        "img": "https://media.valorant-api.com/weaponskinlevels/afcb2528-4415-0178-98b1-c0a751092762/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/afcb2528-4415-0178-98b1-c0a751092762/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "A14FA0B5-4B03-2AD9-3B0E-A3AC6A0B033B",
         "name": "Infantry Ghost",
-        "img": "https://media.valorant-api.com/weaponskinlevels/a14fa0b5-4b03-2ad9-3b0e-a3ac6a0b033b/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/a14fa0b5-4b03-2ad9-3b0e-a3ac6a0b033b/displayicon.png",
+        "cost": 875
     },
     {
         "uuid": "9130E35D-49BB-027D-C536-96A8B63C3F1C",
         "name": "Goldwing Ghost",
-        "img": "https://media.valorant-api.com/weaponskinlevels/9130e35d-49bb-027d-c536-96a8b63c3f1c/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/9130e35d-49bb-027d-c536-96a8b63c3f1c/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "9FA5664E-45FA-2A52-68E4-DB97D85C8A91",
         "name": "Outpost Ghost",
-        "img": "https://media.valorant-api.com/weaponskinlevels/9fa5664e-45fa-2a52-68e4-db97d85c8a91/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/9fa5664e-45fa-2a52-68e4-db97d85c8a91/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "5546F723-4056-6700-80B8-F1B8D42E4952",
         "name": "Prism Ghost",
-        "img": "https://media.valorant-api.com/weaponskinlevels/5546f723-4056-6700-80b8-f1b8d42e4952/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/5546f723-4056-6700-80b8-f1b8d42e4952/displayicon.png",
+        "cost": 1275
     },
     {
         "uuid": "DE822D80-4E91-943D-3DD5-429513E7D177",
         "name": "Serenity Ghost",
-        "img": "https://media.valorant-api.com/weaponskinlevels/de822d80-4e91-943d-3dd5-429513e7d177/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/de822d80-4e91-943d-3dd5-429513e7d177/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "5E1F5465-40CD-2C0F-33AB-398C5367D080",
         "name": "Ruination Ghost",
-        "img": "https://media.valorant-api.com/weaponskinlevels/5e1f5465-40cd-2c0f-33ab-398c5367d080/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/5e1f5465-40cd-2c0f-33ab-398c5367d080/displayicon.png",
+        "cost": 2175
     },
     {
         "uuid": "68564C51-4F7E-67D1-FD0D-4E9D216356E8",
         "name": "Luxe Ghost",
-        "img": "https://media.valorant-api.com/weaponskinlevels/68564c51-4f7e-67d1-fd0d-4e9d216356e8/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/68564c51-4f7e-67d1-fd0d-4e9d216356e8/displayicon.png",
+        "cost": 875
     },
     {
         "uuid": "003E0991-4370-8837-F8FC-6AB3ACEC2DBF",
         "name": "Magepunk Ghost",
-        "img": "https://media.valorant-api.com/weaponskinlevels/003e0991-4370-8837-f8fc-6ab3acec2dbf/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/003e0991-4370-8837-f8fc-6ab3acec2dbf/displayicon.png",
+        "cost": 1775
     },
     {
         "uuid": "B70DB444-4EDE-9CEE-25DD-35B2EDB38CD5",
         "name": "Artisan Ghost",
-        "img": "https://media.valorant-api.com/weaponskinlevels/b70db444-4ede-9cee-25dd-35b2edb38cd5/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/b70db444-4ede-9cee-25dd-35b2edb38cd5/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "D0793C86-471D-C60C-B0DA-BCBADCD8BF12",
         "name": "Jigsaw Ghost",
-        "img": "https://media.valorant-api.com/weaponskinlevels/d0793c86-471d-c60c-b0da-bcbadcd8bf12/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/d0793c86-471d-c60c-b0da-bcbadcd8bf12/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "55AAA4EE-4D64-51C7-3C09-FD9BCBE1D122",
         "name": "Eclipse Ghost",
-        "img": "https://media.valorant-api.com/weaponskinlevels/55aaa4ee-4d64-51c7-3c09-fd9bcbe1d122/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/55aaa4ee-4d64-51c7-3c09-fd9bcbe1d122/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "ED8A1109-4E48-F077-636B-E98DD332BFCC",
         "name": "Sovereign Ghost",
-        "img": "https://media.valorant-api.com/weaponskinlevels/ed8a1109-4e48-f077-636b-e98dd332bfcc/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/ed8a1109-4e48-f077-636b-e98dd332bfcc/displayicon.png",
+        "cost": 1775
     },
     {
         "uuid": "B9F4E6EA-4DB2-6939-731F-0EB93CFBBB1D",
         "name": "Tethered Realms Ghost",
-        "img": "https://media.valorant-api.com/weaponskinlevels/b9f4e6ea-4db2-6939-731f-0eb93cfbbb1d/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/b9f4e6ea-4db2-6939-731f-0eb93cfbbb1d/displayicon.png",
+        "cost": 1775
     },
     {
         "uuid": "459343EB-4C56-4F10-FF2F-FBBF07D3695D",
         "name": "Recon Ghost",
-        "img": "https://media.valorant-api.com/weaponskinlevels/459343eb-4c56-4f10-ff2f-fbbf07d3695d/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/459343eb-4c56-4f10-ff2f-fbbf07d3695d/displayicon.png",
+        "cost": 1775
     },
     {
         "uuid": "7CEE2791-457C-6017-CFBA-BCA7F61FC151",
         "name": "Cavalier Ghost",
-        "img": "https://media.valorant-api.com/weaponskinlevels/7cee2791-457c-6017-cfba-bca7f61fc151/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/7cee2791-457c-6017-cfba-bca7f61fc151/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "0A7E786C-444E-6A80-8BDA-E2B714D68332",
         "name": "Standard Ghost",
-        "img": "https://media.valorant-api.com/weaponskinlevels/0a7e786c-444e-6a80-8bda-e2b714d68332/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/0a7e786c-444e-6a80-8bda-e2b714d68332/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "BB0450C4-47DB-4FC7-D0C3-A8A5320D673B",
         "name": "Depths Ghost",
-        "img": "https://media.valorant-api.com/weaponskinlevels/bb0450c4-47db-4fc7-d0c3-a8a5320d673b/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/bb0450c4-47db-4fc7-d0c3-a8a5320d673b/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "F9FAB42C-46BF-1BF0-DBA5-32988BE03FC2",
         "name": "Ego Ghost",
-        "img": "https://media.valorant-api.com/weaponskinlevels/f9fab42c-46bf-1bf0-dba5-32988be03fc2/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/f9fab42c-46bf-1bf0-dba5-32988be03fc2/displayicon.png",
+        "cost": 1775
     },
     {
         "uuid": "4526A891-4754-DA6C-7ADA-95A8A259952E",
         "name": "Vendetta Ghost",
-        "img": "https://media.valorant-api.com/weaponskinlevels/4526a891-4754-da6c-7ada-95a8a259952e/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/4526a891-4754-da6c-7ada-95a8a259952e/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "D0FDA3CB-454C-E81D-94E4-42942C99F02D",
         "name": "Winterwunderland Ghost",
-        "img": "https://media.valorant-api.com/weaponskinlevels/d0fda3cb-454c-e81d-94e4-42942c99f02d/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/d0fda3cb-454c-e81d-94e4-42942c99f02d/displayicon.png",
+        "cost": 1275
     },
     {
         "uuid": "B85B3760-43BB-507D-323E-1682FA76D96B",
         "name": "Soul Silencer Ghost",
-        "img": "https://media.valorant-api.com/weaponskinlevels/b85b3760-43bb-507d-323e-1682fa76d96b/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/b85b3760-43bb-507d-323e-1682fa76d96b/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "6D4766D0-41F0-8493-93EB-A4902A0C6034",
         "name": "Aristocrat Sheriff",
-        "img": "https://media.valorant-api.com/weaponskinlevels/6d4766d0-41f0-8493-93eb-a4902a0c6034/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/6d4766d0-41f0-8493-93eb-a4902a0c6034/displayicon.png",
+        "cost": 1275
     },
     {
         "uuid": "353C1E5F-4258-C49A-C0D6-319AD33BFFEA",
         "name": "Nebula Sheriff",
-        "img": "https://media.valorant-api.com/weaponskinlevels/353c1e5f-4258-c49a-c0d6-319ad33bffea/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/353c1e5f-4258-c49a-c0d6-319ad33bffea/displayicon.png",
+        "cost": 1775
     },
     {
         "uuid": "4276D2B5-4B1C-B636-AFF0-4EA579D875D7",
         "name": "Singularity Sheriff",
-        "img": "https://media.valorant-api.com/weaponskinlevels/4276d2b5-4b1c-b636-aff0-4ea579d875d7/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/4276d2b5-4b1c-b636-aff0-4ea579d875d7/displayicon.png",
+        "cost": 2175
     },
     {
         "uuid": "DB36EE86-4AA7-249F-6745-5E9DDFFA50B4",
         "name": "Surge Sheriff",
-        "img": "https://media.valorant-api.com/weaponskinlevels/db36ee86-4aa7-249f-6745-5e9ddffa50b4/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/db36ee86-4aa7-249f-6745-5e9ddffa50b4/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "D9FC55C6-4B92-98AC-5052-2A8B5CA4FB71",
         "name": "Protektor Sheriff",
-        "img": "https://media.valorant-api.com/weaponskinlevels/d9fc55c6-4b92-98ac-5052-2a8b5ca4fb71/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/d9fc55c6-4b92-98ac-5052-2a8b5ca4fb71/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "B6E6EA9E-432D-EC17-904E-62A5EA45F1A7",
         "name": "Prism II Sheriff",
-        "img": "https://media.valorant-api.com/weaponskinlevels/b6e6ea9e-432d-ec17-904e-62a5ea45f1a7/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/b6e6ea9e-432d-ec17-904e-62a5ea45f1a7/displayicon.png",
+        "cost": 875
     },
     {
         "uuid": "DF35B7DF-4ADD-58FB-418C-0DBEA48B7E82",
         "name": "K/TAC Sheriff",
-        "img": "https://media.valorant-api.com/weaponskinlevels/df35b7df-4add-58fb-418c-0dbea48b7e82/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/df35b7df-4add-58fb-418c-0dbea48b7e82/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "59733CF9-490B-E25B-2C6F-ECA947628079",
         "name": "Magepunk Sheriff",
-        "img": "https://media.valorant-api.com/weaponskinlevels/59733cf9-490b-e25b-2c6f-eca947628079/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/59733cf9-490b-e25b-2c6f-eca947628079/displayicon.png",
+        "cost": 1775
     },
     {
         "uuid": "75B110DE-40E5-3E02-D700-2ABDA38817C5",
         "name": "Minima Sheriff",
-        "img": "https://media.valorant-api.com/weaponskinlevels/75b110de-40e5-3e02-d700-2abda38817c5/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/75b110de-40e5-3e02-d700-2abda38817c5/displayicon.png",
+        "cost": 1275
     },
     {
         "uuid": "9DBC52E2-4889-CBE5-B874-4F8F0F8F3781",
         "name": "Silvanus Sheriff",
-        "img": "https://media.valorant-api.com/weaponskinlevels/9dbc52e2-4889-cbe5-b874-4f8f0f8f3781/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/9dbc52e2-4889-cbe5-b874-4f8f0f8f3781/displayicon.png",
+        "cost": 1275
     },
     {
         "uuid": "2B555F97-46BB-5949-3531-979F5BC817F0",
         "name": "Ion Sheriff",
-        "img": "https://media.valorant-api.com/weaponskinlevels/2b555f97-46bb-5949-3531-979f5bc817f0/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/2b555f97-46bb-5949-3531-979f5bc817f0/displayicon.png",
+        "cost": 1775
     },
     {
         "uuid": "02F45C84-427C-D575-945F-BA913A732B72",
         "name": "POLYfox Sheriff",
-        "img": "https://media.valorant-api.com/weaponskinlevels/02f45c84-427c-d575-945f-ba913a732b72/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/02f45c84-427c-d575-945f-ba913a732b72/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "54AB75C2-42F2-544F-F4F2-CE9CA9180F6B",
         "name": "POLYfrog Sheriff",
-        "img": "https://media.valorant-api.com/weaponskinlevels/54ab75c2-42f2-544f-f4f2-ce9ca9180f6b/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/54ab75c2-42f2-544f-f4f2-ce9ca9180f6b/displayicon.png",
+        "cost": 0
+    },
+    {
+        "uuid": "12831559-44EE-C708-B97C-29A43938E3CD",
+        "name": "Protocol 781-A Sheriff",
+        "img": "https://media.valorant-api.com/weaponskinlevels/12831559-44ee-c708-b97c-29a43938e3cd/displayicon.png",
+        "cost": 2475
     },
     {
         "uuid": "DD024421-4C2A-7126-B58E-FEA865A45AA9",
         "name": "Lightwave Sheriff",
-        "img": "https://media.valorant-api.com/weaponskinlevels/dd024421-4c2a-7126-b58e-fea865a45aa9/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/dd024421-4c2a-7126-b58e-fea865a45aa9/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "C8652EFA-462F-D455-20B0-699DD00A9E2A",
         "name": "Sakura Sheriff",
-        "img": "https://media.valorant-api.com/weaponskinlevels/c8652efa-462f-d455-20b0-699dd00a9e2a/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/c8652efa-462f-d455-20b0-699dd00a9e2a/displayicon.png",
+        "cost": 1275
     },
     {
         "uuid": "EC570F46-4751-EEB6-7739-069BCBB8D05A",
         "name": "Peacekeeper Sheriff",
-        "img": "https://media.valorant-api.com/weaponskinlevels/ec570f46-4751-eeb6-7739-069bcbb8d05a/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/ec570f46-4751-eeb6-7739-069bcbb8d05a/displayicon.png",
+        "cost": 0
+    },
+    {
+        "uuid": "B5601F65-4467-7946-8A37-45BED5514F98",
+        "name": "Schema Sheriff",
+        "img": "https://media.valorant-api.com/weaponskinlevels/b5601f65-4467-7946-8a37-45bed5514f98/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "746A022B-48A9-C51B-F379-11A3E1E2BC8E",
         "name": "Sentinels of Light Sheriff",
-        "img": "https://media.valorant-api.com/weaponskinlevels/746a022b-48a9-c51b-f379-11a3e1e2bc8e/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/746a022b-48a9-c51b-f379-11a3e1e2bc8e/displayicon.png",
+        "cost": 2175
     },
     {
         "uuid": "4E4EBB8D-41D0-C326-595A-1F9B257E91FA",
         "name": "Reaver Sheriff",
-        "img": "https://media.valorant-api.com/weaponskinlevels/4e4ebb8d-41d0-c326-595a-1f9b257e91fa/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/4e4ebb8d-41d0-c326-595a-1f9b257e91fa/displayicon.png",
+        "cost": 1775
     },
     {
         "uuid": "FEAF05A1-492F-D154-A9F5-0EB1FE9A603E",
         "name": "Standard Sheriff",
-        "img": "https://media.valorant-api.com/weaponskinlevels/feaf05a1-492f-d154-a9f5-0eb1fe9a603e/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/feaf05a1-492f-d154-a9f5-0eb1fe9a603e/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "4538BFF7-470C-889C-9875-7BA3EBF87C87",
         "name": "Convex Sheriff",
-        "img": "https://media.valorant-api.com/weaponskinlevels/4538bff7-470c-889c-9875-7ba3ebf87c87/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/4538bff7-470c-889c-9875-7ba3ebf87c87/displayicon.png",
+        "cost": 875
     },
     {
         "uuid": "5FB2A965-4CD9-0564-C8B1-51895BA7718A",
         "name": "Varnish Sheriff",
-        "img": "https://media.valorant-api.com/weaponskinlevels/5fb2a965-4cd9-0564-c8b1-51895ba7718a/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/5fb2a965-4cd9-0564-c8b1-51895ba7718a/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "0D73596B-478A-DAE0-49CA-2FA588F78F13",
         "name": "Wasteland Sheriff",
-        "img": "https://media.valorant-api.com/weaponskinlevels/0d73596b-478a-dae0-49ca-2fa588f78f13/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/0d73596b-478a-dae0-49ca-2fa588f78f13/displayicon.png",
+        "cost": 1275
     },
     {
         "uuid": "443F5A29-4D5E-D63E-A3C6-ADA7713172FA",
         "name": "Game Over Sheriff",
-        "img": "https://media.valorant-api.com/weaponskinlevels/443f5a29-4d5e-d63e-a3c6-ada7713172fa/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/443f5a29-4d5e-d63e-a3c6-ada7713172fa/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "9EE1D68F-4B51-8EF1-B620-EFA9760B0D02",
         "name": "Arcane Sheriff",
-        "img": "https://media.valorant-api.com/weaponskinlevels/9ee1d68f-4b51-8ef1-b620-efa9760b0d02/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/9ee1d68f-4b51-8ef1-b620-efa9760b0d02/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "A07FF70B-4B4B-EE36-78F5-8BA771B278AC",
         "name": "Death Wish Sheriff",
-        "img": "https://media.valorant-api.com/weaponskinlevels/a07ff70b-4b4b-ee36-78f5-8ba771b278ac/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/a07ff70b-4b4b-ee36-78f5-8ba771b278ac/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "D0A95805-4ADB-95F7-3955-339D89769BEC",
         "name": "Hivemind Shorty",
-        "img": "https://media.valorant-api.com/weaponskinlevels/d0a95805-4adb-95f7-3955-339d89769bec/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/d0a95805-4adb-95f7-3955-339d89769bec/displayicon.png",
+        "cost": 0
+    },
+    {
+        "uuid": "C6DB7920-4D61-556E-7C06-19954B847CBE",
+        "name": "Velocity Shorty",
+        "img": "https://media.valorant-api.com/weaponskinlevels/c6db7920-4d61-556e-7c06-19954b847cbe/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "907BAB1F-4FCA-982E-7645-41A941EF6626",
         "name": "Ruin Shorty",
-        "img": "https://media.valorant-api.com/weaponskinlevels/907bab1f-4fca-982e-7645-41a941ef6626/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/907bab1f-4fca-982e-7645-41a941ef6626/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "A8718ADD-47CD-30AD-12CF-EEA925286A91",
         "name": "Monarch Shorty",
-        "img": "https://media.valorant-api.com/weaponskinlevels/a8718add-47cd-30ad-12cf-eea925286a91/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/a8718add-47cd-30ad-12cf-eea925286a91/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "61F62D77-4F80-7664-2EA9-538F6FC4B241",
         "name": "Prism II Shorty",
-        "img": "https://media.valorant-api.com/weaponskinlevels/61f62d77-4f80-7664-2ea9-538f6fc4b241/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/61f62d77-4f80-7664-2ea9-538f6fc4b241/displayicon.png",
+        "cost": 875
     },
     {
         "uuid": "F9688E62-42C5-9F10-F160-49ABAEE2E02C",
         "name": "Wunderkind Shorty",
-        "img": "https://media.valorant-api.com/weaponskinlevels/f9688e62-42c5-9f10-f160-49abaee2e02c/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/f9688e62-42c5-9f10-f160-49abaee2e02c/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "F5F8FB4F-4C3A-EE60-ED0C-BFB8CDED09FC",
         "name": "Genesis Shorty",
-        "img": "https://media.valorant-api.com/weaponskinlevels/f5f8fb4f-4c3a-ee60-ed0c-bfb8cded09fc/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/f5f8fb4f-4c3a-ee60-ed0c-bfb8cded09fc/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "A2950772-447A-F2DB-BE24-19B0E0ED736F",
         "name": "Oni Shorty",
-        "img": "https://media.valorant-api.com/weaponskinlevels/a2950772-447a-f2db-be24-19b0e0ed736f/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/a2950772-447a-f2db-be24-19b0e0ed736f/displayicon.png",
+        "cost": 1775
     },
     {
         "uuid": "6F90D1ED-4ACC-D925-4A8A-60913F14D16B",
         "name": "Snakebite Shorty",
-        "img": "https://media.valorant-api.com/weaponskinlevels/6f90d1ed-4acc-d925-4a8a-60913f14d16b/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/6f90d1ed-4acc-d925-4a8a-60913f14d16b/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "A7F92A1C-4465-5EA3-7745-BD876117F4A7",
         "name": "Standard Shorty",
-        "img": "https://media.valorant-api.com/weaponskinlevels/a7f92a1c-4465-5ea3-7745-bd876117f4a7/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/a7f92a1c-4465-5ea3-7745-bd876117f4a7/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "1DB941AF-4587-C6A4-5885-DBB77FEFCB32",
         "name": "Aerosol Shorty",
-        "img": "https://media.valorant-api.com/weaponskinlevels/1db941af-4587-c6a4-5885-dbb77fefcb32/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/1db941af-4587-c6a4-5885-dbb77fefcb32/displayicon.png",
+        "cost": 0
+    },
+    {
+        "uuid": "673149D4-463F-27A5-163F-78A599244FC3",
+        "name": "Wayfinder Shorty",
+        "img": "https://media.valorant-api.com/weaponskinlevels/673149d4-463f-27a5-163f-78a599244fc3/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "A88A4C80-4913-A111-0FBA-878ADDDD381A",
         "name": "Wasteland Shorty",
-        "img": "https://media.valorant-api.com/weaponskinlevels/a88a4c80-4913-a111-0fba-878adddd381a/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/a88a4c80-4913-a111-0fba-878adddd381a/displayicon.png",
+        "cost": 1275
     },
     {
         "uuid": "68811D2B-4A6D-CBDC-39D3-F580AA97A297",
         "name": "VALORANT GO! Vol. 2 Operator",
-        "img": "https://media.valorant-api.com/weaponskinlevels/68811d2b-4a6d-cbdc-39d3-f580aa97a297/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/68811d2b-4a6d-cbdc-39d3-f580aa97a297/displayicon.png",
+        "cost": 1775
     },
     {
         "uuid": "4D19C241-4350-6658-F5A6-5C99CA8E5E99",
         "name": "Origin Operator",
-        "img": "https://media.valorant-api.com/weaponskinlevels/4d19c241-4350-6658-f5a6-5c99ca8e5e99/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/4d19c241-4350-6658-f5a6-5c99ca8e5e99/displayicon.png",
+        "cost": 1775
     },
     {
         "uuid": "FC4C9003-4069-D351-E0B5-03B509638C2C",
         "name": "Red Alert Operator",
-        "img": "https://media.valorant-api.com/weaponskinlevels/fc4c9003-4069-d351-e0b5-03b509638c2c/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/fc4c9003-4069-d351-e0b5-03b509638c2c/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "D92A6EE6-4073-8B7F-E944-F1A55606A28A",
         "name": "Glitchpop Operator",
-        "img": "https://media.valorant-api.com/weaponskinlevels/d92a6ee6-4073-8b7f-e944-f1a55606a28a/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/d92a6ee6-4073-8b7f-e944-f1a55606a28a/displayicon.png",
+        "cost": 2175
     },
     {
         "uuid": "5C273D0E-47FA-BB8C-D914-728DE95DA30E",
         "name": "Elderflame Operator",
-        "img": "https://media.valorant-api.com/weaponskinlevels/5c273d0e-47fa-bb8c-d914-728de95da30e/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/5c273d0e-47fa-bb8c-d914-728de95da30e/displayicon.png",
+        "cost": 2475
     },
     {
         "uuid": "F49AC94F-4965-1E13-E293-A9838B042A83",
         "name": "Nitro Operator",
-        "img": "https://media.valorant-api.com/weaponskinlevels/f49ac94f-4965-1e13-e293-a9838b042a83/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/f49ac94f-4965-1e13-e293-a9838b042a83/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "10A5FE91-4EFA-9D6B-44F7-47AE9660550D",
         "name": "Forsaken Operator",
-        "img": "https://media.valorant-api.com/weaponskinlevels/10a5fe91-4efa-9d6b-44f7-47ae9660550d/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/10a5fe91-4efa-9d6b-44f7-47ae9660550d/displayicon.png",
+        "cost": 1775
     },
     {
         "uuid": "E7301730-418F-E0FB-C930-9598741D5C30",
         "name": "Infantry Operator",
-        "img": "https://media.valorant-api.com/weaponskinlevels/e7301730-418f-e0fb-c930-9598741d5c30/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/e7301730-418f-e0fb-c930-9598741d5c30/displayicon.png",
+        "cost": 875
     },
     {
         "uuid": "37851A69-4719-D8AE-D305-49BCEE8D853C",
         "name": "Prism Operator",
-        "img": "https://media.valorant-api.com/weaponskinlevels/37851a69-4719-d8ae-d305-49bcee8d853c/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/37851a69-4719-d8ae-d305-49bcee8d853c/displayicon.png",
+        "cost": 1275
     },
     {
         "uuid": "E045334D-4B19-26DF-739C-F89FD561714F",
         "name": "K/TAC Operator",
-        "img": "https://media.valorant-api.com/weaponskinlevels/e045334d-4b19-26df-739c-f89fd561714f/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/e045334d-4b19-26df-739c-f89fd561714f/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "E5A2E04A-4805-1244-5376-06B40D7C6CBB",
         "name": "Luxe Operator",
-        "img": "https://media.valorant-api.com/weaponskinlevels/e5a2e04a-4805-1244-5376-06b40d7c6cbb/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/e5a2e04a-4805-1244-5376-06b40d7c6cbb/displayicon.png",
+        "cost": 875
     },
     {
         "uuid": "369C9F89-49FA-94BC-F3F8-B9B94B6395AF",
         "name": "Magepunk Operator",
-        "img": "https://media.valorant-api.com/weaponskinlevels/369c9f89-49fa-94bc-f3f8-b9b94b6395af/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/369c9f89-49fa-94bc-f3f8-b9b94b6395af/displayicon.png",
+        "cost": 1775
     },
     {
         "uuid": "4C053776-467F-2C6A-B609-0BA3EA371A14",
         "name": "Spline Operator",
-        "img": "https://media.valorant-api.com/weaponskinlevels/4c053776-467f-2c6a-b609-0ba3ea371a14/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/4c053776-467f-2c6a-b609-0ba3ea371a14/displayicon.png",
+        "cost": 1775
     },
     {
         "uuid": "436F42CC-49C5-B535-4FDF-C0BD48695919",
         "name": "Minima Operator",
-        "img": "https://media.valorant-api.com/weaponskinlevels/436f42cc-49c5-b535-4fdf-c0bd48695919/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/436f42cc-49c5-b535-4fdf-c0bd48695919/displayicon.png",
+        "cost": 1275
     },
     {
         "uuid": "49B00063-4A7E-6C73-B8C9-68A8D5727757",
         "name": "Silvanus Operator",
-        "img": "https://media.valorant-api.com/weaponskinlevels/49b00063-4a7e-6c73-b8c9-68a8d5727757/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/49b00063-4a7e-6c73-b8c9-68a8d5727757/displayicon.png",
+        "cost": 1275
     },
     {
         "uuid": "8F557248-48E2-28A5-3AD4-ECA783FDE786",
         "name": "Genesis Operator",
-        "img": "https://media.valorant-api.com/weaponskinlevels/8f557248-48e2-28a5-3ad4-eca783fde786/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/8f557248-48e2-28a5-3ad4-eca783fde786/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "24C73C29-443C-2440-D6DB-838086F2451A",
         "name": "Ion Operator",
-        "img": "https://media.valorant-api.com/weaponskinlevels/24c73c29-443c-2440-d6db-838086f2451a/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/24c73c29-443c-2440-d6db-838086f2451a/displayicon.png",
+        "cost": 1775
     },
     {
         "uuid": "4AA31563-44E1-0D9F-F95A-A1B9965AD762",
         "name": "Gravitational Uranium Neuroblaster Operator",
-        "img": "https://media.valorant-api.com/weaponskinlevels/4aa31563-44e1-0d9f-f95a-a1b9965ad762/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/4aa31563-44e1-0d9f-f95a-a1b9965ad762/displayicon.png",
+        "cost": 1775
     },
     {
         "uuid": "69657D05-4309-9779-D445-6DA864067246",
         "name": "Sentinels of Light Operator",
-        "img": "https://media.valorant-api.com/weaponskinlevels/69657d05-4309-9779-d445-6da864067246/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/69657d05-4309-9779-d445-6da864067246/displayicon.png",
+        "cost": 2175
     },
     {
         "uuid": "7BFAB387-4E97-D815-4488-C491E3A5520C",
         "name": "Reaver Operator",
-        "img": "https://media.valorant-api.com/weaponskinlevels/7bfab387-4e97-d815-4488-c491e3a5520c/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/7bfab387-4e97-d815-4488-c491e3a5520c/displayicon.png",
+        "cost": 1775
     },
     {
         "uuid": "65D832E3-4B34-B4B9-FDE0-9D897D5FE51B",
         "name": "Tethered Realms Operator",
-        "img": "https://media.valorant-api.com/weaponskinlevels/65d832e3-4b34-b4b9-fde0-9d897d5fe51b/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/65d832e3-4b34-b4b9-fde0-9d897d5fe51b/displayicon.png",
+        "cost": 1775
     },
     {
         "uuid": "19E0625F-4BCC-5126-014A-008C6DF44BA4",
         "name": "Cavalier Operator",
-        "img": "https://media.valorant-api.com/weaponskinlevels/19e0625f-4bcc-5126-014a-008c6df44ba4/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/19e0625f-4bcc-5126-014a-008c6df44ba4/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "88CBA358-4F4D-4D0E-69FC-B48F4C65CB2D",
         "name": "Standard Operator",
-        "img": "https://media.valorant-api.com/weaponskinlevels/88cba358-4f4d-4d0e-69fc-b48f4c65cb2d/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/88cba358-4f4d-4d0e-69fc-b48f4c65cb2d/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "35001B1F-49FA-48AD-A087-03809F6F059E",
         "name": "Aerosol Operator",
-        "img": "https://media.valorant-api.com/weaponskinlevels/35001b1f-49fa-48ad-a087-03809f6f059e/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/35001b1f-49fa-48ad-a087-03809f6f059e/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "ED333B00-4E88-A9C5-D309-ACAE85438E93",
         "name": "Convex Operator",
-        "img": "https://media.valorant-api.com/weaponskinlevels/ed333b00-4e88-a9c5-d309-acae85438e93/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/ed333b00-4e88-a9c5-d309-acae85438e93/displayicon.png",
+        "cost": 875
     },
     {
         "uuid": "43361D49-4331-EE30-E356-0F925E6E17B9",
         "name": "RGX 11z Pro Guardian",
-        "img": "https://media.valorant-api.com/weaponskinlevels/43361d49-4331-ee30-e356-0f925e6e17b9/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/43361d49-4331-ee30-e356-0f925e6e17b9/displayicon.png",
+        "cost": 2175
     },
     {
         "uuid": "920D9D08-4F22-9F1E-B309-DDBBE5ECB91C",
         "name": "VALORANT GO! Vol. 1 Guardian",
-        "img": "https://media.valorant-api.com/weaponskinlevels/920d9d08-4f22-9f1e-b309-ddbbe5ecb91c/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/920d9d08-4f22-9f1e-b309-ddbbe5ecb91c/displayicon.png",
+        "cost": 1775
     },
     {
         "uuid": "19BA907B-4A76-347F-EA24-38990C9FF755",
         "name": "Spectrum Guardian",
-        "img": "https://media.valorant-api.com/weaponskinlevels/19ba907b-4a76-347f-ea24-38990c9ff755/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/19ba907b-4a76-347f-ea24-38990c9ff755/displayicon.png",
+        "cost": 2675
     },
     {
         "uuid": "BF6DF430-4E46-5C51-DF6F-C2BC3B1CB4FE",
         "name": "Nebula Guardian",
-        "img": "https://media.valorant-api.com/weaponskinlevels/bf6df430-4e46-5c51-df6f-c2bc3b1cb4fe/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/bf6df430-4e46-5c51-df6f-c2bc3b1cb4fe/displayicon.png",
+        "cost": 1775
     },
     {
         "uuid": "03D98493-4964-3F66-7E23-7581BBCFA501",
         "name": "Nitro Guardian",
-        "img": "https://media.valorant-api.com/weaponskinlevels/03d98493-4964-3f66-7e23-7581bbcfa501/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/03d98493-4964-3f66-7e23-7581bbcfa501/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "6672800E-442C-A0B5-92D3-ED83483F04DF",
         "name": "Songsteel Guardian",
-        "img": "https://media.valorant-api.com/weaponskinlevels/6672800e-442c-a0b5-92d3-ed83483f04df/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/6672800e-442c-a0b5-92d3-ed83483f04df/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "C41A7B5D-4A04-A411-053D-818FE1D77AC6",
         "name": "Ruin Guardian",
-        "img": "https://media.valorant-api.com/weaponskinlevels/c41a7b5d-4a04-a411-053d-818fe1d77ac6/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/c41a7b5d-4a04-a411-053d-818fe1d77ac6/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "A2C59452-4420-130A-9AA1-CB8EA551A05D",
         "name": "Infantry Guardian",
-        "img": "https://media.valorant-api.com/weaponskinlevels/a2c59452-4420-130a-9aa1-cb8ea551a05d/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/a2c59452-4420-130a-9aa1-cb8ea551a05d/displayicon.png",
+        "cost": 875
+    },
+    {
+        "uuid": "0AB465ED-4539-16F1-B791-5384280E0A1C",
+        "name": "Hydrodip Guardian",
+        "img": "https://media.valorant-api.com/weaponskinlevels/0ab465ed-4539-16f1-b791-5384280e0a1c/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "9336AB9D-445C-0872-A283-9F9B61A0098A",
         "name": "Prime Guardian",
-        "img": "https://media.valorant-api.com/weaponskinlevels/9336ab9d-445c-0872-a283-9f9b61a0098a/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/9336ab9d-445c-0872-a283-9f9b61a0098a/displayicon.png",
+        "cost": 1775
     },
     {
         "uuid": "0E1AF0D5-4DEE-15DB-25B5-31A7DA6F1D52",
         "name": "Ruination Guardian",
-        "img": "https://media.valorant-api.com/weaponskinlevels/0e1af0d5-4dee-15db-25b5-31a7da6f1d52/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/0e1af0d5-4dee-15db-25b5-31a7da6f1d52/displayicon.png",
+        "cost": 2175
     },
     {
         "uuid": "E63EAB09-47E4-25BE-6C9F-57995385429D",
         "name": "Magepunk Guardian",
-        "img": "https://media.valorant-api.com/weaponskinlevels/e63eab09-47e4-25be-6c9f-57995385429d/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/e63eab09-47e4-25be-6c9f-57995385429d/displayicon.png",
+        "cost": 1775
     },
     {
         "uuid": "7A0374AF-42F5-2F99-B535-A997F2179717",
         "name": "Galleria Guardian",
-        "img": "https://media.valorant-api.com/weaponskinlevels/7a0374af-42f5-2f99-b535-a997f2179717/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/7a0374af-42f5-2f99-b535-a997f2179717/displayicon.png",
+        "cost": 875
     },
     {
         "uuid": "FEE2C305-40D1-1CCA-08B8-46BCEDA98ECA",
         "name": "Oni Guardian",
-        "img": "https://media.valorant-api.com/weaponskinlevels/fee2c305-40d1-1cca-08b8-46bceda98eca/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/fee2c305-40d1-1cca-08b8-46bceda98eca/displayicon.png",
+        "cost": 1775
     },
     {
         "uuid": "D52EB83D-4BC0-085D-3EC7-24B2C92281BF",
         "name": "Aero Guardian",
-        "img": "https://media.valorant-api.com/weaponskinlevels/d52eb83d-4bc0-085d-3ec7-24b2c92281bf/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/d52eb83d-4bc0-085d-3ec7-24b2c92281bf/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "DF9044E9-4ED4-4A49-B7CE-BABC4A0E23D6",
         "name": "POLYfox Guardian",
-        "img": "https://media.valorant-api.com/weaponskinlevels/df9044e9-4ed4-4a49-b7ce-babc4a0e23d6/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/df9044e9-4ed4-4a49-b7ce-babc4a0e23d6/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "CF06C0D6-4C0C-1E8A-0553-999A45A53AE1",
         "name": "Jigsaw Guardian",
-        "img": "https://media.valorant-api.com/weaponskinlevels/cf06c0d6-4c0c-1e8a-0553-999a45a53ae1/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/cf06c0d6-4c0c-1e8a-0553-999a45a53ae1/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "C9F0EA7F-4BED-B10E-62D2-0394444FEED1",
         "name": "Reaver Guardian",
-        "img": "https://media.valorant-api.com/weaponskinlevels/c9f0ea7f-4bed-b10e-62d2-0394444feed1/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/c9f0ea7f-4bed-b10e-62d2-0394444feed1/displayicon.png",
+        "cost": 1775
     },
     {
         "uuid": "8F8F82F4-4133-82C9-50B2-3C9C67E0F9FB",
         "name": "Sovereign Guardian",
-        "img": "https://media.valorant-api.com/weaponskinlevels/8f8f82f4-4133-82c9-50b2-3c9c67e0f9fb/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/8f8f82f4-4133-82c9-50b2-3c9c67e0f9fb/displayicon.png",
+        "cost": 1775
     },
     {
         "uuid": "F202625E-4647-B575-07A9-3FBC39D72B10",
         "name": "Tethered Realms Guardian",
-        "img": "https://media.valorant-api.com/weaponskinlevels/f202625e-4647-b575-07a9-3fbc39d72b10/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/f202625e-4647-b575-07a9-3fbc39d72b10/displayicon.png",
+        "cost": 1775
     },
     {
         "uuid": "7BC358D8-42AD-611F-5594-37888C23ABE3",
         "name": "Recon Guardian",
-        "img": "https://media.valorant-api.com/weaponskinlevels/7bc358d8-42ad-611f-5594-37888c23abe3/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/7bc358d8-42ad-611f-5594-37888c23abe3/displayicon.png",
+        "cost": 1775
     },
     {
         "uuid": "4C51B90B-4629-F1B0-5B53-5AA7FB787BE0",
         "name": "Infinity Guardian",
-        "img": "https://media.valorant-api.com/weaponskinlevels/4c51b90b-4629-f1b0-5b53-5aa7fb787be0/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/4c51b90b-4629-f1b0-5b53-5aa7fb787be0/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "414D888A-41CE-FCF0-E545-C49018EC9CF4",
         "name": "Standard Guardian",
-        "img": "https://media.valorant-api.com/weaponskinlevels/414d888a-41ce-fcf0-e545-c49018ec9cf4/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/414d888a-41ce-fcf0-e545-c49018ec9cf4/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "FA3D6A11-46C4-2CAF-F7E4-10A5013C034B",
         "name": "Ego Guardian",
-        "img": "https://media.valorant-api.com/weaponskinlevels/fa3d6a11-46c4-2caf-f7e4-10a5013c034b/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/fa3d6a11-46c4-2caf-f7e4-10a5013c034b/displayicon.png",
+        "cost": 1775
     },
     {
         "uuid": "3E0A3431-4E78-89D1-EE57-D9837E324EE0",
         "name": "Songsteel Marshal",
-        "img": "https://media.valorant-api.com/weaponskinlevels/3e0a3431-4e78-89d1-ee57-d9837e324ee0/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/3e0a3431-4e78-89d1-ee57-d9837e324ee0/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "60DC909F-4C52-B96E-DD37-DFAA2392E373",
         "name": "Ruin Marshal",
-        "img": "https://media.valorant-api.com/weaponskinlevels/60dc909f-4c52-b96e-dd37-dfaa2392e373/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/60dc909f-4c52-b96e-dd37-dfaa2392e373/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "C9D3F7BE-4753-D85C-7A65-A684B6BEBF71",
         "name": "Monarch Marshal",
-        "img": "https://media.valorant-api.com/weaponskinlevels/c9d3f7be-4753-d85c-7a65-a684b6bebf71/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/c9d3f7be-4753-d85c-7a65-a684b6bebf71/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "4A3B4AAF-4CDD-D5CF-B776-0593C3D2BF9A",
         "name": "Avalanche Marshal",
-        "img": "https://media.valorant-api.com/weaponskinlevels/4a3b4aaf-4cdd-d5cf-b776-0593c3d2bf9a/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/4a3b4aaf-4cdd-d5cf-b776-0593c3d2bf9a/displayicon.png",
+        "cost": 1275
     },
     {
         "uuid": "115AD37D-4126-20E5-35A5-D691AA97A03C",
         "name": "Couture Marshal",
-        "img": "https://media.valorant-api.com/weaponskinlevels/115ad37d-4126-20e5-35a5-d691aa97a03c/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/115ad37d-4126-20e5-35a5-d691aa97a03c/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "B2F78500-4322-B03D-2745-A3B2208D63FE",
         "name": "Magepunk Marshal",
-        "img": "https://media.valorant-api.com/weaponskinlevels/b2f78500-4322-b03d-2745-a3b2208d63fe/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/b2f78500-4322-b03d-2745-a3b2208d63fe/displayicon.png",
+        "cost": 1775
     },
     {
         "uuid": "50265AD5-4F14-2B32-924E-02BBED2BEA6F",
         "name": "Galleria Marshal",
-        "img": "https://media.valorant-api.com/weaponskinlevels/50265ad5-4f14-2b32-924e-02bbed2bea6f/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/50265ad5-4f14-2b32-924e-02bbed2bea6f/displayicon.png",
+        "cost": 875
     },
     {
         "uuid": "F1B4577E-4DD3-6573-472C-A68CFE695D60",
         "name": "POLYfrog Marshal",
-        "img": "https://media.valorant-api.com/weaponskinlevels/f1b4577e-4dd3-6573-472c-a68cfe695d60/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/f1b4577e-4dd3-6573-472c-a68cfe695d60/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "C779F43F-47CC-FE29-63AA-BB8B91B36E42",
         "name": "Artisan Marshal",
-        "img": "https://media.valorant-api.com/weaponskinlevels/c779f43f-47cc-fe29-63aa-bb8b91b36e42/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/c779f43f-47cc-fe29-63aa-bb8b91b36e42/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "C5DD6298-4928-5D64-5CD0-7FA41EA89D81",
         "name": "Sovereign Marshal",
-        "img": "https://media.valorant-api.com/weaponskinlevels/c5dd6298-4928-5d64-5cd0-7fa41ea89d81/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/c5dd6298-4928-5d64-5cd0-7fa41ea89d81/displayicon.png",
+        "cost": 1775
     },
     {
         "uuid": "F0389390-49EB-A43E-27FA-FC9F9F8AA9DE",
         "name": "Standard Marshal",
-        "img": "https://media.valorant-api.com/weaponskinlevels/f0389390-49eb-a43e-27fa-fc9f9f8aa9de/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/f0389390-49eb-a43e-27fa-fc9f9f8aa9de/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "4049DC82-495B-CECC-8E34-4DBF35753129",
         "name": "Wasteland Marshal",
-        "img": "https://media.valorant-api.com/weaponskinlevels/4049dc82-495b-cecc-8e34-4dbf35753129/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/4049dc82-495b-cecc-8e34-4dbf35753129/displayicon.png",
+        "cost": 1275
     },
     {
         "uuid": "4FCEA818-4877-85F9-BA01-A0B02E1868F4",
         "name": "Winterwunderland Marshal",
-        "img": "https://media.valorant-api.com/weaponskinlevels/4fcea818-4877-85f9-ba01-a0b02e1868f4/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/4fcea818-4877-85f9-ba01-a0b02e1868f4/displayicon.png",
+        "cost": 1275
     },
     {
         "uuid": "291CB44A-410D-B035-4D0B-608A92C2CD91",
         "name": "VALORANT GO! Vol. 1 Spectre",
-        "img": "https://media.valorant-api.com/weaponskinlevels/291cb44a-410d-b035-4d0b-608a92c2cd91/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/291cb44a-410d-b035-4d0b-608a92c2cd91/displayicon.png",
+        "cost": 1775
     },
     {
         "uuid": "B39AED48-4BB5-089B-3F60-17AA27E45733",
         "name": "Radiant Crisis 001 Spectre",
-        "img": "https://media.valorant-api.com/weaponskinlevels/b39aed48-4bb5-089b-3f60-17aa27e45733/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/b39aed48-4bb5-089b-3f60-17aa27e45733/displayicon.png",
+        "cost": 1775
     },
     {
         "uuid": "3B955119-421C-3319-50CC-1AAF06B42338",
         "name": "Singularity Spectre",
-        "img": "https://media.valorant-api.com/weaponskinlevels/3b955119-421c-3319-50cc-1aaf06b42338/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/3b955119-421c-3319-50cc-1aaf06b42338/displayicon.png",
+        "cost": 2175
     },
     {
         "uuid": "4D02D9FA-4CB4-4D87-BDF0-97BD5F960C12",
         "name": "Hivemind Spectre",
-        "img": "https://media.valorant-api.com/weaponskinlevels/4d02d9fa-4cb4-4d87-bdf0-97bd5f960c12/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/4d02d9fa-4cb4-4d87-bdf0-97bd5f960c12/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "DAA73753-4B56-9D21-D73E-F3B3F4C9B1A6",
         "name": "Forsaken Spectre",
-        "img": "https://media.valorant-api.com/weaponskinlevels/daa73753-4b56-9d21-d73e-f3b3f4c9b1a6/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/daa73753-4b56-9d21-d73e-f3b3f4c9b1a6/displayicon.png",
+        "cost": 1775
+    },
+    {
+        "uuid": "5172EA04-432F-2BFB-2163-808CCC2442C3",
+        "name": "Velocity Spectre",
+        "img": "https://media.valorant-api.com/weaponskinlevels/5172ea04-432f-2bfb-2163-808ccc2442c3/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "DD595229-4AAC-73F1-5FAD-86891B7D7ECB",
         "name": "Infantry Spectre",
-        "img": "https://media.valorant-api.com/weaponskinlevels/dd595229-4aac-73f1-5fad-86891b7d7ecb/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/dd595229-4aac-73f1-5fad-86891b7d7ecb/displayicon.png",
+        "cost": 875
     },
     {
         "uuid": "755D86A0-4B1C-5C8B-9238-E5BE850BA001",
         "name": "Horizon Spectre",
-        "img": "https://media.valorant-api.com/weaponskinlevels/755d86a0-4b1c-5c8b-9238-e5be850ba001/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/755d86a0-4b1c-5c8b-9238-e5be850ba001/displayicon.png",
+        "cost": 1275
     },
     {
         "uuid": "D1D528AE-4DCC-E693-68E2-E8A475DF83A4",
         "name": "Prime Spectre",
-        "img": "https://media.valorant-api.com/weaponskinlevels/d1d528ae-4dcc-e693-68e2-e8a475df83a4/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/d1d528ae-4dcc-e693-68e2-e8a475df83a4/displayicon.png",
+        "cost": 1775
     },
     {
         "uuid": "5A0CD3B5-4249-BF6F-D009-17A81532660E",
         "name": "Avalanche Spectre",
-        "img": "https://media.valorant-api.com/weaponskinlevels/5a0cd3b5-4249-bf6f-d009-17a81532660e/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/5a0cd3b5-4249-bf6f-d009-17a81532660e/displayicon.png",
+        "cost": 1275
     },
     {
         "uuid": "481A5ABB-45D7-818D-798F-D18D988B6DC1",
         "name": "Prism Spectre",
-        "img": "https://media.valorant-api.com/weaponskinlevels/481a5abb-45d7-818d-798f-d18d988b6dc1/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/481a5abb-45d7-818d-798f-d18d988b6dc1/displayicon.png",
+        "cost": 1275
     },
     {
         "uuid": "54EBEA37-4CFE-A79B-707D-0D94017A69A6",
         "name": "Serenity Spectre",
-        "img": "https://media.valorant-api.com/weaponskinlevels/54ebea37-4cfe-a79b-707d-0d94017a69a6/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/54ebea37-4cfe-a79b-707d-0d94017a69a6/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "87220ABC-49A9-7472-AE09-29A6D711BBC3",
         "name": "Ruination Spectre",
-        "img": "https://media.valorant-api.com/weaponskinlevels/87220abc-49a9-7472-ae09-29a6d711bbc3/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/87220abc-49a9-7472-ae09-29a6d711bbc3/displayicon.png",
+        "cost": 2175
     },
     {
         "uuid": "BD80C562-4C2D-F00A-156E-9190D023098E",
         "name": "Kingdom Spectre",
-        "img": "https://media.valorant-api.com/weaponskinlevels/bd80c562-4c2d-f00a-156e-9190d023098e/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/bd80c562-4c2d-f00a-156e-9190d023098e/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "7D43477D-465A-67FC-561E-F2A2EBEA697D",
         "name": "Luxe Spectre",
-        "img": "https://media.valorant-api.com/weaponskinlevels/7d43477d-465a-67fc-561e-f2a2ebea697d/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/7d43477d-465a-67fc-561e-f2a2ebea697d/displayicon.png",
+        "cost": 875
     },
     {
         "uuid": "7E45E9CD-4072-CC32-0898-D09C167CC0F9",
         "name": "Magepunk Spectre",
-        "img": "https://media.valorant-api.com/weaponskinlevels/7e45e9cd-4072-cc32-0898-d09c167cc0f9/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/7e45e9cd-4072-cc32-0898-d09c167cc0f9/displayicon.png",
+        "cost": 1775
     },
     {
         "uuid": "F2EF87C7-4FF5-54F8-E038-CEA4E54EEFDD",
         "name": "Spline Spectre",
-        "img": "https://media.valorant-api.com/weaponskinlevels/f2ef87c7-4ff5-54f8-e038-cea4e54eefdd/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/f2ef87c7-4ff5-54f8-e038-cea4e54eefdd/displayicon.png",
+        "cost": 1775
     },
     {
         "uuid": "1FDBE6F8-42CA-DEB2-33DA-CAA2C4200544",
         "name": "Minima Spectre",
-        "img": "https://media.valorant-api.com/weaponskinlevels/1fdbe6f8-42ca-deb2-33da-caa2c4200544/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/1fdbe6f8-42ca-deb2-33da-caa2c4200544/displayicon.png",
+        "cost": 1275
     },
     {
         "uuid": "CC3BB43A-4078-E7E6-5B43-3BA42FB9D7FB",
         "name": "Aero Spectre",
-        "img": "https://media.valorant-api.com/weaponskinlevels/cc3bb43a-4078-e7e6-5b43-3ba42fb9d7fb/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/cc3bb43a-4078-e7e6-5b43-3ba42fb9d7fb/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "49DE2762-4A72-6659-9139-0F96AE938649",
         "name": "POLYfrog Spectre",
-        "img": "https://media.valorant-api.com/weaponskinlevels/49de2762-4a72-6659-9139-0f96ae938649/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/49de2762-4a72-6659-9139-0f96ae938649/displayicon.png",
+        "cost": 0
+    },
+    {
+        "uuid": "5EB7515F-40A1-2F15-DE03-C9A024664737",
+        "name": "Protocol 781-A Spectre",
+        "img": "https://media.valorant-api.com/weaponskinlevels/5eb7515f-40a1-2f15-de03-c9a024664737/displayicon.png",
+        "cost": 2475
     },
     {
         "uuid": "8A1B2C5B-4692-78AE-9D5C-CDAC6A61E4F4",
         "name": "Gravitational Uranium Neuroblaster Spectre",
-        "img": "https://media.valorant-api.com/weaponskinlevels/8a1b2c5b-4692-78ae-9d5c-cdac6a61e4f4/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/8a1b2c5b-4692-78ae-9d5c-cdac6a61e4f4/displayicon.png",
+        "cost": 1775
     },
     {
         "uuid": "613DD54A-4068-0FAB-7670-BF8268A9B76B",
         "name": "Recon Spectre",
-        "img": "https://media.valorant-api.com/weaponskinlevels/613dd54a-4068-0fab-7670-bf8268a9b76b/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/613dd54a-4068-0fab-7670-bf8268a9b76b/displayicon.png",
+        "cost": 1775
     },
     {
         "uuid": "52907A7C-4570-10D9-D2EB-8991BCFEB2AE",
         "name": "Infinity Spectre",
-        "img": "https://media.valorant-api.com/weaponskinlevels/52907a7c-4570-10d9-d2eb-8991bcfeb2ae/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/52907a7c-4570-10d9-d2eb-8991bcfeb2ae/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "1DC45E18-4A07-C85F-0020-6DA4DB1486CE",
         "name": "Standard Spectre",
-        "img": "https://media.valorant-api.com/weaponskinlevels/1dc45e18-4a07-c85f-0020-6da4db1486ce/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/1dc45e18-4a07-c85f-0020-6da4db1486ce/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "FBE265CF-4E3D-9891-791E-5089F1F7F102",
         "name": "Convex Spectre",
-        "img": "https://media.valorant-api.com/weaponskinlevels/fbe265cf-4e3d-9891-791e-5089f1f7f102/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/fbe265cf-4e3d-9891-791e-5089f1f7f102/displayicon.png",
+        "cost": 875
     },
     {
         "uuid": "FDCB9CC0-4877-6F89-02AD-98AB330F3043",
         "name": "BlastX Spectre",
-        "img": "https://media.valorant-api.com/weaponskinlevels/fdcb9cc0-4877-6f89-02ad-98ab330f3043/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/fdcb9cc0-4877-6f89-02ad-98ab330f3043/displayicon.png",
+        "cost": 2175
     },
     {
         "uuid": "A83AC09D-4C19-FDA6-8E4D-C1B77DC2B479",
         "name": "Wasteland Spectre",
-        "img": "https://media.valorant-api.com/weaponskinlevels/a83ac09d-4c19-fda6-8e4d-c1b77dc2b479/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/a83ac09d-4c19-fda6-8e4d-c1b77dc2b479/displayicon.png",
+        "cost": 1275
     },
     {
         "uuid": "4DBEEBB2-4B39-8AEC-B639-00BC4948D0F3",
         "name": "RGX 11z Pro Stinger",
-        "img": "https://media.valorant-api.com/weaponskinlevels/4dbeebb2-4b39-8aec-b639-00bc4948d0f3/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/4dbeebb2-4b39-8aec-b639-00bc4948d0f3/displayicon.png",
+        "cost": 2175
     },
     {
         "uuid": "DF37B069-48B2-0A7C-78EA-5B8EEDC684F7",
         "name": "Aristocrat Stinger",
-        "img": "https://media.valorant-api.com/weaponskinlevels/df37b069-48b2-0a7c-78ea-5b8eedc684f7/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/df37b069-48b2-0a7c-78ea-5b8eedc684f7/displayicon.png",
+        "cost": 1275
     },
     {
         "uuid": "CD9BEDA3-4042-D79E-6D46-4DAA61484362",
         "name": "Red Alert Stinger",
-        "img": "https://media.valorant-api.com/weaponskinlevels/cd9beda3-4042-d79e-6d46-4daa61484362/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/cd9beda3-4042-d79e-6d46-4daa61484362/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "77D5C1DC-4DDE-539C-3A5A-0A95EECBA1E4",
         "name": "Surge Stinger",
-        "img": "https://media.valorant-api.com/weaponskinlevels/77d5c1dc-4dde-539c-3a5a-0a95eecba1e4/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/77d5c1dc-4dde-539c-3a5a-0a95eecba1e4/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "B5F7B00A-4C4B-A3D5-D2CC-FBB62C482EF6",
         "name": "Prism II Stinger",
-        "img": "https://media.valorant-api.com/weaponskinlevels/b5f7b00a-4c4b-a3d5-d2cc-fbb62c482ef6/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/b5f7b00a-4c4b-a3d5-d2cc-fbb62c482ef6/displayicon.png",
+        "cost": 875
     },
     {
         "uuid": "84A414F6-4FE4-98FF-8D4E-B5866894C436",
         "name": "Couture Stinger",
-        "img": "https://media.valorant-api.com/weaponskinlevels/84a414f6-4fe4-98ff-8d4e-b5866894c436/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/84a414f6-4fe4-98ff-8d4e-b5866894c436/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "D547C575-4572-9D77-42E5-BEA022E5F07B",
         "name": "Silvanus Stinger",
-        "img": "https://media.valorant-api.com/weaponskinlevels/d547c575-4572-9d77-42e5-bea022e5f07b/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/d547c575-4572-9d77-42e5-bea022e5f07b/displayicon.png",
+        "cost": 1275
     },
     {
         "uuid": "FED9C3F3-40A5-DA67-4AC9-4683CC5A0EBA",
         "name": "Sensation Stinger",
-        "img": "https://media.valorant-api.com/weaponskinlevels/fed9c3f3-40a5-da67-4ac9-4683cc5a0eba/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/fed9c3f3-40a5-da67-4ac9-4683cc5a0eba/displayicon.png",
+        "cost": 875
     },
     {
         "uuid": "E2C84381-4FA6-29B4-37B9-21BBA8AE24BF",
         "name": "Sakura Stinger",
-        "img": "https://media.valorant-api.com/weaponskinlevels/e2c84381-4fa6-29b4-37b9-21bba8ae24bf/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/e2c84381-4fa6-29b4-37b9-21bba8ae24bf/displayicon.png",
+        "cost": 1275
+    },
+    {
+        "uuid": "0329743B-4CE8-BE9F-B531-F4AADC890287",
+        "name": "Schema Stinger",
+        "img": "https://media.valorant-api.com/weaponskinlevels/0329743b-4ce8-be9f-b531-f4aadc890287/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "9BC535DD-4D91-3421-2CD0-7A8FDAD3478B",
         "name": "Sovereign Stinger",
-        "img": "https://media.valorant-api.com/weaponskinlevels/9bc535dd-4d91-3421-2cd0-7a8fdad3478b/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/9bc535dd-4d91-3421-2cd0-7a8fdad3478b/displayicon.png",
+        "cost": 1775
     },
     {
         "uuid": "7B71FC11-4FA2-C84C-31EC-5EB5C3E3FFF3",
         "name": "Cavalier Stinger",
-        "img": "https://media.valorant-api.com/weaponskinlevels/7b71fc11-4fa2-c84c-31ec-5eb5c3e3fff3/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/7b71fc11-4fa2-c84c-31ec-5eb5c3e3fff3/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "471FC2A5-47A7-5B12-2895-0899117D2F57",
         "name": "Standard Stinger",
-        "img": "https://media.valorant-api.com/weaponskinlevels/471fc2a5-47a7-5b12-2895-0899117d2f57/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/471fc2a5-47a7-5b12-2895-0899117d2f57/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "6A1CD98A-4248-4B67-8CED-AC9C56FB4630",
         "name": "Depths Stinger",
-        "img": "https://media.valorant-api.com/weaponskinlevels/6a1cd98a-4248-4b67-8ced-ac9c56fb4630/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/6a1cd98a-4248-4b67-8ced-ac9c56fb4630/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "CA2F7BC0-4270-7F76-4623-8596A5584D06",
         "name": "Ego Stinger",
-        "img": "https://media.valorant-api.com/weaponskinlevels/ca2f7bc0-4270-7f76-4623-8596a5584d06/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/ca2f7bc0-4270-7f76-4623-8596a5584d06/displayicon.png",
+        "cost": 1775
     },
     {
         "uuid": "D1E1F521-4C6B-A47D-6C02-F5A5DE9DAB48",
         "name": "Varnish Stinger",
-        "img": "https://media.valorant-api.com/weaponskinlevels/d1e1f521-4c6b-a47d-6c02-f5a5de9dab48/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/d1e1f521-4c6b-a47d-6c02-f5a5de9dab48/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "A1762ED3-45BF-2DD5-776F-A18A33171E6F",
         "name": "RGX 11z Pro Blade",
-        "img": "https://media.valorant-api.com/weaponskinlevels/a1762ed3-45bf-2dd5-776f-a18a33171e6f/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/a1762ed3-45bf-2dd5-776f-a18a33171e6f/displayicon.png",
+        "cost": 4350
     },
     {
         "uuid": "6E37A33A-416E-FCC0-CEB8-7784E18FBFE9",
         "name": "VALORANT GO! Vol. 1 Knife",
-        "img": "https://media.valorant-api.com/weaponskinlevels/6e37a33a-416e-fcc0-ceb8-7784e18fbfe9/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/6e37a33a-416e-fcc0-ceb8-7784e18fbfe9/displayicon.png",
+        "cost": 3550
     },
     {
         "uuid": "EC70C8C8-48DB-B2DC-AB7D-1D9410B0CFBF",
         "name": "Yoru's Stylish Butterfly Comb",
-        "img": "https://media.valorant-api.com/weaponskinlevels/ec70c8c8-48db-b2dc-ab7d-1d9410b0cfbf/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/ec70c8c8-48db-b2dc-ab7d-1d9410b0cfbf/displayicon.png",
+        "cost": 3550
     },
     {
         "uuid": "F58E7DA3-4567-707F-CB1E-3A9ADD422481",
         "name": "Waveform",
-        "img": "https://media.valorant-api.com/weaponskinlevels/f58e7da3-4567-707f-cb1e-3a9add422481/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/f58e7da3-4567-707f-cb1e-3a9add422481/displayicon.png",
+        "cost": 5350
     },
     {
         "uuid": "470E2855-4B86-F62D-258F-4588056A7B23",
         "name": "Champions 2021 Karambit",
-        "img": "https://media.valorant-api.com/weaponskinlevels/470e2855-4b86-f62d-258f-4588056a7b23/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/470e2855-4b86-f62d-258f-4588056a7b23/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "5F059D7E-413C-445C-E36F-9A9791FBA5B0",
         "name": "Origin Crescent Blade",
-        "img": "https://media.valorant-api.com/weaponskinlevels/5f059d7e-413c-445c-e36f-9a9791fba5b0/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/5f059d7e-413c-445c-e36f-9a9791fba5b0/displayicon.png",
+        "cost": 3550
     },
     {
         "uuid": "30DE237A-4FB3-90F5-3630-65BE64D01423",
         "name": "Radiant Crisis 001 Baseball Bat",
-        "img": "https://media.valorant-api.com/weaponskinlevels/30de237a-4fb3-90f5-3630-65be64d01423/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/30de237a-4fb3-90f5-3630-65be64d01423/displayicon.png",
+        "cost": 3550
     },
     {
         "uuid": "88D7C503-477F-C881-AF2C-53BBAB55807C",
         "name": "Nebula Knife",
-        "img": "https://media.valorant-api.com/weaponskinlevels/88d7c503-477f-c881-af2c-53bbab55807c/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/88d7c503-477f-c881-af2c-53bbab55807c/displayicon.png",
+        "cost": 3550
     },
     {
         "uuid": "48CE4A70-4207-623B-4739-BFB937812432",
         "name": "Glitchpop Dagger",
-        "img": "https://media.valorant-api.com/weaponskinlevels/48ce4a70-4207-623b-4739-bfb937812432/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/48ce4a70-4207-623b-4739-bfb937812432/displayicon.png",
+        "cost": 4350
     },
     {
         "uuid": "F27623A6-40DE-20B9-17B5-C5BED27453A7",
         "name": "Glitchpop Axe",
-        "img": "https://media.valorant-api.com/weaponskinlevels/f27623a6-40de-20b9-17b5-c5bed27453a7/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/f27623a6-40de-20b9-17b5-c5bed27453a7/displayicon.png",
+        "cost": 4350
     },
     {
         "uuid": "F3594BCC-43A9-4A74-8C40-98A4E4A4569A",
         "name": "Elderflame Dagger",
-        "img": "https://media.valorant-api.com/weaponskinlevels/f3594bcc-43a9-4a74-8c40-98a4e4a4569a/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/f3594bcc-43a9-4a74-8c40-98a4e4a4569a/displayicon.png",
+        "cost": 4950
     },
     {
         "uuid": "EA441610-42DA-E46F-8D7B-1B9759C105CD",
         "name": "Singularity Knife",
-        "img": "https://media.valorant-api.com/weaponskinlevels/ea441610-42da-e46f-8d7b-1b9759c105cd/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/ea441610-42da-e46f-8d7b-1b9759c105cd/displayicon.png",
+        "cost": 4350
     },
     {
         "uuid": "E701B267-43BB-7862-CEBB-9695590B68AC",
         "name": "Songsteel",
-        "img": "https://media.valorant-api.com/weaponskinlevels/e701b267-43bb-7862-cebb-9695590b68ac/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/e701b267-43bb-7862-cebb-9695590b68ac/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "1DC43C70-4DEC-A8E6-E9FA-CDA0033CC041",
         "name": "Hivemind Sword",
-        "img": "https://media.valorant-api.com/weaponskinlevels/1dc43c70-4dec-a8e6-e9fa-cda0033cc041/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/1dc43c70-4dec-a8e6-e9fa-cda0033cc041/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "5FECFD43-4BEC-4E6A-842C-84860853DF82",
         "name": "Forsaken Ritual Blade",
-        "img": "https://media.valorant-api.com/weaponskinlevels/5fecfd43-4bec-4e6a-842c-84860853df82/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/5fecfd43-4bec-4e6a-842c-84860853df82/displayicon.png",
+        "cost": 3550
+    },
+    {
+        "uuid": "C01062AB-48ED-11A2-46BB-DBA096DACA59",
+        "name": "Velocity Karambit",
+        "img": "https://media.valorant-api.com/weaponskinlevels/c01062ab-48ed-11a2-46bb-dba096daca59/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "726B77C9-41C3-80C6-F33E-068B9F74EF56",
         "name": "Ruin Dagger",
-        "img": "https://media.valorant-api.com/weaponskinlevels/726b77c9-41c3-80c6-f33e-068b9f74ef56/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/726b77c9-41c3-80c6-f33e-068b9f74ef56/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "249B0E46-4A11-F045-51BB-649151CD802A",
         "name": "Prime Axe",
-        "img": "https://media.valorant-api.com/weaponskinlevels/249b0e46-4a11-f045-51bb-649151cd802a/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/249b0e46-4a11-f045-51bb-649151cd802a/displayicon.png",
+        "cost": 3550
     },
     {
         "uuid": "167481DE-4732-B44A-06AD-938625015ABE",
         "name": "Prime//2.0 Karambit",
-        "img": "https://media.valorant-api.com/weaponskinlevels/167481de-4732-b44a-06ad-938625015abe/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/167481de-4732-b44a-06ad-938625015abe/displayicon.png",
+        "cost": 3550
     },
     {
         "uuid": "3A1EC58C-4380-0622-7FDE-C1936519FCF2",
         "name": "Outpost Melee",
-        "img": "https://media.valorant-api.com/weaponskinlevels/3a1ec58c-4380-0622-7fde-c1936519fcf2/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/3a1ec58c-4380-0622-7fde-c1936519fcf2/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "7CF3AF0B-4556-A0DB-2E04-EEA4368B354B",
         "name": "Prism Knife",
-        "img": "https://media.valorant-api.com/weaponskinlevels/7cf3af0b-4556-a0db-2e04-eea4368b354b/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/7cf3af0b-4556-a0db-2e04-eea4368b354b/displayicon.png",
+        "cost": 2550
     },
     {
         "uuid": "56F387F3-4B88-46B0-EE0D-249145F05D26",
         "name": "Prism III Axe",
-        "img": "https://media.valorant-api.com/weaponskinlevels/56f387f3-4b88-46b0-ee0d-249145f05d26/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/56f387f3-4b88-46b0-ee0d-249145f05d26/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "E94012B1-4A22-63D2-117E-90A2C1375DED",
         "name": "Broken Blade of the Ruined King",
-        "img": "https://media.valorant-api.com/weaponskinlevels/e94012b1-4a22-63d2-117e-90a2c1375ded/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/e94012b1-4a22-63d2-117e-90a2c1375ded/displayicon.png",
+        "cost": 4350
     },
     {
         "uuid": "8C2E0F93-4277-FBB8-20C6-E2B2638B6ED4",
         "name": "Kingdom Knife",
-        "img": "https://media.valorant-api.com/weaponskinlevels/8c2e0f93-4277-fbb8-20c6-e2b2638b6ed4/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/8c2e0f93-4277-fbb8-20c6-e2b2638b6ed4/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "A17E9FCC-4081-9B5A-CF63-FCA395E652DF",
         "name": "K/TAC Blade",
-        "img": "https://media.valorant-api.com/weaponskinlevels/a17e9fcc-4081-9b5a-cf63-fca395e652df/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/a17e9fcc-4081-9b5a-cf63-fca395e652df/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "B6768F01-4D72-F0F1-65B5-71B751536490",
         "name": "Smite Knife",
-        "img": "https://media.valorant-api.com/weaponskinlevels/b6768f01-4d72-f0f1-65b5-71b751536490/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/b6768f01-4d72-f0f1-65b5-71b751536490/displayicon.png",
+        "cost": 1750
     },
     {
         "uuid": "DC5E3CFC-466A-4819-E93B-2BA5F1847915",
         "name": "Catrina",
-        "img": "https://media.valorant-api.com/weaponskinlevels/dc5e3cfc-466a-4819-e93b-2ba5f1847915/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/dc5e3cfc-466a-4819-e93b-2ba5f1847915/displayicon.png",
+        "cost": 2550
     },
     {
         "uuid": "7302D465-46CD-2A43-655F-93AEE59030DB",
         "name": "Celestial Fan",
-        "img": "https://media.valorant-api.com/weaponskinlevels/7302d465-46cd-2a43-655f-93aee59030db/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/7302d465-46cd-2a43-655f-93aee59030db/displayicon.png",
+        "cost": 3550
     },
     {
         "uuid": "E57317AC-4A93-50A9-30E9-93A098513FA9",
         "name": "Luxe Knife",
-        "img": "https://media.valorant-api.com/weaponskinlevels/e57317ac-4a93-50a9-30e9-93a098513fa9/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/e57317ac-4a93-50a9-30e9-93a098513fa9/displayicon.png",
+        "cost": 1750
     },
     {
         "uuid": "C1326EE3-47AF-D823-6686-618E1BCDF0C6",
         "name": "Magepunk Electroblade",
-        "img": "https://media.valorant-api.com/weaponskinlevels/c1326ee3-47af-d823-6686-618e1bcdf0c6/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/c1326ee3-47af-d823-6686-618e1bcdf0c6/displayicon.png",
+        "cost": 3550
     },
     {
         "uuid": "C5EC6A47-40C2-66ED-D546-5BAD1EEF6FD5",
         "name": "Magepunk Shock Gauntlet",
-        "img": "https://media.valorant-api.com/weaponskinlevels/c5ec6a47-40c2-66ed-d546-5bad1eef6fd5/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/c5ec6a47-40c2-66ed-d546-5bad1eef6fd5/displayicon.png",
+        "cost": 3550
     },
     {
         "uuid": "D6E93360-46A2-0103-AFA0-8B91E78B6FE8",
         "name": "Spline Dagger",
-        "img": "https://media.valorant-api.com/weaponskinlevels/d6e93360-46a2-0103-afa0-8b91e78b6fe8/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/d6e93360-46a2-0103-afa0-8b91e78b6fe8/displayicon.png",
+        "cost": 3550
     },
     {
         "uuid": "A080B538-4593-B092-D29C-04B80E6E983F",
         "name": "Genesis Arc",
-        "img": "https://media.valorant-api.com/weaponskinlevels/a080b538-4593-b092-d29c-04b80e6e983f/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/a080b538-4593-b092-d29c-04b80e6e983f/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "21CEB4B1-480F-DDDB-1422-8AAD73519181",
         "name": "Ion Energy Sword",
-        "img": "https://media.valorant-api.com/weaponskinlevels/21ceb4b1-480f-dddb-1422-8aad73519181/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/21ceb4b1-480f-dddb-1422-8aad73519181/displayicon.png",
+        "cost": 3550
     },
     {
         "uuid": "E34039B6-441D-3E17-2773-BDAF5C3D2FAA",
         "name": "Oni Claw",
-        "img": "https://media.valorant-api.com/weaponskinlevels/e34039b6-441d-3e17-2773-bdaf5c3d2faa/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/e34039b6-441d-3e17-2773-bdaf5c3d2faa/displayicon.png",
+        "cost": 3550
     },
     {
         "uuid": "704A71AB-4B0E-6E03-466E-5B9CA9D987FD",
         "name": "Artisan Foil",
-        "img": "https://media.valorant-api.com/weaponskinlevels/704a71ab-4b0e-6e03-466e-5b9ca9d987fd/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/704a71ab-4b0e-6e03-466e-5b9ca9d987fd/displayicon.png",
+        "cost": 0
+    },
+    {
+        "uuid": "47897CD1-49E2-DA3F-4A8F-B6A1E84B0DD0",
+        "name": "Personal Administrative Melee Unit",
+        "img": "https://media.valorant-api.com/weaponskinlevels/47897cd1-49e2-da3f-4a8f-b6a1e84b0dd0/displayicon.png",
+        "cost": 4950
     },
     {
         "uuid": "3710F62C-4E0C-65FD-848D-8DA25D2FB833",
         "name": "Gravitational Uranium Neuroblaster Baton",
-        "img": "https://media.valorant-api.com/weaponskinlevels/3710f62c-4e0c-65fd-848d-8da25d2fb833/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/3710f62c-4e0c-65fd-848d-8da25d2fb833/displayicon.png",
+        "cost": 3550
     },
     {
         "uuid": "155BA654-4AFA-1029-9E71-E0B6962D5410",
         "name": "Snowfall Wand",
-        "img": "https://media.valorant-api.com/weaponskinlevels/155ba654-4afa-1029-9e71-e0b6962d5410/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/155ba654-4afa-1029-9e71-e0b6962d5410/displayicon.png",
+        "cost": 2550
     },
     {
         "uuid": "315E8E49-4DC4-9769-2382-3BA5F7AF87DA",
         "name": "Relic of the Sentinel",
-        "img": "https://media.valorant-api.com/weaponskinlevels/315e8e49-4dc4-9769-2382-3ba5f7af87da/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/315e8e49-4dc4-9769-2382-3ba5f7af87da/displayicon.png",
+        "cost": 4350
     },
     {
         "uuid": "D7A02A43-47A5-556C-A69F-EC9CF6EDE66D",
         "name": "Reaver Knife",
-        "img": "https://media.valorant-api.com/weaponskinlevels/d7a02a43-47a5-556c-a69f-ec9cf6ede66d/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/d7a02a43-47a5-556c-a69f-ec9cf6ede66d/displayicon.png",
+        "cost": 3550
     },
     {
         "uuid": "90FE45D6-41EA-1C49-8FB9-46B0E98C0077",
         "name": "Sovereign Sword",
-        "img": "https://media.valorant-api.com/weaponskinlevels/90fe45d6-41ea-1c49-8fb9-46b0e98c0077/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/90fe45d6-41ea-1c49-8fb9-46b0e98c0077/displayicon.png",
+        "cost": 3550
     },
     {
         "uuid": "12DCE8F5-42FE-87C6-EF37-8AA4E55F1F64",
         "name": "Prosperity",
-        "img": "https://media.valorant-api.com/weaponskinlevels/12dce8f5-42fe-87c6-ef37-8aa4e55f1f64/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/12dce8f5-42fe-87c6-ef37-8aa4e55f1f64/displayicon.png",
+        "cost": 3550
     },
     {
         "uuid": "E85CF8B6-467B-BC6C-9013-959383F71B2E",
         "name": "Recon Balisong",
-        "img": "https://media.valorant-api.com/weaponskinlevels/e85cf8b6-467b-bc6c-9013-959383f71b2e/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/e85cf8b6-467b-bc6c-9013-959383f71b2e/displayicon.png",
+        "cost": 3550
     },
     {
         "uuid": "854938F3-4532-B300-D9A2-379D987D7469",
         "name": "Melee",
-        "img": "https://media.valorant-api.com/weaponskinlevels/854938f3-4532-b300-d9a2-379d987d7469/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/854938f3-4532-b300-d9a2-379d987d7469/displayicon.png",
+        "cost": 0
     },
     {
         "uuid": "5BF17117-4EAD-A0A8-2961-288D38985E93",
         "name": "Ego Knife",
-        "img": "https://media.valorant-api.com/weaponskinlevels/5bf17117-4ead-a0a8-2961-288d38985e93/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/5bf17117-4ead-a0a8-2961-288d38985e93/displayicon.png",
+        "cost": 3550
     },
     {
         "uuid": "708ABBC6-4579-4452-4293-07BA45E78979",
         "name": "BlastX Polymer KnifeTech Coated Knife",
-        "img": "https://media.valorant-api.com/weaponskinlevels/708abbc6-4579-4452-4293-07ba45e78979/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/708abbc6-4579-4452-4293-07ba45e78979/displayicon.png",
+        "cost": 4350
     },
     {
         "uuid": "B577585F-4171-19A1-2899-848460DE8089",
         "name": "Winterwunderland Candy Cane",
-        "img": "https://media.valorant-api.com/weaponskinlevels/b577585f-4171-19a1-2899-848460de8089/displayicon.png"
+        "img": "https://media.valorant-api.com/weaponskinlevels/b577585f-4171-19a1-2899-848460de8089/displayicon.png",
+        "cost": 2550
     }
 ]
