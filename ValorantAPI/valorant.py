@@ -295,7 +295,7 @@ class Valorant(commands.Cog):
                 if not user:
                     await ctx.send("Id not found!")
                     return
-                user.delete()
+                s.delete(user)
                 s.commit()
                 print("Deleted " + ign)
             except:
