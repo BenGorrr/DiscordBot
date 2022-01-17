@@ -166,7 +166,7 @@ class Valorant(commands.Cog):
                 await ctx.send("Id not found. Use .valadd to add your valorant id")
                 return
 
-            print(f"id: {id} \n username: {id.username} ign: {id.ign}")
+            print(f"obj: {id} \n username: {id.username} ign: {id.ign} ppuid: {id.ppuid}")
             print(f"Last auth user: {self.last_auth_user}")
             # Get Auth with username and password
             # If last auth time is more than 1 hour or it is not previously auth'd
@@ -311,6 +311,7 @@ class Client():
         data = await RSO_Auth.auth(username, password)
         if data:
             print("Authorization done!")
+        else: print("Authorization failed")
         self.access_token, self.entitlements_token = data   # Set tokens that we get from RSO_Auth
 
     def set_base_url(self, base_url):
