@@ -90,16 +90,38 @@ class Valorant(commands.Cog):
                     await ctx.send("Id not found!")
                     return
 
-                await ctx.author.send("Reply with your new id and password and ingame name with tag seperated by a space! \nExample: [benn123 mypassword BenGorr#1234]")   
+                await ctx.author.send("Reply with your new id and password seperated by a space! \nExample: benn123 mypassword")   
                 # create a check for messages from author only
                 check = messages.message_check(channel=ctx.author.dm_channel)
                 # wait for reponse
                 response = await self.bot.wait_for('message', check=check)
                 try:
-                    id, pw, ign = response.content.split(' ')
+                    id, pw = response.content.split(' ')
+                except Exception as e:
+                    print(e)
+                    await ctx.author.send("Invalid input :/")
+                    raise Exception("Invalid input")
+
+                await ctx.author.send(
+                    "Reply with your ingame name with tag seperated by a space! \n\
+                        Example: BenGorr#1234\n\
+                        Example: Name with Space#1234")
+                response = await self.bot.wait_for('message', check=check)
+                ign = response.content.lower()
+                if not ign: 
+                    await ctx.author.send("Invalid input :/")
+                    raise Exception("Invalid input")
+                # Get player info
+                player = self.client.get_player(*ign.split('#')).json()
+                ppuid = player['data']['puuid']
+                player_card = player['data']['card']['small']
+
+                try:
                     # add user to db
-                    user.username, user.password, user.ign = id, pw, ign
-                    if user.username and user.password and user.ign:
+                    user.username, user.password, user.password = id, pw, ign
+                    user.ppuid, user.player_card = ppuid, player_card
+
+                    if user.username and user.password and user.ign and user.ppuid and user.player_card:
                         s.commit()
                         await ctx.author.send(f"Edited {user.ign} :)")
                     else: await ctx.author.send("Something went wrong!")
@@ -354,6 +376,7 @@ class Client():
         try:
             #skins_ids = files_util.read_Json(self.contentFile)['skinLevels']
             skins_ids = files_util.read_Json(self.skinsFile)
+            print("Got skin ids")
         except:
             # self.update_content(self.contentFile)
             # skins_ids = files_util.read_Json(self.contentFile)['skinLevels']
@@ -372,6 +395,7 @@ class Client():
                 except Exception as e:
                     print(e)
             if len(skins) != len(store_ids): # if not all skins is found
+                print("Not all skin found")
                 tries += 1
                 self.update_skins(self.skinsFile)   # Update skins file incase there is update
                 skins_ids = files_util.read_Json(self.skinsFile)
