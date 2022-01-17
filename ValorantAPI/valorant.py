@@ -276,7 +276,40 @@ class Valorant(commands.Cog):
         finally:
             s.close()
 
+    @commands.command(help="Delete a valorant user")
+    @commands.check(isBen)
+    async def valdel(self, ctx, ign):
+        try:
+            if not ign:
+                await ctx.send("Usage: .valdel [in-game-name without #tag]")
+                return
+            s = self.Session()
+            user = None
+            try:
+                valoUsers = s.query(ValorantUsers).all()
+                for valoUser in valoUsers:
+                    if ign in valoUser.ign:
+                        user = valoUser
+                        break
+
+                if not user:
+                    await ctx.send("Id not found!")
+                    return
+                user.delete()
+                s.commit()
+                print("Deleted " + ign)
+            except:
+                s.rollback()
+                raise
+            finally:
+                s.close()
+
+        except Exception as e:
+            print(e)
+            await ctx.send("Something went wrong!")
+
     @commands.command(help="Delete all currently added valorant users")
+    @commands.check(isBen)
     async def valdelall(self, ctx):
         s = self.Session()
         try:
