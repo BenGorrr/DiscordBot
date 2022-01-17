@@ -435,7 +435,8 @@ class Client():
                 self.update_skins(self.skinsFile)   # Update skins file incase there is update
                 skins_ids = files_util.read_Json(self.skinsFile)
             else: found = True
-        print("skins: " + skins)
+        print("skins: ")
+        print(skins)
         return skins
 
     def update_content(self, file):
