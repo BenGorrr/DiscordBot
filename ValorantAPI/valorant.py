@@ -295,7 +295,7 @@ class Valorant(commands.Cog):
                 if not user:
                     await ctx.send("Id not found!")
                     return
-                user.delete()
+                s.delete(user)
                 s.commit()
                 print("Deleted " + ign)
             except:
@@ -423,6 +423,7 @@ class Client():
         while not found and tries <= 1:
             for store_id in store_ids:
                 #skins_name.append(next(skin for skin in skins_ids if skin['id'] == store_id.upper())['name'])
+                print("Finding skins")
                 try:
                     skin = next(skin_id for skin_id in skins_ids if skin_id['uuid'] == store_id.upper())
                     skins.append({'name': skin['name'], 'img': skin['img'], 'cost': skin['cost']})
@@ -434,7 +435,7 @@ class Client():
                 self.update_skins(self.skinsFile)   # Update skins file incase there is update
                 skins_ids = files_util.read_Json(self.skinsFile)
             else: found = True
-        
+        print("skins: " + skins)
         return skins
 
     def update_content(self, file):
