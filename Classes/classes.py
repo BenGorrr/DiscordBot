@@ -139,8 +139,9 @@ class ClassesLinks(commands.Cog):
     @commands.command(help="Delete all the class links from DB (only owner)")
     @commands.check(isBen)
     async def deleteallclass(self, ctx):
-        self.recreate_db()
-        await ctx.send("Deleted everything.")
+        #self.recreate_db()
+        #await ctx.send("Deleted everything.")
+        pass
 
     def recreate_db(self):
         Base.metadata.drop_all(self.engine)
