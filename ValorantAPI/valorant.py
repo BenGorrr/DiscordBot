@@ -159,6 +159,7 @@ class Valorant(commands.Cog):
             # search for the user with the user given ign
             for user in valoUsers: 
                 if name in user.ign:
+                    print("Found user!: " + user.ign)
                     id = user
                     break
 
@@ -180,12 +181,14 @@ class Valorant(commands.Cog):
             player_store = self.client.get_player_store(name, tag, id.ppuid)
 
             # Create and setup embed
+            print("Setting up main embed")
             embed = discord.Embed(title=f"{id.ign}'s Store:")
             player_card = id.player_card
             embed.set_thumbnail(url=player_card)
 
             if image == '': # Send one embed with text-only
                 # if user does not want weapon image
+                print("Setting up embed_field")
                 for item in player_store:
                     embed.add_field(
                         name=f"{item['name']}\nCost: {item['cost']}", 

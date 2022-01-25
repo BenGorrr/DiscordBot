@@ -138,6 +138,9 @@ class MainCog(commands.Cog):
             elif message.author.id == 458649160623718400 or message.author.id == 698072756033421402:
                 await message.channel.send("Adu, Hi")
             else: await message.channel.send("Diam.")
+        if "haha" == message.content.lower() and message.author.id == 458649160623718400:
+            await message.channel.send("https://tenor.com/view/kettle-tea-morning-gif-7894132")
+
 
 def setup(bot):
     bot.add_cog(MainCog(bot))
